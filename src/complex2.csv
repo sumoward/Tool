@@ -1,0 +1,688 @@
+section 1 ,Contact Details
+,Company Name
+,Company Address Line 1
+,Company Address Line 2
+,Company Address Line 3
+,Company Address Line 4
+,Company Address Line 5
+,Company Address Line 6
+,Landline Telephone Number 
+,Mobile Telephone Number 
+,Contact Name of person completing this questionaire
+,Contact Title 
+,Contact email
+,
+section 2 ,Primary Business Drivers for investigating a WMS
+,Please Identify your key drivers at this time by placing yes in the answer No Current System
+,Old System  reviewing the Market
+,Growing Business demands enhanced functionality
+,Dissatisfaction with current WMS Solution Provider
+,Government Regulation or Traceability Issues
+,Adherence to complex stock handling rules or Errors or Accuracy
+,Customer Demands
+,Reduce Reliance on Key Staff 
+,Requirement for Improved Management Information and reporting
+,Other  Please Specifiy  Why are we here today
+,
+section 3 ,General Business Questions
+,What is the principal activity of business  
+,What is the total Number of Customers managed 3PL Only
+,eighty percentage of Volume is done by what number of customers 
+,Do you have a WMS currently in place
+,What is the WMS Product Name 
+,How many years has your current technology been in use
+,What  Product Temperatures does the business manage
+,percentage Ambient Operation Normal Temperature 
+,percentage Chill Operation circa 2 to 5 degrees Celisus 
+,percentage Cold Store Operation circa 18 to 30 degrees Celisus 
+,In terms of food  Product Types what percentage of Food is managed
+,percentage Chemical managed
+,percentage Hardware managed
+,percentage Other  managed
+,Do you perform Case Picking 
+,How many Pallet Positions are dedicated to Pick Faces
+, How many SKUs Stock Keeping Units are in the warehouse 
+,Do pick faces contain more than one SKU
+,Is Bulk Storage a major component of the business
+,How many Pallet Positions 
+, List any special services provided 
+, Manufacturing 
+, Repacking  
+, Kitting 
+, Assembly 
+, Sampling 
+, Bonded 
+, Other   
+, Do you have a Transport Divison 
+,Do you operate to BRC British Retail Consortium Standards
+,Do you have any ADR requirements 
+,
+section 4 ,Facility Overview Questions
+,How many physical warehousing sites do you operate
+,How many physical warehousing sites is the WMS being deployed 
+,Please complete the following for each facility you have
+,Facility name 
+,Size  Sq Feet
+,Number of Pallet Spaces
+,What is the total number Loading Bays or Doors 
+,Number of different chamber types operated Ambient or Chill or Frozen or bonded
+,Provide an overview of the Racking Types you operate by Pallet Space
+,Fixed Single Depth Racking  Number of spaces
+,Drive in MultiDepth Racking  Number of Spaces
+,Push Back racking
+,Mobile Racking  Number of Spaces
+,Narrow Aisle Racking  Number of spaces
+,Gravity Feed Racking  Number of spaces
+,MutliSpace racking  Not Drive In  Number of spaces
+,Block Stacking  Is this operated in the company
+,Other
+,Bulk Picking  
+,Case Picking 
+,Radio Frequency or Voice Yes  or No
+,Number of different chamber types operated Ambient or Chill or Frozen or bonded
+,What number of days per week does the warehouse operate  5 days 6 days 7 days 
+,The average number of shifts the warehouse operates per day 
+,What is the average number of hours per shift for warhouse operatives
+,How many days per week does the back office operate
+,How many shifts per day does the back office operate per day 
+,What is the average number of hours per shift for a back office administrator
+,
+section 5 , How many weeks per year does the warehouse operate 
+,Volumetrics  ROI  Across all Facilities
+,What is the average number of Good In Loads per day Daily
+,What is the average number of orders picked per day
+,What is the average number of lines per order
+,What Number of Goods Out Loads Per Day
+,Do you have a union workforce
+,
+section 6 ,Administration
+,What is the current total number of back office warehouse administration staff
+,What is the average hourly rate for warehouse backoffice staff
+,Across all back office staff  On average per week how many hours would be spent on the following activities 
+,Dealing with warehouse operative queries
+,Dealing with Customer or Supplier queries
+,Order data entry
+,System stock house keeping
+,Filing documentation
+,Documentation retreival
+,Report production
+,Invoice generation
+,On average how many Invoices are produced weekly
+,percentage Invoices physically posted
+,What is the average weekly back office overtime figure If any
+,
+section 7 ,Stock Supervisors
+,What is the current total number of Stock Supervisor staff
+,What is the average hourly rate for Stock Supervisor staff
+,Across all stock supervisors  On average per week how many hours would be spent on the following activities
+,Dealing with warehouse operative queries
+,Dealing with Customer or Supplier queries
+,Order data entry
+,System stock house keeping
+,Filing documentation
+,Documentation retreival
+,Report production
+,Invoice generation
+,On average how many Invoices are produced weekly
+,percentage Invoices physically posted
+,What is the average weekly stock supervisor overtime figure If any
+,
+section 8 ,Warehouse Operatives
+,What is the current total number of warehouses floor operatives
+,What is the average hourly rate for warehouse operator
+,What if any standards do you use to measure worker productivty
+,Do you have the current pick rate per operative per hour
+,Full Pallets picked per hour
+,Cases Picked per hour
+,pieces Picked per hour
+,Do warehouse operatives multitask 
+,What is the average number of warehouse operatives dedicated full time to Goods In activities Goods In Checking Putaway
+,What is the average number of warehouse operatives dedicated to fulltime Rewarehousing  Replenishments Internal Transfers 
+,What is the average number of warehouse operatives dedicated full time to  Picking Activities
+,What is the average number of warehouse operatives dedicated full time to Goods Out activities Marshalling Checking Loading
+,What is the average number of warehouse operatives dedicated full time to Stock Control activities
+,What is the average weekly warehouse overtime figure If any
+,What is the average weekly amount spent on warehouse agency  or contract staff If any
+,What is the current warehouse operator turnover rate per annum percentage
+,What would be the average cost to train a warehouse operative
+,For an ROI calculation please enter an average hourly rate for management who perform or are engaged in warehouse management activities  error correction credit note approvals  
+,What is the total Number of Forklifts Trucks operated by the business
+,What is the average annual cost of running a Forklift 
+,How many Full Pallet Movements  Putaways Replenishments Picks Stock Transfers
+,How many Fork Lift drivers are dedicated to full pallet movements
+,What is the average number of pallets moved internally per day  Replenishments Transfers Tempering rework  Per day
+,What is the average number full pallet putaways per day
+,What is the average number full pallet replenishments per day
+,What is the average number full pallet picks per day
+,What is the average number full pallet stock transfers per day
+,What is the average number of full pallet other movements per day
+,Are forklift drivers dedicated to specific tasks
+,Do operators currently Dual cycle
+,
+section 9 ,Accuracy  ROI  Across All Facilities
+,Do you have accurate data on order picking accuracy rates
+,If yes What is your current order selection picking accuracy rate 
+,How much do errors cost you on average per error                                                                        
+,What is the average value of stock on hand
+,What would be the annual estimate of stock losses arising from Issues not relating to short picks over picks mispicks  Shinkage POD issues returns
+,
+section 10 ,Technology Questions  Across All Facilities
+,Do you have your own internal IT department  No of People
+,Do you currently use Radio Frequency barcode Scanning
+,What is the number of handheld devices
+,What is the number of truck mounted devices
+,Do you currently use any voice technologies
+,What is the number of voice units
+,Do you currently use RFID Technology
+,Do you have a 80211b compliant wireless network in the warehouse
+,Is there full wireless coverage throughout the warehouses 
+,Is there a good and reliable broadband connection available at all locations 
+,Would you consider hosting your WMS application in the cloud
+,Number of Label Printers 
+,Number of Wireless Mobile Label Printers
+,Existing Accounting package If relevant
+,Existing Transport Package If relevent
+,Existing ERP or Sales or Purchase Ordering System If relevant
+,Existing Telesales System If relevant
+,Existing Manufacturing System If relevant
+,Other relevant Systems in operation If relevant
+,What is your current server specification 
+,Our Generic sample File Server Specification for a 10 User system is as follows
+,Does your email reside on this server
+,Is the server virtualised
+,What VM ware is running
+,Do you have antivirus protection on the server
+,What antivirus product is it 
+,Is this server your domain controller
+,What is the operating systems on the server   Windows 2008
+,Do you have Excel on the server
+,What Email Exchange Software do you operate  Microsoft Outlook
+,Do you run Microsoft SBS  Small Business Server
+,Are your servers hosted extenally
+,What is the speed of the broadband on site currently
+,What is the maximum bandwidth avaialbe in the area
+,Please outline the make and model number of each printer type proposed to be used on site
+,Dot Matrix Printers
+,Laser Printers
+,Label Printers 
+,Mobile Label Printers
+,Other 
+,Can you  or are you willing to get Professional Art work done for Dockets and Invoices in JPEG Format PSL can superimpose details onto the image
+,
+section 11 ,Digital Signature Pads We can capture and burn signatures to PDF
+,IT Hardware Vendor
+,Can we have permission to contact these
+,Company Name
+,Company Address Line 1
+,Company Address Line 2
+,Company Address Line 3
+,Company Address Line 4
+,Company Address Line 5
+,Company Address Line 6
+,Landline Telephone Number 
+,Mobile Telephone Number 
+,Contact Name
+,Contact Title 
+,
+section 12 ,Contact email
+,RF Hardware  or Wireless Vendor
+,Can we have permission to contact these
+,Company Name
+,Company Address Line 1
+,Company Address Line 2
+,Company Address Line 3
+,Company Address Line 4
+,Company Address Line 5
+,Company Address Line 6
+,Landline Telephone Number 
+,Mobile Telephone Number 
+,Contact Name
+,Contact Title 
+,Contact email
+,
+section 13 ,InHouse System Interfacing
+,What inhouse systems would the proposed WMS be required to Integrate with
+,Accounts  Sage Line 50 SAP Business One Access Accounts 
+,ERP 
+,Transport
+,Manufacturing
+,Other  Specify
+,Do these Integrations currently exist 
+,Do Systems Reside side by side  
+,If no how will files be managed
+,Type of interface required  File transfer or Database Level
+,Where relevant  File types to be used  CSV XML EDIFACT Other
+,File transfer Method  FTP AS2 EDI 
+,Will Principal Systems Ltd Standard File Formats be used by the client
+,If No are sample Files available
+,
+section 14 ,Customer or Supplier  System Interfacing
+,What Customer or Supplier systems would the proposed WMS be required to Integrate with
+,SAPR3
+,Movex
+,MFGPRO
+,SAP Business One
+,Access Accounts
+,Other  Specify
+,Do these Integrations currently exist 
+,Do Systems Reside side by side  
+,If no how will files be managed
+,Type of interface required  File transfer or Database Level
+,Where relevant  File types to be used  CSV XML EDIFACT Other
+,File transfer Method  FTP AS2 EDI 
+,Will Principal Systems Ltd Standard File Formats be used by the client
+,If No are sample Files available
+,
+section 15 ,Warehouse Setup Overview
+,Please identify the relevant warehouse articles that currently transit your warehouse
+,Standard Pallets 
+,Euro Pallets 
+,Chep Pallets
+,Plastic Pallets
+,Metal Pallets
+,Dolavs
+,Cages
+,Other
+,Are you required to manage the intake and despatch quantitys ie Article Control
+,Condition Codes
+,Do you operate condition codes to stock through the warehouse functions
+,Damaged
+,Quarantined 
+,Stock on hold
+,Other  Please List
+,Compatibility Tables
+,Are compatibility rules a feature of the operation 
+,Petrol should be a minimum of X positions from Fire
+,Can you provide PSL with a documented rule book
+,Does these apply at Putaway
+,Does these apply at picking
+,Crushability Tables
+,Are crushability rules a feature of the operation 
+,Are crushability rules a feature of the operation 
+,Can you provide PSL with a documented rule book
+,Does these apply at Putaway
+,Does these apply at picking
+,SSCC Labels
+,Are SSCC Labels a feature of the operation
+,Do you receive SSCC Labels 
+,Are you required to Produce SSCC Labels
+,Do you have a GS1 Prefix
+,Is the Prefix your own or you customers
+,Do you operate GTIN Numbers Global Trade Item Number  GTIN  is an identifier for trade items developed by GS1
+,Do you have Zebra ZM 600 Printers
+,Consignee Rules
+,Are Consignees Rules a feature of the operation
+,Delivery Dockets 
+,Pallet Manifest
+,Showing Supplier and Customer Product Codes on the delivery dockets  
+,Webfront end
+,How many or How many categories of Consignee Rules are a feature
+,Stock Rotation Rules
+,InDEX WMS  Can be configured that at the item Master Level you can choose the following stock rotation rules
+,FIFO  First in first out {Default]
+,LIFO  Last In First Out
+,Expiration  Oldest Stock 
+,Best Fit
+,Do you have requirements to rotate your stock other than FIFO
+,Does stock ever enter the warehouse  from production with a shorter shelf live than stock in the pickface
+,Are there different stock rotation rules at Product Class Level or Product Level
+,Are you required to control Best Before or Lot Numbers or other such traceable information through the pickface
+,Drive In racking  Can rule stock be extracted by conditions  Take it from easiest location if rules adhered to 
+,
+section 16 ,Goods In  Checking  Non Production Stock
+,Do you have a manned Security gate where drivers check in or could check in
+,Do you receive preadvice  or Advance Shipping Notifications  ASNs for Goods In
+,If yes  What percentage of orders do you received  ASNs for
+,How are preadvices notified
+,Fax
+,Email
+,Electronic  EDI CSV 
+,Can get sample sample files for Electronic  ASNs
+,What is the average number of Goods In loads per day
+,What percentage of Goods In are Full Pallets
+,What percentage of Goods In are Handballed loose product that need to be palletised
+,Are existing Pallets in the warehouse topped up
+,What percentage of Goods In are Mixed Pallets
+,Are you required to breakdown Mixed pallets at Good In
+,Are you required to Record Variable weight Items at Goods In
+,Are you required to Record Serial Items at Goods In
+,At Goods In are containers or Vehicles parked and processed over a number of days  
+,What percentage of Goods In loads are Checked
+,How is Checking currently performed Paper based or RF or Voice Checking
+,Is Checking performed by Goods In Staff or are there dedicated Checkers at Goods In
+,If applicable how many dedicated Good In Checkers are there
+,Do checkers perform the putaway function
+,On Average how long in Minutes does it take to physically unload and Check a Goods In Load
+,What is the average time taken by the back office to process each Goods In load
+,What percentage of incoming Product has a Barcode Labelled
+,Do you scan Customer or Supplier Pallet Labels at goods In
+,Is there a requirment to read Customer or Supplier Barcodes
+,Please Supply copies of each barcode to be scanned
+,Please supply the barcode make up or configuration of each pallet to be scanned
+,Are you allowed apply your own labels to Pallets at Goods In
+,What percentage of Goods In do you apply your own labels to at the Goods In Stage
+,Do you currently use Fixed Label Printers at Goods In
+,Do you currently use wireless or mobile Label Printers at Goods In
+,Is space a constraining factor at the Goods In area
+,Do you currently send Supplier or customer confirmation by :
+,percentage by Post 
+,percentage by Email 
+,percentage by Fax 
+,percentage Other
+,Do you currently scan Paper work in a document management system
+,What Information do you record at Goods In
+,Product Code
+,Product Quantity
+,Batch Number 
+,Dates  Production Date or Best Before Dates or Kill Dates 
+,Temperature 
+,Weight
+,Lot Number
+,Other 
+,Do temperature tolerances apply
+,Is product outside of a tolerance handled differently 
+,Is it available for picking
+,Does it go through a different process
+,Is it quarantined
+,Does the information captured at goods In changes from Customer to Customer  Product to Product
+,Do your record the physical Pallets or Cages at Good In
+,What happens in the event of a descrepencies  Over  or Under  or  incorrect product
+,Is there a requirments to check shelf life at Goods In 
+,Is there a requirment to Cross Dock at Goods In 
+,BRC  Do you record BRC Information at Goods In
+,Do you require and messages to display at goods In  Customer Product
+,Do you perform an VAS at Goods In 
+,Are Charges appplied at Goods In
+,Per Load
+,Per Pallet
+,Weight 
+,Other 
+,Is product receipted or after goods in available immediately available to pick
+,Do you operate any quanrantine processes
+,Can stock arrive from production out of date sequence
+,If yes please define what occurs
+,Are condition codes a feature of Good In 
+,Are Compatibility codes a feature of Goods In 
+,Are crushablity tables a feature of Good In
+,Dairy Booking Systems Is this required or nice to have
+,
+section 17 ,Goods In  Production Stock 
+,Do you receive product from Production
+,Is production at the same facility as the warehouse
+,Is production 24 hours
+,percentage of product receipted Blind from production
+,percentage of product preadviced from Production
+,How are preadvices notified
+,Fax
+,Email
+,Electronic  EDI CSV 
+,Are these systems currently integrated
+,Is there a requirment to integrate to a production system
+,What is the name of the production or ERP system
+,Proposed Integration method
+,Can get sample sample files for Electronic ASNs
+,Is it a continous flow of product from production
+,How many Goods In from production are receipted per day
+,At what times are these recepited
+,What is the average number of Goods In loads from production per day
+,What percentage of Goods In from production are Full Pallets
+,What percentage of Goods In from Production require to be pallet or cage built loose product that need to be palletised
+,Are Goods In from Production Mixed Products
+,Are existing Pallets in the warehouse topped up
+,Are you required to Record Variable weight Items at Goods In from production
+,Are you required to Record Serial Items at Goods In from Production
+,What percentage of Goods In loads are Checked
+,How is Checking currently performed Paper based or RF or Voice Checking
+,Is Checking performed by Goods In Staff or are there dedicated Checkers at Goods In
+,If applicable how many dedicated Good In Checkers are there
+,Do checkers perform the putaway function
+,On Average how long in Minutes does it take to physically unload and Check a Goods In Load
+,What is the average time taken by the back office to process each Goods In load
+,What percentage of incoming Product has a Barcode Labelled
+,Do you scan Production Pallet Labels at goods In
+,Is there a requirment to read Production Barcodes
+,Please Supply copies of each barcode to be scanned
+,Please supply the barcode make up or configuration of each pallet to be scanned
+,Are you allowed apply your own labels to Pallets at Goods In
+,What percentage of Goods In do you apply your own labels to at the Goods In Stage
+,Do you currently use Fixed Label Printers at Goods In
+,Do you currently use wireless or mobile Label Printers at Goods In
+,Is space a constraining factor at the Goods In from production area
+,Do you currently send Production confirmation by :
+,percentage by Email 
+,percentage by Fax 
+,percentage File
+,percentage Other
+,Do you currently receive Paper work with Goods In from Production
+,What Information do you record at Goods In Production
+,Product Code
+,Product Quantity
+,Batch Number 
+,Dates  Production Date or Best Before Dates or Kill Dates 
+,Temperature 
+,Weight
+,Lot Number
+,Other 
+,If temperature is recorded at Good In from Production Do temperature tolerances apply
+,Is product outside of a tolerance handled differently 
+,Is it available for picking
+,Does it go through a different process
+,Is it quarantined
+,Does the information captured at goods In from production changes from  Product to Product
+,Do your record the physical Pallets or Cages or Articles at Good In
+,What happens in the event of a descrepencies  Over  or Under  or  incorrect product
+,Is there every a requirement to Cross Dock at Goods In from production
+,BRC  Do you record BRC Information at Goods In from production
+,Do you require and messages to display at goods In from production
+,Do you perform an VAS at Goods In from production
+,Is product receipted or after goods in from porduction available immediately available to pick
+,Do you operate any quanrantine processes
+,Can stock arrive from production out of date sequence
+,If yes please define what occurs
+,Are condition codes a feature of Good In from production
+,
+section 18 ,PutAway
+,Do operators currently choose putaway locations
+,Do you require system directed putaway algorithms
+,Can you provide PSL with the system directed rule book
+,Temperatures considerations  ambient product to ambient locations 
+,Reserved locations for a customer
+,Reserved locations for Products
+,Keep like product together
+,Replenish pick face first
+,Locate above pick face next
+,If full suggest Bulk stock locations
+,Are product compatability considerations a feature of Putaway
+,Is cross docking a feature of the operation
+,Do you currently operating Dual Cycling Dual Cycling or Task interleaving is a method of combining picking and putaway The WMS uses logic to direct a lift truck operator to put away a pallet en route to a pick and vice versa 
+,Are varying Euro  or Standard Pallets dimensions an issue for the business  Three Euro Pallets will fit in a bay but only two standard pallets
+,Can you double stack products in locations
+,Are there bay locations that would have Height restrictions
+,
+section 19 ,Replenishments
+,Are replenishments performed in realtime
+,Do you deplete the pickface to Zero
+,Do you perform optimistic replnishments
+,Can two Forklift drivers be in a single Aisle
+,
+section 20 ,Picking
+,Picking overview
+,What is the average number orders picked per day
+,What is the average number of lines per order
+,What is the average number of items per order
+,What percentage of the pick operation is Full Pallet picks
+,What percentage of the pick operation is Case picks
+,What percentage of the pick operation is piece Picks 
+,What is the average value of an order 
+,How are Picks Released or Sequenced
+,Pick by order 
+,Pick By Route
+,Pick to Zero
+,Pick by Line
+,Are full Pallet Picks segregated from case picks
+,Are Orders send to multiple pickers
+,What is the average Number of Full Pallets  Shipped unbroken per day
+,How many hours per day are dedicated to full pallet picks
+,What percentage of full Pallet Picks are Marshalled or Staged
+,What percentage of Full Pallet Picks are loaded directly to an Outbound Trailer or Container
+,What is the average number of warehouse operatives dedicated full time to Full Pallet Picks
+,Are Full Pallet Picks re Labelled 
+,Currently are Full pallet picks paper based Radio Frequency or Voice based
+,On average how many Cases are picked per day
+,What is the average number of cases picked per order
+,How many case pickers on the busiest shift
+,What best describes your current case pick operation percentage Basic Order Picking  
+,percentage Batch Picking  
+,percentage Zone Picking  
+,percentage Wave Picking  
+,Typically what are case picked onto or into  Pallets or Cages
+,Are Case picks currently paper based Radio Frequency or Voice based other
+,Are Case Picks labelled 
+,How many SKUs are involved in the case picking
+,How many Pickface locations do you operate
+,Do you require pick to zero on pickfaces or full traceability through the pickface
+,Are Variable Weight cases a feature of the business
+,Are Serial Item Tracking a feature of your case picking operation
+,Number of Pallets Replenished to the Pick Face  Per day
+,What percentage of Case Picks are Checked for accuracy
+,Is Pallet Building Logic a feature of the business
+,Are they any Pallet Building Rules 
+,Pallet Types 
+,Layers
+,Column Stacking
+,Crushability issues
+,Pallet Labelling Requirments  SSCC Labels  Location Number of Labels
+,How many consignees have specific pallet building function
+,piece Picking If applicable
+,On average how many piece picks per day
+,What is the average number of pieces picked per order
+,How many piece pickers on the busiest shift
+,What best describes your current piece pick operation percentage Basic Order Picking  
+,percentage Batch Picking  
+,percentage Zone Picking  
+,percentage Wave Picking  
+,Typically what are pieces picked onto or into  Cages or Boxes
+,Are piece picks currently paper based Radio Frequency or Voice based other
+,Are piece Picks labelled 
+,How many SKUs are involved in the piece picking
+,How many Pickface locations are operated for Piece Picks
+,Are Case Picks and piece Pickfaces Shared
+,Do you require pick to zero on pickfaces or full traceability through the pickface
+,Are Variable Weight cases a feature of the business
+,Are Serial Item Tracking a feature of your case picking operation
+,What percentage of piece Picks are Checked for accuracy
+,Perpetual Inventory Counting in picking
+,Is there a requirement for Perpectual Inventory Counting  Every X visit to the pickface the picker gets a count Instruction post pick
+,What number of Groups will stock Categorised into 
+,
+section 21 ,Orders Consolidation if applicable
+,Are Full Pallets Consiolidated with Case picks
+,
+section 22 ,Are Piece Picks consolidated with Case Picks
+,Average number of Loads Out per day
+,Average Load Time per Load Out
+,percentage of Goods Out that are stock checked 
+,Do you receive Advance Shipping Notifications  ASNs for Goods Out
+,If yes  What percentage of orders do you received  ASNs for
+,Currently are Loads checked before 
+,Does Loading need to be managed by the WMS
+,How are Loads Sequenced Eg by route
+,Do vehicles need to be loaded in Sequence Does the InDEX need to manage or manual
+,What is the average value of stock held on the site
+,How often are stock takes performed Daily or Weekly or Fortnightly or Monthly or Annually
+,Do you Cycle count
+, If Yes  On average how many times per year are Cycle Counts completed
+,On average how many hours per week are spent by warehouse operatives on stock taking activities
+,On average how many hours per week is spent by back office operatives on stock taking activities
+,On average how many hours per week is spent by management on stock taking activities
+,Do you currently operate Perpetual Inventory Counting Perpetual Inventory  Counting Stock while performing picks
+,On average What is the current value annual stock losses
+,On average how many Returns occur per day
+,What percentage of returns are advised or planned
+,What percentage of returns are unplanned
+,How many hours are spent by warehouse operative on returns activities per day
+,How many hours are spent by back office operatives on returns activities per day
+,How many hours are spent by management on returns activities per day
+,What percentage of returns are due to mispicks
+,How many Credit notes are generate as a result of returns activities
+,How do you manage stock transfers
+,Billing and Charging 3PL only
+,Will you be using InDEX to create Invoices
+,How often are invoices created
+,Daily 
+,Weekly
+,Fortnightly
+,Monthly 
+,Is week 53 an issue for the business
+,Can you provide PSL with a matrix of all handling and storage charges
+,Invoicing 
+,Will InDEX be used for Invoicing 
+,Storage Charges
+,Handling Charges
+,VAS  Value added services  On the Gun
+,Billing Period  Daily Weekly Forthnighly Monthly
+,Bonded Operations 
+,Do you have a Bonded Area 
+,Do you perform any Customs Clearance
+,What type of clearances do you have or do  
+,Import EMCS  Excise Movement and Control systems
+,Export EMCS  Excise Movement and Control systems
+,Import ICS  Import Control Systems 
+,Import New Computerised Transit Sytem
+,Export New Computerised Transit System
+,Do you require integration to online Customs  CHIEF System  
+,What system do you currently use
+,Are transactions manually entered or automated 
+,How many Chief Transactions do you perform in a Month 
+,What Sea Ports or Airports do you receive stock into 
+,What Sea Ports or Airports do you despatch stock from 
+,
+section 23 ,What are you currently paying or month 
+,VASs  Value Added Services
+,
+section 24 ,Shrinkwrapping
+,Pallet Inversion
+,
+section 25 ,Blastfreezing 
+,How do you manage Blastfreeing
+,
+section 26 ,Order Fulfilment
+,How do you manage Order Fulfilment
+,
+section 27 ,Product Sampling Functions
+,How do you manage Product Sampling Functions
+,
+section 28 ,Place Stock on Hold
+,How do you manage Stock on Hold
+,
+section 29 ,Release Stock from holds
+,How do you manage Stock from Hold
+,
+section 30 ,Product Grading Functions
+,How do you manage Product Grading Functions
+,
+section 31 ,Tempering Functions
+,How do you manage Tempering Functions
+,
+section 32 ,Microwaving Functions
+,How do you manage Microwaving Functions
+,
+section 33 ,Kitting 
+,How do you manage Kitting
+,
+section 34 ,Assembly 
+,How do you manage Assembly
+,
+section 35 ,Rework 
+,How do you manage Rework
+,
+section 36 ,Other
+,How do you manage other
+,
+section 37 ,External Web Front End
+,Does the Current System If any have a Web Front End Interface
+,Do you require the ability for external users to be able to view and perform their own stock enquiries
+,Do you have an existing web server
+,Webservers must be in a DMZ 
+,In computer security a DMZ sometimes referred to as a perimeter networking is a physical or logical subnetwork that contains and exposes an organizations externalfacing services to a larger untrusted network usually the Internet
+,How many Customers or Accounts would require access to web enquiries

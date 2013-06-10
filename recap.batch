@@ -1,0 +1,11 @@
+rem boot mongod
+rem mongod >> "c:\eclipse for python\workspace\RECAP\src\log.txt"
+
+pause 
+rem boot bottle
+rem open recap_questionaire_module.py
+c:
+cd "\eclipse for python\workspace\RECAP\src"
+pause
+recap_questionaire_module.py >> "c:\eclipse for python\workspace\RECAP\src\log.txt"
+pause
