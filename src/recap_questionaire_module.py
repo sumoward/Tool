@@ -206,7 +206,7 @@ def form_end():
 #        free_text_list.append(var )
 #    print ('free text',free_text_list)
 
-    return bottle.template("accordian",
+    return bottle.template("tab",
              form1=section_interface_dict, form2=question_interface_dict)
 
 
@@ -420,5 +420,5 @@ def create_doc():
 
 
 bottle.debug(True)
-bottle.run(server='cherrypy', host='localhost', port=8081)
-# bottle.run(server = 'cherrypy',host='0.0.0.0', port=8081 )
+#bottle.run(server='cherrypy', host='localhost', port=8081)
+bottle.run(server = 'cherrypy',host='0.0.0.0', port=8081 )

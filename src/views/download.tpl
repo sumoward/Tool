@@ -3,13 +3,14 @@
 <head>
 <title></title>
 <link rel="stylesheet" type="text/css" href="/layoutcss.css">
-</head>
 
+ <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
+ 
+</head>
+<body>
 <nav>
 %include navbar
 </nav>
-<body>
-
 <div class="container">
 
 <div class="hero-unit">

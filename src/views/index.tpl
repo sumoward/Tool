@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap.css" rel="stylesheet">
+        <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
         <style type="text/css">
             body{padding-top: 60px;padding-bottom: 40px;}
         </style>
@@ -17,7 +17,7 @@
         <![endif]-->
     </head>
     <body>
-    <nav>
+<nav>
 %include navbar
 </nav>
     

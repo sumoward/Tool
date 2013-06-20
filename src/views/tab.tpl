@@ -1,24 +1,16 @@
 <!doctype html>
- 
-<html lang="en">
+ <html lang="en">
 <head>
-
 <title>RECAP</title>
-
-	
-
 </head>
-
 <body>
- <nav>
+<nav>
 %include navbar
 </nav>
 
 <div>
-    
-    %include accordian form1=form1, form2 = form2
-       
-	</div>
+%include accordian form1=form1, form2 = form2
+ </div>
 
 </body>
 <footer>

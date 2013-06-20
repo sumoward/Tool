@@ -10,13 +10,8 @@
   <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   
   <script>
-  $(function() {
-        $( "#accordion" ).accordion({
-            collapsible: true,
-            active: false,
-            heightStyle: "content"
-        });
-    });
+  
+
   </script>
   
 
@@ -37,7 +32,7 @@
 </head>
 <body>
   
-<div id="accordion">
+<div id="accordion" style="display: none;">
 
 %for x, sect in enumerate(form1):
 %check1 = True

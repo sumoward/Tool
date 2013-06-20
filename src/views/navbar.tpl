@@ -2,7 +2,7 @@
  
     <head>
         <meta charset="utf-8">
-        <title>Bootstrap, from Twitter</title>
+        <title>RECAP</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -28,6 +28,7 @@
             active: false,
             heightStyle: "content"
         });
+         $("#accordion").css("display", "block");
     });
   </script>
         
