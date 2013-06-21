@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.python.pydev.pythonNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>user.py</name>
-			<type>1</type>
-			<location>C:/mongodb/user.py</location>
-		</link>
-	</linkedResources>
 </projectDescription>
