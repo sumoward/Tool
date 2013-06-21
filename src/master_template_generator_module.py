@@ -18,7 +18,7 @@ class Import:
         self.intro = None
 
     def readin(self):
-        self.holder = open(self.file, 'r')
+        self.holder = open(self.file, 'r', encoding='iso-8859-1')
         return self.holder
 
     def start(self):
@@ -80,7 +80,7 @@ class Import:
         self.string_persist()
 
 if __name__ == "__main__":
-    tester1 = Import() 
+    tester1 = Import()
     tester1.start()
     tester1.writeout()
     print('completed')
