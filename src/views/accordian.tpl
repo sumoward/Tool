@@ -31,13 +31,16 @@
 
 </head>
 <body>
+
+
+
   
 <div id="accordion" style="display: none;">
 
 %for x, sect in enumerate(form1):
 %check1 = True
 <!-- Section header -->
-<h3 id='top'>{{sect['section_no']}}::{{sect['section_name']}}</h3>
+<h3 id='top'>{{sect['section_name']}}</h3>
 
 <div class="container">
 <div class="hero-unit">
@@ -45,7 +48,7 @@
 <!-- Intro -->
 
 %if sect['intro'] != 'None' and  check1 == True:
-<legend>Intro:{{sect['intro']}}:intro</legend><br>
+<legend>{{sect['intro']}}</legend><br>
 %check1 = False
 %end
 
@@ -60,12 +63,12 @@
 %if int(str(key['quest_no'])[:-3]) == sect['section_no']:
 
 %if key['subhead'] != None and check2 == True:
-<div class="span6"><br><h4>:test:{{key['subhead']}}::</h4><br></div>
+<div class="span6"><br><h4>{{key['subhead']}}</h4><br></div>
 %check2 = False
 %end
 
 <!-- Questions -->
-<div class="span6"><label>{{key['quest_no']}}::{{key['quest']}}</label></div>
+<div class="span6"><label>{{key['quest']}}</label></div>
 
 <div class="span4"><input type="text" name= "{{key['quest_no']}}" class="input-large search-query"  value ="{{key['answer']}}" ></div>
 
@@ -76,7 +79,7 @@
 
 
 
-<div class="span6"><br><p>Enter any additional information here</p> <br><textarea name= "free_text"rows="3">{{sect['free_text']}}</textarea><br></div>
+<div class="span6"><br><p>Enter any additional information here</p> <br><textarea name= "free_text" rows="5" cols="30">{{sect['free_text']}}</textarea><br></div>
 <br>
 
 

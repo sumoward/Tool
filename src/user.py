@@ -167,9 +167,13 @@ def uid_to_username(connection, uid):
 
 # Implement the hash_str function to use HMAC and our SECRET instead of md5
 SECRET = 'verysecret'
-
+SECRET = SECRET.encode('utf-8')
 
 def hash_str(s):
+    
+    #print(SECRET)
+    #print(type(SECRET))
+    #print(s)
     return hmac.new(SECRET, s.encode('utf-8')).hexdigest()
 
 

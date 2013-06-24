@@ -52,7 +52,7 @@ class Import:
             # check to see if it is used to generate the variable name
             if 'section' in entry:
                 self.customer.insert({'sections': {'section': self.counter1,
-              'section_string': entry,
+              'section_string': entry[10:].strip(),
               'intro': self.intro,
                  'section_tag': [], 'questions': [],
                   'account_name': None, 'free_text': None}})

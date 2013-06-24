@@ -35,7 +35,6 @@ class Database_manage_recap:
         return cursor
 
     def get_sections(self):
-        pass
         print('getting sections')
         # dict1 = {}
         list1 = []
@@ -468,7 +467,7 @@ if __name__ == "__main__":
     tester1.connection()
     #print("___________________________________________________________")
     tester1.copy_template()
-    tester1.get_sections()
+    #tester1.get_sections()
     section_no = 2
     #print("____________________________________________________")
     tester1.get_questions(section_no)

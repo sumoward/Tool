@@ -57,7 +57,9 @@
                             </li>
                             <li><a href="/download">Download</a>
                             </li>
-                            
+                            </li>
+                            <li><a href="/logout">logout</a>
+                            </li>
                             
                             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -76,11 +78,7 @@
                         </ul>
                         </li>
                         </ul>
-                        <form class="navbar-form pull-right">
-                            <input class="span2" placeholder="Email" type="text">
-                            <input class="span2" placeholder="Password" type="password">
-                            <button type="submit" class="btn">Sign in</button>
-                        </form>
+                      
                     </div>
                 </div>
             </div>
