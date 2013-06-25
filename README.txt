@@ -9,3 +9,6 @@ mongoimport --db recap --collection users --file users.txt
 Run sonar / start
 
 then sonar-runner in recap folder
+
+git add -u
+
