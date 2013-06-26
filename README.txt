@@ -12,3 +12,4 @@ then sonar-runner in recap folder
 
 git add -u
 
+scp test.txt ubuntu@54.228.195.27:recap
