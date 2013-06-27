@@ -254,7 +254,7 @@ def download():
         print ("welcome: can't identify user...redirecting to signup")
         bottle.redirect("/signup")
     print('download')
-    return bottle.template('download')
+    return bottle.template('download', username=username)
 
 
 @bottle.route('/accordian')

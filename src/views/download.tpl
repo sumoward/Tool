@@ -9,7 +9,7 @@
 </head>
 <body>
 <nav>
-%include navbar
+%include navbar username=username
 </nav>
 <div class="container">
 
