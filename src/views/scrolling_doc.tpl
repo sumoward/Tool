@@ -1,9 +1,6 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-
 
 <!-- CSS Code -->
 <link rel="stylesheet" href="static/css/style.css">
@@ -32,41 +29,40 @@ $(document).ready(function() {
    $('#nav').localScroll({duration:800});
 });
 
-
-
 </head>
-
-
-
 
 <body>
  <nav>
-%include navbar
+%include navbar username=username
 </nav>
+
 
 %for sect in form1:
 	<section id="document" data-speed="10" data-type="background">
-		<div class="container">
 		
-			<div class="span6"><legend><h1>{{sect['section_no']}}::{{sect['section_name']}}</h1></legend></div>
-			
-	<div class="span6">		
-			
-%for key in form2:	
+		
+		<div class="span12"><legend><h1>{{sect['section_name']}}</h1></legend></div>
+		
+	<div class="span12">	
+	
+				
+%for key in form2:
+
 %if int(str(key['quest_no'])[:-3]) == sect['section_no']:
-<p class="docpara"><strong>{{key['quest_no']}}::{{key['quest']}}:::{{key['answer']}}</strong></p><br>
+
+
+
+	<div class="span6"><strong>{{key['quest']}}</strong></div>
+
+	<div class="span6">{{key['answer']}}</div>
+
+
  %end
 %end
-   		
-		</div>	
-		
-
-    			
-    
-          </div>
-            
-            
-	</section>
+	
+	</div>
+	
+  </section>
  %end
 </body>
 </html>

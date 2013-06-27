@@ -5,11 +5,11 @@
 </head>
 <body>
 <nav>
-%include navbar
+%include navbar username=username
 </nav>
 
 <div>
-%include accordian form1=form1, form2 = form2
+%include accordian form1=form1, form2 = form2, username=username
  </div>
 
 </body>

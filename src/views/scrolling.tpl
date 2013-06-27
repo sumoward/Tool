@@ -24,7 +24,6 @@
 
 
 
-
 <script src="static/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script> 
 <script src="static/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script> 
 
@@ -41,7 +40,7 @@ $(document).ready(function() {
             <div class="navbar-inner">
                 <div class="container">
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="brand" href="#home">Project name</a>
+                    </button><a class="brand" href="#home">{{username}}</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active"><a href="#first">Warehouse</a>
@@ -53,10 +52,13 @@ $(document).ready(function() {
                             <li><a href="#fourth">Scope</a>
                             </li>
                             <li><a href="#fifth">Go Live</a>
-                            </li>
-                            <li><a href="/user_interface">START RECAP</a>
-                            </li>
-                        </ul>
+                             </li>
+                            <li><a href="\user_interface">RECAP</a>
+                            
+                            
+                           </ul>
+                           
+                           
                     </div>
                 </div>
             </div>
@@ -126,7 +128,11 @@ $(document).ready(function() {
 	<div class="span3 "><img src="..\static\image\postit13.png" alt="64x64"></div>
 	<div class="span3 offset3"><img src="..\static\image\postit16.png" alt="64x64"></div>
 	<div class="span3 offset1 "><img src="..\static\image\postit17.png" alt="64x64"></div>
-	<div class="span3 offset2"><p><a href="/user_interface" class="btn btn-primary btn-large">Start RECAP </a></div>
+	
+	<form method = "post" action="/user_interface">
+<input type="hidden"  name = 'username' value = "{{username}}">
+	<div class="span3 offset2"><input class="btn-large btn-primary" type="submit" value="Start Recap for {{username}}"></div>
+<form>
 
 <section name="fifth" id = "fifth" data-speed="300" data-type="background">
 
@@ -134,6 +140,9 @@ $(document).ready(function() {
 </section>
 
 </div>
+
+
+
 
 
 </body>

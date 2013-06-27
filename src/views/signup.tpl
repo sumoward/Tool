@@ -25,10 +25,11 @@
     Already a user? <a href="/login">Login</a><p>
     <legend>
     <h2>Signup</h2>
-    <form method="post">  
-    Username<input type="text" name="username" value="{{username}}"> 
-    Password<input type="password" name="password" value="">
-    Verify Password <input type="password" name="verify" value="">
+    <form method="post" class="form-horizontal">  
+    Username	<input type="text" name="username" value="{{username}}"><br>
+    Password	<input type="password" name="password" value=""><br>
+    Password	<input type="password" name="verify" value=""><br>
+    email		<input type="text" name="email" value=""><br>
     <button type="submit" class="btn-medium">Submit</button>
     </form>
 </div>

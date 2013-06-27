@@ -31,7 +31,7 @@
 </head>
 <body>
    <nav>
-%include navbar
+%include navbar username=username
 </nav>
 <h1>Map Link</h1>
 

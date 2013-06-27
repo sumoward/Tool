@@ -11,7 +11,7 @@
 </head>
 
 <nav>
-%include navbar
+%include navbar username=username
 </nav>
 
 

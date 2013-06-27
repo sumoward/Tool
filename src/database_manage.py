@@ -11,11 +11,15 @@ import csv
 
 class Database_manage_recap:
 
-    def connection(self):
-        connection = pymongo.MongoClient("localhost", 27017)
-        db = connection.recap
-        self.template = db.questionaire_master_template
-        self.store = db.template4
+    def dbconnection(self, username):
+        self.connection = pymongo.MongoClient("localhost", 27017)
+        self.db = self.connection.recap
+        self.template = self.db.questionaire_master_template
+        self.store = self.db[username]
+        #print('end of connection method',self.store)
+        #print(type(self.store))
+        print('connection made')
+        return self.store
 
     def copy_template(self):
         self.store.drop()
@@ -23,7 +27,7 @@ class Database_manage_recap:
         for cur in cursor:
             temp = cur
             self.store.insert(cur)
-        print('copied template over')
+        #print('copied template over')
         return temp
 
     def get_sections_and_tags(self):
@@ -341,8 +345,8 @@ class Database_manage_recap:
         quest = quest['result']
         return quest
 
-    def create_interface_dict(self, page):
-
+    def create_interface_dict(self, page, customer_name):
+        print ('in data manage',customer_name)
         if page == 'sales':
             modifier = {'sections.section': {'$lte': 12}}
         elif page == 'scoping':
@@ -366,12 +370,28 @@ class Database_manage_recap:
           'answer':'$sections.questions.answer',
           'subhead':'$sections.questions.subhead'}},
          {'$sort':{'quest_no':1, 'section_no':1}}]
+
+        #check if the collections exits
+        self.check_create_db(customer_name)
         section_interface_dict = self.store.aggregate(pipeline1)
         section_interface_dict = section_interface_dict['result']
         question_interface_dict = self.store.aggregate(pipeline2)
         question_interface_dict = question_interface_dict['result']
 
         return section_interface_dict, question_interface_dict
+
+    def check_create_db(self, customer_name):
+        #print('un',customer_name)
+        #check if the collection exists
+        #print('-----------')
+        db = self.dbconnection(customer_name)
+        #print('db names inside:', self.connection.database_names())
+        collections = self.connection['recap'].collection_names()
+        #print('collections', collections)
+        #if collection exists return if not create one from the template
+        if customer_name in collections:
+            return customer_name
+        return self.copy_template()
 
     def count_questions(self, section_no):
         pipeline = [{'$match':{'sections.section':section_no}},
@@ -383,7 +403,10 @@ class Database_manage_recap:
         count = count['result'][0]['count']
         return count
 
-    def save_answer(self, question_no, answer):
+    def save_answer(self, question_no, answer,customer_name):
+        print(customer_name)
+        self.dbconnection(customer_name)
+        print(self.store)
         self.store.update({'sections.questions.question': question_no},
          {'$set': {'sections.questions.$.answer': answer}})
 
@@ -415,10 +438,11 @@ class Database_manage_recap:
         result = result['result'][0]['tag']
         return result
 
-    def add_free_text(self, section_no, free_text):
+    def add_free_text(self, section_no, free_text, customer_name):
         """
         to remove free text just set free_text to None
         """
+        self.dbconnection(customer_name)
         self.store.update({'sections.section': section_no},
                      {'$set': {'sections.free_text':  free_text}})
 
@@ -464,7 +488,7 @@ if __name__ == "__main__":
 
 ########################################################
     tester1 = Database_manage_recap()
-    tester1.connection()
+    tester1.dbconnection()
     #print("___________________________________________________________")
     tester1.copy_template()
     #tester1.get_sections()

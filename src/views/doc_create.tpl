@@ -8,7 +8,9 @@
 
 
 <body>
-
+   <nav>
+%include navbar username=username
+</nav>
 
 
 <form class="" method = "POST" action="/doc_create">
