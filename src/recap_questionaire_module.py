@@ -243,7 +243,7 @@ def scrolling_doc():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             root='C:\eclipse for python\workspace\RECAP\src\static')
+             root='.\static')
 
 
 @bottle.route('/download')
