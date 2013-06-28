@@ -21,7 +21,8 @@
   <body>
 
 <div class="container">
-<div class="hero-unit">  
+<div class="hero-unit"> 
+<img src="static/image/header1_01.gif" class="img-polaroid"> 
 	<legend>
     Already a user? <a href="/login">Login</a><p>
     <legend>

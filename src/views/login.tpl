@@ -23,6 +23,7 @@
 
 <div class="container">
 <div class="hero-unit"> 
+<img src="static/image/header1_01.gif" class="img-polaroid">
 <h3>Welcome - please login to RECAP</h3> 
 <form class="form-inline" method="post" action="/login">
   User name &nbsp<input type="text" class="input-small"  name="username" >

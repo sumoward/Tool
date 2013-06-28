@@ -19,6 +19,9 @@
  <body>      
 <div class="container">
 <div class="hero-unit">  
+
+<img src="static/image/header1_01.gif" class="img-polaroid">
+
     <h1>Welcome {{username}}</h1>
 <ul>
 <li><a href="/">Start Recap Introduction</a></li>
