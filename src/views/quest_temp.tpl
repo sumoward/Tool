@@ -51,5 +51,8 @@ Select the appropriate tags for this question(if any)</br>
         <input type="submit"  name="choice" value="add"><br/>
      </form>
 </div>
+<footer>
+%include footer
+</footer>
 </body>
 </html>

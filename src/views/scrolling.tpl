@@ -75,15 +75,14 @@ $(document).ready(function() {
 
 <!-- left column-->
 
-<div class="span3">
-<div class="well sidebar-nav sidebar-nav-fixed">
-<section name="side" id="" data-speed="300" data-type="background">
+<div class="span4">
 %include list_features 
-</section>
 </div>
-</div>
+
 <!-- right column-->
-<div class="span9">
+
+<div class="span8">
+
 <!-- Section #1 -->
 <section name="first" id="first" data-speed="300" data-type="background">
     <article> 
@@ -143,11 +142,22 @@ $(document).ready(function() {
 <section name="fifth" id = "fifth" data-speed="300" data-type="background">
 
 </div>
+
 </section>
 
 </div>
 
+    <!-- google analytics -->
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-42099327-1', 'principalwms.com');
+  ga('send', 'pageview');
+
+</script> 
 
 
 

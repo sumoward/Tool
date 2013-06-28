@@ -21,5 +21,8 @@ New Tag : <input type="text" name="new_tag_name" value = ''><br>
 
 
 </body>
+<footer>
+%include footer
+</footer>
 </html>
 

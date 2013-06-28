@@ -48,7 +48,7 @@
              
              
                 <div class="container">
-                <img src="static/image/header1_01.gif" class="img-polaroid">
+                
                 
                 
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -97,4 +97,5 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/js/bootstrap.js"></script>
     </body>
+
     </html>

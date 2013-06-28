@@ -33,4 +33,7 @@
 <p>{{text_box}}</p>
 
 </body>
+<footer>
+%include footer
+</footer>
 </html>

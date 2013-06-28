@@ -27,6 +27,8 @@
    
 	</form>
 </div>
-
+<footer>
+%include footer
+</footer>
 </body>
 </html>

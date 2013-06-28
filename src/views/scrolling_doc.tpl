@@ -64,6 +64,11 @@ $(document).ready(function() {
 	
   </section>
  %end
+ <footer>
+%include footer
+</footer>
+ 
+ 
 </body>
 </html>
 

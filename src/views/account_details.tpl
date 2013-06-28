@@ -16,5 +16,8 @@ Account Name : <input type="text" name="new_account_name" value = {{account_deta
 
 
 </body>
+<footer>
+%include footer
+</footer>
 </html>
 

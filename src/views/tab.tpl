@@ -5,6 +5,7 @@
 <title>RECAP</title>
 </head>
 <body>
+
 <nav>
 %include navbar username=username
 </nav>
