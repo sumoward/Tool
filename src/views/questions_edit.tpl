@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <title>questions</title>
 </head>
 <body>

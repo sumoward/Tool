@@ -1,6 +1,7 @@
 <!doctype html>
  <html lang="en">
 <head>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <title>RECAP</title>
 </head>
 <body>

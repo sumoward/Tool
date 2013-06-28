@@ -14,5 +14,7 @@ git add -u
 
 scp test.txt ubuntu@54.228.195.27:recap
 
-
+STEPS BEFORE UPLOAD:
 remmeber to set root path for static files on ubuntu server
+
+turn off debugging.

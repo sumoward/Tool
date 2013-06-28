@@ -6,7 +6,7 @@
 
        <link href="http://bootswatch.com/cerulean/bootstrap.css"
         rel="stylesheet">
-       
+       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap-responsive.css"
 </head>
 

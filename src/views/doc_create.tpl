@@ -3,12 +3,13 @@
 
 <head>
 <meta charset="utf-8">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<title>generate customer document</title>
 <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
 </head>
 
-
 <body>
-   <nav>
+  <nav>
 %include navbar username=username
 </nav>
 

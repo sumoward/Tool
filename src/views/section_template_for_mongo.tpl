@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Section</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 </head>
 <body>
 

@@ -3,6 +3,7 @@
  <head> 
         <meta charset="utf-8">
       	<title>Welcome</title>
+      	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -28,7 +29,7 @@
 <a href="/user_interface">Sales</a>
 </li>
 <li>
-<a href="/sales">Scoping</a>
+<a href="/scoping">Scoping</a>
 </li>
 
 

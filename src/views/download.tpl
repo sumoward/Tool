@@ -1,12 +1,11 @@
 <!doctype HTML>
 <html>
 <head>
-<title></title>
+<title>Download</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <link rel="stylesheet" type="text/css" href="/layoutcss.css">
-
- <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
- 
-</head>
+<link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
+ </head>
 <body>
 <nav>
 %include navbar username=username

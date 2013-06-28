@@ -2,8 +2,8 @@
 <html class="no-js" lang="en">
 <head>
 <meta charset="utf-8">
-<title>Parallax Scrolling</title>
-
+<title>InDex WMS</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <!-- CSS Code -->
 <link rel="stylesheet" href="static/css/style.css">
 <link rel="stylesheet" href="static/css/reset.css">

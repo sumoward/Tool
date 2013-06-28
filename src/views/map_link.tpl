@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <meta charset="utf-8">
 <title>Map Link</title>
 

@@ -4,6 +4,7 @@
 <head>
 
   <meta charset="utf-8" />
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
   <title>jQuery UI Accordion - Default functionality</title>
   <link rel="stylesheet" href="/static/jquery-ui-1.10.2.custom.min.css.gz" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -15,7 +16,6 @@
   </script>
   
 
-   <meta charset="utf-8">
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">

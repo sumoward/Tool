@@ -5,7 +5,7 @@
 
 <title>RECAP</title>
  <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
-	
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 </head>
 

@@ -60,6 +60,7 @@ def present_signup():
                                 email="", username_error="", email_error="",
                                 verify_error=""))
 
+
 @bottle.post('/signup')
 def process_signup():
     print('signup process')
@@ -83,10 +84,10 @@ def process_signup():
         cookie = user.make_secure_val(session_id)
         bottle.response.set_cookie("session", cookie)
         cook = bottle.request.get_cookie('session')
-        print('cook',cook)
-        print('user',username)
+        print('cook', cook)
+        print('user', username)
         #username = bottle.request.forms.get("username")
-        return bottle.template("welcome" , username=username)
+        return bottle.template("welcome", username=username)
     else:
         print ("user did not validate")
         return bottle.template("signup", errors)
@@ -95,9 +96,10 @@ def process_signup():
 # displays the initial recap login form
 @bottle.get('/login')
 def present_login():
-    return bottle.template("login", 
-                           dict(username="", password="", 
+    return bottle.template("login",
+                           dict(username="", password="",
                                 login_error=""))
+
 
 # handles a login request
 @bottle.post('/login')
@@ -125,10 +127,9 @@ def process_login():
         bottle.redirect("/welcome")
 
     else:
-        return bottle.template("login", 
-                           dict(username=cgi.escape(username), password="", 
+        return bottle.template("login",
+                           dict(username=cgi.escape(username), password="",
                                 login_error="Invalid Login"))
-
 
 
 @bottle.get('/logout')
@@ -147,8 +148,9 @@ def process_logout():
             # remove the session
             user.end_session(connection, session_id)
             print ("clearing the cookie")
-            bottle.response.set_cookie("session","")
+            bottle.response.set_cookie("session", "")
             bottle.redirect("/signup")
+
 
 @route('/convertpdf')
 @bottle.post('/convertpdf')
@@ -184,9 +186,9 @@ def convertpdf():
             output = filename[:-5]+ '.pdf'
             print(output)
             doc2.convert(filename, output)
-            return bottle.template('convertpdf', template = template, message = 'Your pdf: '+ output+' is ready.', company_data = company_data)
+            return bottle.template('convertpdf', template=template, message= 'Your pdf: '+ output+' is ready.', company_data=company_data)
 
-    return bottle.template('convertpdf', template = template, company_data = company_data, message ='', username=username)
+    return bottle.template('convertpdf', template=template, company_data=company_data, message ='', username=username)
 
 
 @route('/')
@@ -196,14 +198,15 @@ def index():
     if (username is None):
         bottle.redirect("/login")
     session = bottle.request.get_cookie('session')
-    print ('user',username, ':', session)
+    #print ('user',username, ':', session)
     #response.charset = 'utf-8'
     return bottle.template('scrolling', username=username)
+
 
 @bottle.get('/internal_error')
 @bottle.view('error_template')
 def present_internal_error():
-    return ({error:"System has encountered a DB error"})
+    return ({error: "System has encountered a DB error"})
 
 
 @route('/scrolling')
@@ -212,9 +215,9 @@ def scrolling():
     if (username == None):
         print ("welcome: can't identify user...redirecting to signup")
         bottle.redirect("/signup")
-
     #response.charset = 'utf-8'
     return bottle.template('scrolling', username=username)
+
 
 @route('/map_link')
 def map_link():
@@ -233,7 +236,7 @@ def scrolling_doc():
     if (username == None):
         print ("welcome: can't identify user...redirecting to signup")
         bottle.redirect("/signup")
-    print('useer',username)
+    #print('useer',username)
     section_interface_dict, question_interface_dict = database.create_interface_dict('all', username)
     return bottle.template('scrolling_doc',
                 form1=section_interface_dict,
@@ -259,7 +262,7 @@ def download():
 
 @bottle.route('/accordian')
 def accordian():
-    print('accordion')
+    #print('accordion')
     return bottle.template('accordian')
 
 
@@ -285,10 +288,10 @@ def user_interface():
     database = Database_manage_recap()
     database.dbconnection(username)
     #username = bottle.request.forms.get("username")
-    print(username)
+    #print(username)
     section_interface_dict, question_interface_dict = database.create_interface_dict('sales', username)
     #username = bottle.request.forms.get("username")
-    cook = bottle.request.get_cookie('session')
+    #cook = bottle.request.get_cookie('session')
     #print('cook-interface',cook)
     #question_interface_dict = database.phase1()
     #print(section_interface_dict)
@@ -311,9 +314,9 @@ def scoping():
     database.dbconnection(username)
     section_interface_dict, question_interface_dict = database.create_interface_dict('scoping', username)
     #question_interface_dict = database.phase1()
-    print(section_interface_dict)
-    print(question_interface_dict)
-    print('-------******************************-------')
+    #print(section_interface_dict)
+    #print(question_interface_dict)
+    #print('-------******************************-------')
     return bottle.template('tab', form1=section_interface_dict,
                  form2=question_interface_dict, username=username)
 
@@ -327,14 +330,14 @@ def section(section):
 
 @bottle.route('/accordian2')
 def accordian2():
-    print('accordian2====================================================')
+    #print('accordian2====================================================')
     return bottle.template('accordian2', form1='form holder string')
 
 
 @bottle.route('/form_end')
 @bottle.post('/form_end')
 def form_end():
-    print('-------******************************-------')
+    #print('-------******************************-------')
     print('form_end')
     username = login_check()
     if (username == None):
@@ -344,12 +347,12 @@ def form_end():
     database = Database_manage_recap()
     database.dbconnection(username)
     #username = bottle.request.forms.get("username")
-    print(username)
+    #print(username)
     # form = bottle.request.forms.get('answer')
     section_no = bottle.request.forms.get('section')
     free_text = bottle.request.forms.get('free_text')
-    print ('free_text here', free_text, username)
-    print('section = ', section_no)
+    #print ('free_text here', free_text, username)
+    #print('section = ', section_no)
     section_no = int(section_no)
     save_free_text(section_no, free_text, username)
     no_questions = database.count_questions(section_no)
@@ -357,7 +360,7 @@ def form_end():
     if section_no < 13:
         modifier = 'sales'
     else:
-        modifier ='scoping'
+        modifier = 'scoping'
 
     form = {}
     for x in range(no_questions):
@@ -390,44 +393,37 @@ def save_answer(answer_dictionary, modifier, username):
         except ValueError:
             print('will not convert to an int')
         print('saving.....')
-        database.save_answer(question_no, answer,username)
-
+        database.save_answer(question_no, answer, username)
 
     return database.create_interface_dict(modifier, username)
-
-@bottle.route('/pricing')
-def pricing():
-    # print('pricing')
-    final_pricing = 666
-    return bottle.template('pricing', pricing_holder=final_pricing)
 
 
 @bottle.route('/saved_file')
 @bottle.post('/saved_file')
 def saved_file():
-    print('save_file')
+    #print('save_file')
 
     data = bottle.request.files.uploadField
-    print(data)
+    #print(data)
 
     if data and data.file:
         raw = data.file.read()  # This is dangerous for big files
-        print(raw)
+        #print(raw)
         filename = data.filename
-        form = "Hello ! You uploaded %s (%d bytes)." % (filename, len(raw))
-        print(form)
+        #form = "Hello ! You uploaded %s (%d bytes)." % (filename, len(raw))
+        #print(form)
 
         # save the file
 
         target_dir = r"static/uploaded"
 
         filename = os.path.join(target_dir, filename)
-        print(filename)
+        #print(filename)
         # write the uploaded file to the storage
         fileObj = open(filename, "wb")
         fileObj.write(data.value)
         fileObj.close()
-        print(filename, ' writen to file.')
+        #print(filename, ' writen to file.')
         # email the user to inform that a file has been uploaded
         handler = Email_handler()
         handler.build_mime(filename)
@@ -492,7 +488,7 @@ def form_input_parse(form_dictionary):
     d = OrderedDict()
     for x, y in form_dictionary:
         d.setdefault(x, y)
-    print (d)
+    #print (d)
     form_dictionary = d
     # print ('form_end')
     # populate the Dictionary with inputs
@@ -500,7 +496,7 @@ def form_input_parse(form_dictionary):
         # print('key: ',key)
         form_dictionary[key] = bottle.request.forms.get(key)
         # print(bottle.request.forms.get(key))
-        print('end form parse', form_dictionary)
+        #print('end form parse', form_dictionary)
 
     return form_dictionary
 
@@ -512,15 +508,16 @@ def create_doc():
     if (username == None):
         print ("welcome: can't identify user...redirecting to signup")
         bottle.redirect("/signup")
-    print('start document creation')
+    #print('start document creation')
     section = bottle.request.forms.get('section')
-    print(section)
+    #print(section)
     text_box = bottle.request.forms.get('text_box')
-    print(text_box)
+    #print(text_box)
     #document_dict = database.create_interface_dict('sales')
-    return bottle.template('doc_create', section = section, text_box = text_box, username=username)
+    return bottle.template('doc_create', section=section,
+                            text_box=text_box, username=username)
 
 
 bottle.debug(True)
 #bottle.run(server='cherrypy', host='localhost', port=8081)
-bottle.run(server = 'cherrypy',host='0.0.0.0', port=8081 )
+bottle.run(server='cherrypy', host='0.0.0.0', port=80)

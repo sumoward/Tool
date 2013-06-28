@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <!-- CSS Code -->
 <link rel="stylesheet" href="static/css/style.css">
 <link rel="stylesheet" href="static/css/reset.css">

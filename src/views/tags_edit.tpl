@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Tags</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 </head>
 <body>
 
