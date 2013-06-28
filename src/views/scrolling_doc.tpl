@@ -2,6 +2,7 @@
 <html>
 <head>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
 <!-- CSS Code -->
 <link rel="stylesheet" href="static/css/style.css">
 <link rel="stylesheet" href="static/css/reset.css">

@@ -2,6 +2,8 @@
  <html lang="en">
 <head>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
 <title>RECAP</title>
 </head>
 <body>

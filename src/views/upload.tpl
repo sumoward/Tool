@@ -2,6 +2,7 @@
 <html>
 <head>
 <title></title>
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/layoutcss.css">
  <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
 </head>

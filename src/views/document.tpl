@@ -6,6 +6,7 @@
 <title>RECAP</title>
  <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
 
 </head>
 

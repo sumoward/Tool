@@ -3,7 +3,7 @@
 <head>
 <title>Documentation</title>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
 </head>
 <body>
 <nav>

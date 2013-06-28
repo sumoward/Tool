@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <title>generate customer document</title>
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
 <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
 </head>
 
