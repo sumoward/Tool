@@ -14,12 +14,12 @@ class File_template_handling:
         os.chdir(self.path)
         #get curent
         current = os.getcwd()
-        print(current)
+        print('current path: ',current)
         list_of_files = os.listdir(self.relativepath)
         print('please choose the files needed from :\n', list_of_files)
         for file in list_of_files:
             locfile = os.path.join(self.relativepath, file)
-            print('\n', locfile)
+            #print('\n', locfile)
         #return to orginal directory
         os.chdir(self.origdir)
         print('\nthe present directory is ', os.getcwd())

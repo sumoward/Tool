@@ -249,7 +249,7 @@ def server_static(filename):
              #root='.\static')
             root='/home/ubuntu/recap/RECAP/src/static')
 
-
+@bottle.post('/download')
 @bottle.route('/download')
 def download():
     username = login_check()
@@ -257,7 +257,7 @@ def download():
         print ("welcome: can't identify user...redirecting to signup")
         bottle.redirect("/signup")
     print('download')
-    return bottle.template('download', username=username)
+    return bottle.template('download', username=username, message ="")
 
 
 @bottle.route('/accordian')
@@ -436,42 +436,53 @@ def saved_file():
 @bottle.post('/documentation')
 @bottle.route('/documentation')
 def documentation():
+
+    username = login_check()
+    if (username == None):
+        print ("welcome: can't identify user...redirecting to signup")
+        bottle.redirect("/signup")
     print('documentation')
-    uploaded_file = bottle.request.forms.get('doc_upload')
-    downloaded_file = bottle.request.forms.get('document_download')
+    customer = bottle.request.forms.get('customer')
+    downloaded_file =[]
+    
+    downloaded_file = bottle.request.forms.getlist('document_download')
+    print('downloaded file',downloaded_file)
+
+    if not downloaded_file or not customer:
+        print('here', customer, downloaded_file)
+        message = "Please select a document and assign an email address to the client"
+        return bottle.template('download', username=username, message=message)
 
     if downloaded_file:
-        print(downloaded_file)
+        print('downloaded file',downloaded_file)
         # use the file handling class
         file_handler = File_template_handling()
-        file_handler.directory()
-        if downloaded_file == 't1':
-            filename = 'static/downloads/ASN & Pallet and Case Label Data Capture Template.xlsx'
-        elif downloaded_file == 't2':
-            filename = 'static/downloads/BRC Data Capture Template.xlsx'
-        elif downloaded_file == 't3':
-            filename = 'static/downloads/Customer charges.xlsx'
-        elif downloaded_file == 't4':
-            filename = 'static/downloads/In-DEX User Profiles Data Capture Template.xlsx'
-        elif downloaded_file == 't5':
-            filename = 'static/downloads/In-DEX WMS Functionality Checklist.xls'
-        elif downloaded_file == 't6':
-            filename = 'static/downloads/Master Charges.xlsx'
-        elif downloaded_file == 't7':
-            filename = 'static/downloads/Product Code Data Capture Template.xlsx'
+        list_of_files = file_handler.directory()
+        num = len(list_of_files)
+        #print(num)
+        filename = []
+        for choice in downloaded_file:
+            #print('choice',choice)#
+            file = 'static/downloads/' + list_of_files[int(choice)]
+            #print(file)
+            filename.append(file)
+            #print(filename)
 
         target_dir = r"C:\eclipse for python\workspace\RECAP\src/"
-        print('filename: ' + filename)
-        filename = os.path.join(target_dir, filename)
-
+        #print('filename: ' , filename)
+        #filename = os.path.join(target_dir, filename)
         # open the file using the associated software
+        #os.startfile(filename)
+        #print('opened : ' , filename)
+        print(' the following was sent', downloaded_file)
+        #email the file to user
+        handler = Email_handler()
+        filename = filename
+        handler.build_mime(filename, customer)
 
-        os.startfile(filename)
-        print('opened : ' + filename)
-        print(' the following was sent', uploaded_file, downloaded_file)
-        return bottle.template('download')
-    else:
-        return bottle.template('upload')
+        message = (str(filename) + ' sent to, ' + customer)
+        return bottle.template('download', username=username, message=message)
+
     """
     convert the string back to an ordered dict
     """

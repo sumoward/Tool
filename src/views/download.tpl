@@ -15,30 +15,32 @@
 <div class="container">
 
 <div class="hero-unit">
-download
+<legend>Select the documents you want to share with the client</legend>
 <br/>
 
-<form name="template_download" action="/documentation" method="post">
-<select size="3" name="document_download" multiple="yes" > 
-  <option value="t1" >ASN & Pallet and Case Label Data Capture Template.xlsx</option>
-  <option value="t2" >BRC Data Capture Template.xlsx</option>
-  <option value="t3" >Customer charges.xlsx</option>
-  <option value="t4" >In-DEX User Profiles Data Capture Template.xlsx</option>
-  <option value="t5" >In-DEX WMS Functionality Checklist.xls</option>
-  <option value="t6" >Master Charges.xlsx</option>
-  <option value="t7" >Product Code Data Capture Template.xlsx</option> 
+<form enctype="multipart/form-data" name="template_download" action="/documentation" method="post" class="form-horizontal">
+<select size="7" name="document_download" multiple="yes" > 
+  <option value="0" >ASN & Pallet and Case Label Data Capture Template.xlsx</option>
+  <option value="1" >BRC Data Capture Template.xlsx</option>
+  <option value="2" >Customer charges.xlsx</option>
+  <option value="3" >In-DEX User Profiles Data Capture Template.xlsx</option>
+  <option value="4" >In-DEX WMS Functionality Checklist.xls</option>
+  <option value="5" >Master Charges.xlsx</option>
+  <option value="6" >Product Code Data Capture Template.xlsx</option> 
 </select>
 <br>
-<input type="submit" value="Open" class="btn btn-primary btn-large">
+Insert the clients email here<br>
+<input type="text" name= "customer" class="input-large search-query"  value = "" ><br><br>
+<input type="submit" value="E-Mail" class="btn btn-primary btn-large">
 </form>
-
+{{message}}
 
 </div>
 </div>
 
 <br/>
 
-download
+
 
 <br/>
 </body>

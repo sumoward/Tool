@@ -4,46 +4,53 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from smtplib import SMTP
 """
-mail handling class
+mail handling class for recap
 """
 
 
 class Email_handler():
 
-    def build_mime(self, filename):
-        msg = MIMEMultipart()
-        msg['Subject'] = 'Email From Python about ' + filename
-        msg['From'] = 'brian@principal.ie'
-        msg['Reply-to'] = ''
-        msg['To'] = 'brian.ward@principalsystems.com'
+    def build_mime(self, filename, customer):
 
+        LOGIN = "principalsystemsie@gmail.com"
+        PASSWORD = "Number56"
+        msg = MIMEMultipart()
+        msg['Subject'] = 'Email From RECAP about ' + str(filename)
+        msg['From'] = LOGIN
+        msg['Reply-to'] = ''
+        #email a copy to our gmail for records
+        msg['To'] = customer + ' , ' + LOGIN
         # That is what u see if dont have an email reader:
         msg.preamble = 'Multipart message.\n'
-
         # This is the textual part:
         part = MIMEText("Hello. \n A new file \
-        " + filename + " has been uploaded for this account.\
-        nI am sending an email from a python program,\
-         just testing.\n There is also an attachment,\
-         we can pretend that its from recap")
+        " + str(filename) + " has been uploaded for this account.\
+        \nI am sending an email from a Python program,\
+         just testing.\n The attachment should work")
         msg.attach(part)
-
-        # This is the binary part(The Attachment):
-        part = MIMEApplication(open("persistence.txt", "rb").read())
-        part.add_header('Content-Disposition',
-                         'attachment', filename="persistence.txt")
-        msg.attach(part)
+        #print ('filename: ',filename)
+        for file in filename:
+            # This is the binary part(The Attachment):
+            part = MIMEApplication(open(file, "rb").read())
+            part.add_header('Content-Disposition',
+                             'attachment', filename=file)
+            msg.attach(part)
         # Create an instance in SMTP server
-        "89.101.215.10"
-        smtp = SMTP("mail.principalsystems.com", 25)
+        smtp = SMTP("smtp.gmail.com", 587)
         # Start the server:
+        #uncomment this if you wish to debug
+        #smtp.set_debuglevel(1)
         smtp.ehlo()
-        #smtp.login("Brian.Ward@principalsystems.com", "Br!@nW@RD")
-
+        smtp.starttls()
+        smtp.login(LOGIN, PASSWORD)
         # Send the email
         smtp.sendmail(msg['From'], msg['To'], msg.as_string())
 
 if __name__ == "__main__":
     handler = Email_handler()
-    filename ='recap.bat'
-    handler.build_mime(filename)
+    filename1 ='static/downloads/ASN & Pallet and Case Label Data Capture Template.xlsx'
+    filename2 = 'static/downloads/Customer charges.xlsx'
+    filename=[filename1, filename2]
+    
+    customer = 'brian.ward@principalsystems.com'
+    handler.build_mime(filename, customer)
