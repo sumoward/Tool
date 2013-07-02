@@ -58,11 +58,11 @@ Country_or_Region=kwargs.get('Country_or_Region', "default Country_or_Region"),
         files = {'file': open(filename, 'rb')}
         result = requests.post(API_URI, files=files, data=payload)
         #print(result.headers)
-        #print('*' * 70)
+        print('*' * 70)
         #read document as json
         pdf = result.json()['File']
         #decode document from base64
-        pdf = base64.b64decode(pdf)
+        pdf = base64.b64decode(pdf.encode('ascii'))
         #write out the document as binary
         f1 = open(output, 'wb')
         f1.write(pdf)
