@@ -164,7 +164,7 @@ def convertpdf():
                         'First_Name': 'Joe',
                         'Last_Name': 'OShea',
                         'Company_Name': 'Principal Systems',
-                        'Email_Address': 'joeoshea@principalsystems.com',
+                        'Email_Address': 'brian@principal.ie',
                         'City': 'Dublin',
                         'State': 'Dublin',
                         'Work_Phone': '123333',
@@ -175,20 +175,31 @@ def convertpdf():
                         'ZIP_Code': 'Dublin6'}
 
     template1 = bottle.request.forms.get('template')
-    print('T!', template1)
-    template = 'Executive_Summary2.docx'
-    print (template)
+    #print('T!', template1)
+    template = 'static/documents/Executive_Summary2.docx'
+    #print (template)
 
     if template1 == template:
             doc2 = DocGen()
             #company_name = 'Principalx Systems'
             filename = doc2.mail_merge(template, company_data)
-            output = filename[:-5]+ '.pdf'
-            print(output)
+            output = 'static/documents/' + filename[:-5] + '.pdf'
+            #print('$$output', output)
             doc2.convert(filename, output)
-            return bottle.template('convertpdf', template=template, message= 'Your pdf: '+ output+' is ready.', company_data=company_data)
+            #create email handeler
+            handler = Email_handler()
+            customer = company_data['Email_Address']
+            output_filename = []
+            output_filename.append(output)
+            #print(customer, output_filename)
+            handler.build_mime(output_filename, customer)
 
-    return bottle.template('convertpdf', template=template, company_data=company_data, message ='', username=username)
+            return bottle.template('convertpdf', template=template,
+                        message='Your document: ' + output + ' is ready. A copy has been emailed to you',
+                                     company_data=company_data,
+                                    username=username)
+
+    return bottle.template('convertpdf', template=template, company_data=company_data, message='', username=username)
 
 
 @route('/')

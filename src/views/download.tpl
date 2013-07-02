@@ -6,6 +6,11 @@
 <link rel="stylesheet" type="text/css" href="/layoutcss.css">
 <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
 <link rel="icon" type="image/png "href="static/image/favicon.ico">
+
+
+
+
+
  </head>
  
 <body>
@@ -18,7 +23,7 @@
 <legend>Select the documents you want to share with the client</legend>
 <br/>
 
-<form enctype="multipart/form-data" name="template_download" action="/documentation" method="post" class="form-horizontal">
+<form enctype="multipart/form-data" name="template_download" action="/documentation" method="post" class="form-horizontal input-xxlarge">
 <select size="7" name="document_download" multiple="yes" > 
   <option value="0" >ASN & Pallet and Case Label Data Capture Template.xlsx</option>
   <option value="1" >BRC Data Capture Template.xlsx</option>

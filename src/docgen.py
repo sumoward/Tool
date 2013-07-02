@@ -23,10 +23,10 @@ class DocGen:
     def mail_merge(self, template, kwargs):
 
         company_name = kwargs.get('Company_Name', "default company_name")
-        print('******',company_name)
-        print('*******************', kwargs.items())
+        #print('******',company_name)
+        #print('*******************', kwargs.items())
         document = MailMerge(template)
-        print (document.get_merge_fields())
+        #print (document.get_merge_fields())
         #merge fields
         #{'ZIP_Code', 'Address_Line_2', 'Country_or_Region',
         #'Address_Line_1', 'Company_Name', 'Title',
@@ -47,19 +47,18 @@ class DocGen:
 Country_or_Region=kwargs.get('Country_or_Region', "default Country_or_Region"),
                     ZIP_Code=kwargs.get('ZIP_Code ', "default ZIP_Code "))
 
-        output = company_name + '_output.docx'
+        output =  company_name + '_output.docx'
         document.write(output)
-        print(output, ' is ready')
+        #print(output, ' is ready')
         return  output
 
-
     def convert(self, filename, output):
-        print('*' * 70)
+        #print('*' * 70)
         payload = {'OutputFileName': output, 'ApiKey': ''}
         files = {'file': open(filename, 'rb')}
         result = requests.post(API_URI, files=files, data=payload)
-        print(result.headers)
-        print('*' * 70)
+        #print(result.headers)
+        #print('*' * 70)
         #read document as json
         pdf = result.json()['File']
         #decode document from base64
@@ -73,7 +72,7 @@ Country_or_Region=kwargs.get('Country_or_Region', "default Country_or_Region"),
 if __name__ == "__main__":
     print('test  document generation')
     doc2 = DocGen()
-    template = 'Executive_Summary2.docx'
+    template = 'static/documents/Executive_Summary2.docx'
     #company_name = 'Principalx Systems'
     company_data = {'Title': 'Mr',
                         'First_Name': 'Joe',
@@ -93,8 +92,9 @@ if __name__ == "__main__":
     filename = doc2.mail_merge(template, company_data)
     print(filename,' is your document')
 
-    output = filename[:-5]+ '.pdf'
-    print(output)
-    doc2.convert(filename, output)
-
+    output1 = 'static/documents/' + filename[:-5] + '.docx'
+    output2 = 'static/documents/' + filename[:-5] + '.pdf'
+    print(output1)
+    doc2.convert(filename, output1)
+    doc2.convert(filename, output2)
     print('end of test')
