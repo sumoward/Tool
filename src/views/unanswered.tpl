@@ -45,7 +45,7 @@
 
 %if int(str(key['quest_no'])[:-3]) == sect['section_no']:
 
-%if key['answer'] == None:
+%if key['answer'] == "None":
 
 	<div class="span6"><strong>{{key['quest']}}</strong></div>
 
