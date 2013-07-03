@@ -34,7 +34,7 @@
    <nav>
 %include navbar username=username
 </nav>
-<h1>Map Link</h1>
+
 
 <div class="image">
 

@@ -4,7 +4,8 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from smtplib import SMTP
 """
-mail handling class for recap
+mail handling class for recap.
+It allows for attachments and uses ga,il for smtp.
 """
 
 
