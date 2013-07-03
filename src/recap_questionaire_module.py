@@ -257,8 +257,8 @@ def scrolling_doc():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             root='.\static')
-            #root='/home/ubuntu/recap/RECAP/src/static')
+             #root='.\static')
+            root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
