@@ -73,10 +73,15 @@
                                     
                                     <li class="divider"></li>
                                     <li class="nav-header">Nav header</li>
-                                    <li><a href="/scrolling_doc">Scrolling Documents</a>
+                                    <li><a href="/scrolling_doc">Answers</a>
                                     </li>
+                                     </li>
+                                    <li><a href="/unanswered">Unanswered</a>
+                                    </li
                                     <li><a href="/scrolling">Scrolling Introduction</a>
                                     </li>
+                                    >
+                                    
                         </ul>
                         </li>
                         </li>

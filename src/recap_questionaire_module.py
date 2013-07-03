@@ -254,6 +254,17 @@ def scrolling_doc():
                  form2=question_interface_dict, username=username)
 
 
+@route('/unanswered')
+def unanswered():
+    username = login_check()
+    if (username == None):
+        print ("welcome: can't identify user...redirecting to signup")
+        bottle.redirect("/signup")
+    section_interface_dict, question_interface_dict = database.create_interface_dict('all', username)
+    return bottle.template('unanswered',
+                form1=section_interface_dict,
+                 form2=question_interface_dict, username=username)
+
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,

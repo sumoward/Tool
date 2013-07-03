@@ -22,13 +22,9 @@
         <![endif]-->
 
 
-<script src="static/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script> 
-<script src="static/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script> 
 
-<script type="text/javascript">
-$(document).ready(function() {
-   $('#nav').localScroll({duration:800});
-});
+
+
 
 </head>
 
@@ -39,8 +35,6 @@ $(document).ready(function() {
 
 
 %for sect in form1:
-	
-		
 		
 		<div class="span12"><legend><h1>{{sect['section_name']}}</h1></legend></div>
 		
@@ -51,19 +45,19 @@ $(document).ready(function() {
 
 %if int(str(key['quest_no'])[:-3]) == sect['section_no']:
 
-
+%if key['answer'] == None:
 
 	<div class="span6"><strong>{{key['quest']}}</strong></div>
 
 	<div class="span6">{{key['answer']}}</div>
 
-
+		%end
  %end
 %end
 	
 	</div>
 	
- 
+  
  %end
  <footer>
 %include footer
