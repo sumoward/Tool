@@ -3,51 +3,51 @@
 
 <table class="table">
 
-<tr><td><i class="icon-ok"></td><td><strong>SAP Interfacing</strong></td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td><strong>Date control</strong></td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Lot control</td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Batch Control</td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Kill date Management</td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Production Date Management</td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Traceability Trough the pick-face</td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Multiple Units for products</td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Special Storage requirements</td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td><strong>Multiple pick locations per product</strong></td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>HERE</td><td><img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td><strong>SAP Interfacing</strong></td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td><strong>Date control</strong></td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td>Lot control</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td>Batch Control</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td>Kill date Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td>Production Date Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td>Traceability Trough the pick-face</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td>Multiple Units for products</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td>Special Storage requirements</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td><strong>Multiple pick locations per product</strong></td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td><i class="icon-ok"></td><td>HERE</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 </table>
 
 
 <strong>Multiple pick locations per product</strong><i class="icon-ok"></i><br>
-Reserve locations<img src="static/image/tick.png" class="img-polaroid" height="12" width="12" border="0"><br>
-Kitting<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-Bill of Materials<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-QA inspection<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-BRC Data Capture<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-Weight & dimensions<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
+Reserve locations<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"><br>
+Kitting<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+Bill of Materials<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+QA inspection<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+BRC Data Capture<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+Weight & dimensions<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
 Load characteristics<br><
-Empty Locations Report<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"<br>
-Group locations into zones within warehouse<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-<strong>ID zone characteristics</strong><img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-Walk Sequence Logic<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
+Empty Locations Report<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"<br>
+Group locations into zones within warehouse<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+<strong>ID zone characteristics</strong><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+Walk Sequence Logic<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
 <strong>Crushability Rules<br></strong>
-Column Stacking Logic<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
+Column Stacking Logic<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
 Support <strong>FIFO</strong>, LIFO, FEFO rotation<br>
 Dual Cycling<br>
 Pick or reserve Stock<br>
 Support special locations within the DC<br>
-Location type<br><img src="static/image/tick.png" class="img-polaroid" height="12" width="12">
-Able to consolidate products in storage location<br><img src="static/image/tick.png" class="img-polaroid" height="12" width="12">
-Item look up by Item number<br><img src="static/image/tick.png" class="img-polaroid" height="12" width="12">
-Item look up by UPC code<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-Item look up by Supplier<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-Item look up by receipt date<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-Item look up by Age<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
-Remote access by Client/Supplier<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
+Location type<br><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12">
+Able to consolidate products in storage location<br><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12">
+Item look up by Item number<br><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12">
+Item look up by UPC code<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+Item look up by Supplier<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+Item look up by receipt date<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+Item look up by Age<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
+Remote access by Client/Supplier<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
 <strong>Key Performance Indicators</strong><br>
 Cross Docking<br>
-Receive without previous appointment<img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
+Receive without previous appointment<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
 Receive information via EDI from shippers/carriers<br>
-<strong>Load Bay Scheduler</strong><img src="static/image/tick.png" class="img-polaroid" height="12" width="12"><br>
+<strong>Load Bay Scheduler</strong><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
 Photograph Damages via wireless network<br>
 Capture carrier compliance violations<br>
 <strong>RF and Desktop Based receiving</strong><br>
