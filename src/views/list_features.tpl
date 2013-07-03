@@ -1,197 +1,191 @@
-<h1>InDex Modules</h1>
-
-
 <table class="table">
+<tr><td>SAP Interfacing</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Date control</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Lot control</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Batch Control</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Kill date Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Production Date Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Traceability Trough the pick-face</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Multiple Units for products</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Special Storage requirements</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Multiple pick locations per product</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Reserve locations</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Kitting</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Bill of Materials</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>QA inspection</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>BRC Data Capture</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Weight and dimensions</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Load characteristics</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Empty Locations Report</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Walk Sequence Logic</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Crushability Rules</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Column Stacking Logic</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>FIFO, LIFO, FEFO rotation</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Dual Cycling</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Pick or reserve Stock</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Location type</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Item look up by Item number</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Item look up by UPC code</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Item look up by Supplier/td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Item look up by receipt date</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Item look up by Age</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Remote access by Client/Supplier</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Remote access by Client/Supplier</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Key Performance Indicators</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Cross Docking</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Receive without previous appointment</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Receive without previous appointment</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Receive information via EDI</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Load Bay Scheduler</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Photograph Damages via wireless network</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Capture carrier compliance violations</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>RF and Desktop Based receiving</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Direct items with RF bar code scanners </td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Generate pallet/case numbers on demand</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Discrepancy management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Verification of received weight</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Audit trail on all receipts</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Blind receiving</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Capture merchandise condition</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Generate bar-coded license plates</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>RF based putaway</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Interleaving</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Rules for putaway by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Suggest optimal item putaway location</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Putaway to multiple zones </td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>multiple step putaway</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Override of putaway location with reason code</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Suggest alternate putaway location</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Special processing</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Return to vendor</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Destructive testing/Scrap</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Rework</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Establish rules for picking by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Convert order quantity to required picking units</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Interface to routing</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Schedule pick activities to match ship load out times</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Wave planning</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Generate pick assignments by zones</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Sort picks in pick path sequence within zones</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Sort picks in pick path sequence within zones</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Generate picking labels and shipping container labels</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Track order status through order shipment</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Update host with order status information</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Round up customer demand to the closest unit of issue</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Pick to a pallet/tote/carton</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Assigned pickers by profiles - fork trucks, hand-helds</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support RF, Voice and paper based picking</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Box pick</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Case pick</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Pallet pick</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Confirmation Pick location and quantity</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Track pallet contents</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Reassign planned picks to new location when problems</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Reconciliation of location with pick exceptions</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Identify damaged products</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Able to alter picking method by route</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Customs picking algorithm</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Monitor order status through the filling process</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Paper, Voice or RF-based replenishment</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Replenishment rules by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Identify & prioritize required replenishments</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Emergency replenishment when picking location empty</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Interleaving of replenishments with other tasks</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Batch replenishment at end-of-day</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Min/Max & opportunity replenishment</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Confirmation of product loading</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Shipping documents</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Capture freight information for each load </td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Generate transportation trip sheets</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Generate safety data sheets</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Special handling requirements</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Generate product shipping labels</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Customer specific ship label formats and symbols</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support capture of pallet weight</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Load Planning</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>CMR's</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Preplanned returns management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Unplanned returns management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Group returns into optimal putaway batches</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Returns to Vendor Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Storage and Handling Charges</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Invoice Generation</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Cycling Counting</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Adjust inventory with required reason code</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Blind cycle counts</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Require recounts for out-of-tolerance products</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Audit trail of all adjustments to inventory</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Counts by pick paths</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Random audits of completed counts</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>DC productivity analysis by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Total  cases and dollars picked, shipped and in-process</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Total pallets, weight, and cases shipped</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Provide in-process analysis by zone</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support graphical user interface for information analysis</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support cycle time analysis</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support service level analysis</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support DC reprofiling analysis</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support warehouse cost analysis by item by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support ad-hoc report writing</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Support warehouse space reporting by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Space availability by zone</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Available locations</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Space utilization</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report total putaways by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report total picked by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report total vendor returns by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report total DC transfers by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Consolidate year-to-date figures, volume, pieces, etc. by customer</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Generate vendor performance reports</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report vendor shipping accuracy and timelines</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report compliance with terms of purchase orders</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report quantity of short or over shipped items</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report quality of items</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report late arrivals</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report cancellations/no-shows</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Consolidation reports using information from all DCs</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Order age reporting</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Not shipped order analysis</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Analysis of item on QA hold/release for QA</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>HAd-hoc report writing</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Transaction audit trails</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Override report by employee, supervisor, zone</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Non-acceptance report by reason code</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Non-acceptance report by reason code</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Inventory aging report</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Report writer function</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Multi-lingual</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Supports International dating</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 
-<tr><td><i class="icon-ok"></td><td><strong>SAP Interfacing</strong></td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td><strong>Date control</strong></td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Lot control</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Batch Control</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Kill date Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Production Date Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Traceability Trough the pick-face</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Multiple Units for products</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>Special Storage requirements</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td><strong>Multiple pick locations per product</strong></td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td><i class="icon-ok"></td><td>HERE</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+
+<!--
+
+<tr><td>Cycle count of yard inventory</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Physical inventory of yard inventory</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Allocate inventory from yard to fulfill order</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Record and store trailer number</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Charges for initial and renewal storage</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Charges for  handling inbound and or outbound</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Ancillary/Accessorial charge capability</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Billing profile per client</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Billing by item or product group such as Hazardous</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><tdClient terms registered in the system</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Multiple charge codes per client</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Multiple charge types </td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Multiple revenue analysis codes</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Multiple Invoice codes</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Choice of units of measure to be used for billing</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Rounding up/down capability</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Initial and renewal rates, same or different</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Flat rate or conditional rates</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Rate breaks </td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Minimum/maximum charges</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Tax code for each billing profile</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></t
+<tr><td>Invoice printing profiles available</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></t
+<tr><td>Automatic or on demand invoicin</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></t
+<tr><td>All billing has audit capabilit</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></t
+
+-->
 </table>
 
 
-<strong>Multiple pick locations per product</strong><i class="icon-ok"></i><br>
-Reserve locations<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"><br>
-Kitting<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Bill of Materials<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-QA inspection<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-BRC Data Capture<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Weight & dimensions<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Load characteristics<br><
-Empty Locations Report<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"<br>
-Group locations into zones within warehouse<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-<strong>ID zone characteristics</strong><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Walk Sequence Logic<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-<strong>Crushability Rules<br></strong>
-Column Stacking Logic<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Support <strong>FIFO</strong>, LIFO, FEFO rotation<br>
-Dual Cycling<br>
-Pick or reserve Stock<br>
-Support special locations within the DC<br>
-Location type<br><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12">
-Able to consolidate products in storage location<br><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12">
-Item look up by Item number<br><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12">
-Item look up by UPC code<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Item look up by Supplier<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Item look up by receipt date<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Item look up by Age<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Remote access by Client/Supplier<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-<strong>Key Performance Indicators</strong><br>
-Cross Docking<br>
-Receive without previous appointment<img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Receive information via EDI from shippers/carriers<br>
-<strong>Load Bay Scheduler</strong><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12"><br>
-Photograph Damages via wireless network<br>
-Capture carrier compliance violations<br>
-<strong>RF and Desktop Based receiving</strong><br>
-Direct items with RF bar code scanners <br>
-Capture receive date and receiver for each receipt<br>
-Generate pallet/case numbers on demand<br>
-<strong>Discrepancy management</strong><br>
-Verification of received weight<br>
-Audit trail on all receipts<br>
-<strong>Blind receiving</strong><br>
-Capture merchandise condition<br>
-Generate bar-coded license plates<br>
-RF based putaway<br>
-<strong>Interleaving</strong><br>
-Rules for putaway by customer<br>
-Suggest optimal item putaway location<br>
-Putaway to multiple zones <br>
-Support single and multiple step putaway<br>
-Override of putaway location with reason code<br>
-Require positive confirmation of putaway location<br>
-Suggest alternate putaway location - Flag problem location to resolve<br>
-Mandatory areas for certain items, flexible for others<br>
-Support consolidation of partial pallets on putaway<br>
-Identification of special processing<br>
-<strong>Return to vendor</strong><br>
-Destructive testing/Scrap<br>
-<strong>Rework</strong><br>
-<strong>Establish rules for picking by customer</strong><br>
-Convert order quantity to required picking units<br>
-Allocate physical inv. using FIFO, LIFO, FEFO logic<br>
-Interface to routing <br>
-Schedule pick activities to match ship load out times<br>
-Wave planning - customer, carrier, warehouse, division, department, SKU<br>
-<strong>Generate pick assignments by zones<br></strong>
-Sort picks in pick path sequence within zones<br>
-Generate picking labels and shipping container labels<br>
-Track order status through order shipment<br>
-Update host with order status information<br>
-Round up customer demand to the closest unit of issue<br>
-Pick to a pallet/tote/carton<br>
-Assigned pickers by profiles - fork trucks, hand-helds<br>
-<strong>Support RF, Voice and paper based picking</strong><br>
-Box pick<br>
-Case pick<br>
-<strong>Pallet pick</strong><br>
-Confirmation Pick location and quantity<br>
-Track pallet contents<br>
-Reassign planned picks to new location when problems<br>
-Reconciliation of location with pick exceptions<br>
-<strong>Identify damaged products</strong><br>
-Able to alter picking method by route<br>
-Customs picking algorithm<br>
-Monitor order status through the filling process<br>
-Paper, Voice or RF-based replenishment<br>
-Replenishment rules by customer<br>
-Identify & prioritize required replenishments<br>
-Emergency replenishment when picking location empty<br>
-Interleaving of replenishments with other tasks<br>
-Batch replenishment at end-of-day <br>
-Min/Max & opportunity replenishment <br>
-Confirmation of product loading<br>
-<strong>Shipping documents</strong><br>
-Capture freight information for each load <br>
-Generate transportation trip sheets<br>
-Generate safety data sheets<br>
-Special handling requirements<br>
-Generate product shipping labels<br>
-Customer specific ship label formats & symbols<br>
-Support capture of pallet weight<br>
-<strong>Load Planning</strong><br>
-CMR's<br>
-Preplanned returns management<br>
-Unplanned returns management<br>
-Group returns into optimal putaway batches<br>
-Returns to Vendor Management <br>
-Storage and Handling Charges<br>
-Invoice Generation<br>
-<strong>Cycling Counting</strong><br>
-Adjust inventory with required reason code<br>
-Blind cycle counts<br>
-Require recounts for out-of-tolerance products<br>
-Audit trail of all adjustments to inventory<br>
-Counts by pick paths<br>
-<strong>Random audits</strong> of completed counts<br>
-DC productivity analysis by customer<br>
-Total  cases and dollars picked, shipped and in-process<br>
-Total pallets, weight, and cases shipped<br>
-Provide in-process analysis by zone<br>
-Support graphical user interface for information analysis<br>
-Support cycle time analysis<br>
-Support service level analysis<br>
-Support DC reprofiling analysis<br>
-Support warehouse cost analysis by item by customer<br>
-Support ad-hoc report writing<br>
-Support warehouse space reporting by customer<br>
-Space availability by zone<br>
-Available locations<br>
-<strong>Space utilization</strong><br>
-Report total putaways by customer<br>
-Report total picked by customer<br>
-<strong>Report total vendor returns by customer</strong><br>
-Report total DC transfers by customer<br>
-Consolidate year-to-date figures, volume, pieces, etc. by customer<br>
-Generate vendor performance reports<br>
-<strong>Report vendor shipping accuracy and timeliness</strong><br>
-Report compliance with terms of purchase orders<br>
-Report quantity of short or over shipped items<br>
-Report quality of items<br>
-<strong>Report late arrivals</strong><br>
-Report cancellations/no-shows<br>
-Consolidation reports using information from all DCs<br>
-Order age reporting<br>
-<strong>Not shipped order analysis</strong><br>
-Analysis of item on QA hold/release for QA<br>
-Ad-hoc report writing (one time and reusable reports)<br>
-Transaction audit trails<br>
-Override report by employee, supervisor, zone<br>
-Non-acceptance report by reason code <br>
-Inventory aging report<br>
-Report writer function<br>
-<strong>Multi-lingual</strong> <br>
-Supports International dating<br>
-International weights and measures (metric system)<br>
-<strong>Cycle count of yard inventory</strong><br>
-Physical inventory of yard inventory<br>
-Allocate inventory from yard to fulfill order<br>
-Record and store trailer number<br>
-Charges for initial and renewal storage <br> 
-Charges for  handling inbound and or outbound<br>
-Ancillary/Accessorial charge capability<br>
-Billing profile per client<br>
-Billing by item or product group such as Hazardous<br>
-Client terms registered in the system<br>
-Multiple charge codes per client<br>
-<strong>Multiple charge types</strong> <br>
-Multiple revenue analysis codes<br>
-Multiple Invoice codes<br>
-Choice of units of measure to be used for billing<br>
-Rounding up/down capability<br>
-Initial and renewal rates, same or different<br>
-Flat rate or conditional rates<br>
-<strong>Rate breaks </strong><br>
-Minimum/maximum charges<br>
-Tax code for each billing profile<br>
-Invoice printing profiles available<br>
-Automatic or on demand invoicing<br>
-<strong>All billing has audit capability</strong><br>
