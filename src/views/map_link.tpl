@@ -39,7 +39,7 @@
 <div class="image">
 
 
-<img src="../static/image/ArdBoeMAP.png" alt="warehouse" usemap = "#warehousemap" height="1000" width="1000">
+<img src="../static/image/warehouse.jpg" alt="warehouse" usemap = "#warehousemap" height="1000" width="1000">
 
 <map name="warehousemap">
   <area shape="rect" coords="64,449,366,662" alt="Sales" href="/">
