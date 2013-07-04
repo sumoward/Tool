@@ -43,15 +43,10 @@
 <h3 id='top'>{{sect['section_name']}}</h3>
 
 <div class="container">
-<div class="hero-unit">
+
 
 <!-- Intro -->
-
-%if sect['intro'] != 'None' and  check1 == True:
-<legend>{{sect['intro']}}</legend><br>
-%check1 = False
-%end
-
+<legend><h3>Please fill in the appropriate details</h3></legend><br>
 
 <form class="form-inline" method = "POST" action="/form_end">
 <input type="hidden"  name = 'section' value = "{{sect['section_no']}}">
@@ -88,7 +83,7 @@
 
 </form>
 </div>
-</div>
+
  
  </body>
 </html>

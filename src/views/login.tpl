@@ -25,7 +25,7 @@
 <div class="hero-unit"> 
 <img src="static/image/header1_01.gif" class="img-polaroid">
 <h3>Welcome - please login to RECAP</h3> 
-<form class="form-inline" method="post" action="/login">
+<form class="form-horizontal" method="post" action="/login">
   User name &nbsp<input type="text" class="input-small"  name="username" >
   Password &nbsp<input type="text" class="input-small" name="password">
   <button type="submit" class="btn-medium">Submit</button>

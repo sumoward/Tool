@@ -21,11 +21,6 @@
             <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
         <![endif]-->
 
-
-
-
-
-
 </head>
 
 <body>
