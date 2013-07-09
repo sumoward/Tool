@@ -27,7 +27,8 @@
         $( "#accordion" ).accordion({
             collapsible: true,
             active: false,
-            heightStyle: "content"
+            heightStyle: "content",
+            
             
         });
         
@@ -35,10 +36,7 @@
          
     });
     
-    
-    
-    
-    
+       
   </script>
         
         
@@ -96,11 +94,8 @@
                            		<li><a href="javascript:window.print()">Print this page<i class="icon-print"></i></a>
                          			</li>
                                     </ul>
-                        	</li>
                         
-                        
-                        
-                            <li><a href="/logout">Logout</a>
+                                   <li><a href="/logout">Logout</a>
                          	</li>
                            <li><a href="javascript:window.print()"><img src="/static/image/click-here-to-print.jpg" alt="print this page" id="print-button" height="30" width="100"/></a>
 

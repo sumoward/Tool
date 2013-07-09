@@ -72,7 +72,7 @@ class Import:
                 # add in the questions we wish to add to the section
                 questionaire = {'question': question_refernce_no,
                  'question_string': entry.strip(),
-                  'question_tag': [], 'answer': None, 'subhead': self.subhead}
+                  'question_tag': [], 'answer': '', 'subhead': self.subhead}
                 self.customer.update({'sections.section': self.counter1},
 {'$push': {'sections.questions': questionaire}})
                 self.counter2 = self.counter2 + 1

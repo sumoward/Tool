@@ -27,7 +27,7 @@ class Database_manage_recap:
         for cur in cursor:
             temp = cur
             self.store.insert(cur)
-        #print('copied template over')
+        print('copied template over')
         return temp
 
     def get_sections_and_tags(self):
@@ -488,7 +488,8 @@ if __name__ == "__main__":
 
 ########################################################
     tester1 = Database_manage_recap()
-    tester1.dbconnection()
+    username ="brian"
+    tester1.dbconnection(username)
     #print("___________________________________________________________")
     tester1.copy_template()
     #tester1.get_sections()

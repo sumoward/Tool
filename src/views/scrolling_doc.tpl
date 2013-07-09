@@ -37,12 +37,14 @@ $(document).ready(function() {
 %include navbar username=username
 </nav>
 
-
+<div class="span12">
 %for sect in form1:
-	
-		
-		
-		<div class="span12"><legend><h1>{{sect['section_name']}}</h1></legend></div>
+%if sect['section_no'] < 13:
+%page="user_interface"
+%else:
+%page="scoping"
+%end
+		<div class="span12"><legend><a href="/{{page}}#{{sect['section_name']}}"><h1>{{sect['section_name']}}</h1></a></legend></div>
 		
 	<div class="span12">	
 	
@@ -59,12 +61,17 @@ $(document).ready(function() {
 
 
  %end
+ 
 %end
 	
 	</div>
 	
- 
+ <div class="span6"><strong>Freetext : </strong></div><br>
+ %if sect['free_text']:
+ <div class="span6">{{sect['free_text']}}</div>
  %end
+ %end
+ </div>
  <footer>
 %include footer
 </footer>

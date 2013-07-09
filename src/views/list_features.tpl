@@ -5,7 +5,7 @@
 <tr><td>Batch Control</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Kill date Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Production Date Management</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td>Traceability Trough the pick-face</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
+<tr><td>Traceability Through the pick-face</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Multiple Units for products</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Special Storage requirements</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Multiple pick locations per product</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
@@ -30,10 +30,8 @@
 <tr><td>Item look up by receipt date</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Item look up by Age</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Remote access by Client/Supplier</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td>Remote access by Client/Supplier</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Key Performance Indicators</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Cross Docking</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td>Receive without previous appointment</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Receive without previous appointment</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Receive information via EDI</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Load Bay Scheduler</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
@@ -66,7 +64,6 @@
 <tr><td>Schedule pick activities to match ship load out times</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Wave planning</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Generate pick assignments by zones</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td>Sort picks in pick path sequence within zones</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Sort picks in pick path sequence within zones</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Generate picking labels and shipping container labels</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Track order status through order shipment</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
@@ -150,7 +147,6 @@
 <tr><td>HAd-hoc report writing</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Transaction audit trails</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Override report by employee, supervisor, zone</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
-<tr><td>Non-acceptance report by reason code</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Non-acceptance report by reason code</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Inventory aging report</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>
 <tr><td>Report writer function</td><td><img src="static/image/Tick.png" class="img-polaroid" height="12" width="12" border="0"></td></tr>

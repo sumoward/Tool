@@ -268,8 +268,8 @@ def unanswered():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
-            root='/home/ubuntu/recap/RECAP/src/static')
+             root='.\static')
+            #root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
@@ -405,17 +405,18 @@ def save_free_text(section_no, free_text, username):
 def save_answer(answer_dictionary, modifier, username):
 
     for key in answer_dictionary.keys():
-        # print(answer_dictionary
+        print(answer_dictionary)
         question_no = int(key)
-        # print(question_no)
+        print(question_no)
         answer = answer_dictionary[key]
-        # print(answer)
+        print(answer)
         # check if the answer should be stored as an int
-        try:
-            answer = int(answer)
-        except ValueError:
-            print('will not convert to an int')
-        print('saving.....')
+        if answer !=None:
+            try:
+                answer = int(answer)
+            except ValueError:
+                print('will not convert to an int')
+            print('saving.....')
         database.save_answer(question_no, answer, username)
 
     return database.create_interface_dict(modifier, username)
