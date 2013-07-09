@@ -269,7 +269,7 @@ def unanswered():
 def server_static(filename):
     return static_file(filename,
              #root='.\static')
-            root='/home/ubuntu/recap/RECAP/src/static')
+             root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
