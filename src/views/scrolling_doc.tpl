@@ -66,7 +66,7 @@ $(document).ready(function() {
 	
 	</div>
 	
- <div class="span6"><strong>Freetext : </strong></div><br>
+ <div class="span6"><strong>Additional Information(if supplied): </strong></div><br>
  %if sect['free_text']:
  <div class="span6">{{sect['free_text']}}</div>
  %end

@@ -350,7 +350,10 @@ class Database_manage_recap:
         if page == 'sales':
             modifier = {'sections.section': {'$lte': 12}}
         elif page == 'scoping':
-            modifier = {'sections.section': {'$gt': 12}}
+            modifier = {'sections.section': {'$gt': 12,'$lt': 45}}
+        elif page == 'prof':
+            print('prof')
+            modifier = {'sections.section': {'$gte': 45}}
         else:
             modifier = {'sections.section': {'$gte': 1}}
 

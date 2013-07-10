@@ -326,6 +326,22 @@ def user_interface():
                  username=username)
 
 
+@bottle.post('/professional_services')
+@bottle.route('/professional_services')
+def professional_services():
+    username = login_check()
+    if (username == None):
+        print ("welcome: can't identify user...redirecting to signup")
+        bottle.redirect("/signup")
+    #print('-------******************************-------')
+    database = Database_manage_recap()
+    database.dbconnection(username)
+    section_interface_dict, question_interface_dict = database.create_interface_dict('prof', username)
+    return bottle.template('tab', form1=section_interface_dict,
+                 form2=question_interface_dict,
+                 username=username)
+
+
 @bottle.route('/scoping')
 def scoping():
     username = login_check()
@@ -382,6 +398,8 @@ def form_end():
 
     if section_no < 13:
         modifier = 'sales'
+    elif section_no > 45:
+        modifier = 'prof'
     else:
         modifier = 'scoping'
 

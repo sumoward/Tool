@@ -35,7 +35,9 @@
 <li>
 <a href="/scoping">Scoping</a>
 </li>
-
+<li>
+<a href="/professional_services">Professional Services</a>
+</li>
 
 %if (username == 'joe' or 'brian' or 'phil'):
 <li>
