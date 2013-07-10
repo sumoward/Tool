@@ -268,8 +268,8 @@ def unanswered():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
-             root='/home/ubuntu/recap/RECAP/src/static')
+             root='.\static')
+             #root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
@@ -486,7 +486,6 @@ def documentation():
     print('documentation')
     customer = bottle.request.forms.get('customer')
     downloaded_file =[]
-    
     downloaded_file = bottle.request.forms.getlist('document_download')
     print('downloaded file',downloaded_file)
 

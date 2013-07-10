@@ -72,10 +72,6 @@ $(document).ready(function() {
  %end
  %end
  </div>
- <footer>
-%include footer
-</footer>
- 
  
 </body>
 </html>

@@ -67,7 +67,7 @@
                             <li><a href="/scoping">Scoping<i class="icon-eye-open icon-white"></i></a>
                             </li>
                             </li>
-                            <li><a href="/professional_services">Professional Services<i class="icon-certification icon-white"></i></a>
+                            <li><a href="/professional_services">Professional Services<i class="icon-certificate icon-white"></i></a>
                             </li>
                             <li><a href="/map_link">MAP<i class="icon-search icon-white"></i></a>
                                     </li>
