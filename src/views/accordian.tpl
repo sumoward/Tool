@@ -66,7 +66,7 @@
 
 
 <!-- Questions -->
-<div class="span6"><label>{{key['quest_no']}}{{key['quest']}}</label></div>
+<div class="span6"><label>{{key['quest']}}</label></div>
 %if key['answer']:
 <div class="span4"><input type="text" name= "{{key['quest_no']}}" class="input-large search-query"  value ="{{key['answer']}}" ></div>
 %else:
