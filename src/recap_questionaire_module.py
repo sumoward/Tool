@@ -18,6 +18,8 @@ database = Database_manage_recap()
 
 section_interface_dict = {}
 question_interface_dict = {}
+#set the maximum number of post vars passed
+bottle.BaseRequest.MAX_PARAMS = 150
 
 
 # will check if the user is logged in and if so, return the username.
@@ -160,44 +162,59 @@ def convertpdf():
     if (username == None):
         print ("welcome: can't identify user...redirecting to signup")
         bottle.redirect("/signup")
-    company_data = {'Title': 'Mr',
-                        'First_Name': 'Joe',
-                        'Last_Name': 'OShea',
-                        'Company_Name': 'Principal Systems',
-                        'Email_Address': 'brian@principal.ie',
-                        'City': 'Dublin',
-                        'State': 'Dublin',
-                        'Work_Phone': '123333',
-                        'Address_Line_1': '56 Pembrooke road',
-                        'Address_Line_2': 'Ballsbridge',
-                        'Home_Phone': '1234567',
-                        'Country_or_Region': 'Ireland',
-                        'ZIP_Code': 'Dublin6'}
 
-    template1 = bottle.request.forms.get('template')
-    #print('T!', template1)
-    template = 'static/documents/Executive_Summary2.docx'
-    #print (template)
+    template1 = bottle.request.forms.get('title')
+    template2 = bottle.request.forms.get('first_name')
+    template3 = bottle.request.forms.get('last_name')
+    template4 = bottle.request.forms.get('company_name')
+    template5 = bottle.request.forms.get('email')
+    template6 = bottle.request.forms.get('home_phone')
+    template7 = bottle.request.forms.get('work_phone')
+    template8 = bottle.request.forms.get('addr1')
+    template9 = bottle.request.forms.get('addr2')
+    template10 = bottle.request.forms.get('country')
+    template11 = bottle.request.forms.get('city')
+    template12 = bottle.request.forms.get('state')
 
-    if template1 == template:
-            doc2 = DocGen()
-            #company_name = 'Principalx Systems'
-            filename = doc2.mail_merge(template, company_data)
-            output = 'static/documents/' + filename[:-5] + '.pdf'
-            #print('$$output', output)
-            doc2.convert(filename, output)
-            #create email handeler
-            handler = Email_handler()
-            customer = company_data['Email_Address']
-            output_filename = []
-            output_filename.append(output)
-            #print(customer, output_filename)
-            handler.build_mime(output_filename, customer)
+    #print('T1!', template1)
+    #print('T2!', template2)
+    company_data = {'Title': template1,
+                        'First_Name': template2,
+                        'Last_Name': template3,
+                        'Company_Name': template4,
+                        'Email_Address': template5,
+                        'City': template6,
+                        'State': template7,
+                        'Work_Phone': template8,
+                        'Address_Line_1': template9,
+                        'Address_Line_2': template10,
+                        'Home_Phone': template11,
+                        'Country_or_Region': template12
+                        }
 
-            return bottle.template('convertpdf', template=template,
-                        message='Your document: ' + output + ' is ready. A copy has been emailed to you',
-                                     company_data=company_data,
-                                    username=username)
+    #template = 'static/documents/Executive_Summary2.docx'
+    template = 'static/documents/templatecust.docx'
+    print ('template is : ', template)
+
+    if template1:
+        doc2 = DocGen()
+        #company_name = 'Principalx Systems'
+        filename = doc2.mail_merge(template, company_data)
+        output = 'static/documents/' + filename[:-5] + '.pdf'
+        print('$$output', output)
+        doc2.convert(filename, output)
+        #create email handeler
+        handler = Email_handler()
+        customer = company_data['Email_Address']
+        output_filename = []
+        output_filename.append(output)
+        print(customer, output_filename)
+        handler.build_mime(output_filename, customer)
+    
+        return bottle.template('convertpdf', template=template,
+                            message='Your document: ' + output + ' is ready. A copy has been emailed to you',
+                                         company_data=company_data,
+                                        username=username)
 
     return bottle.template('convertpdf', template=template, company_data=company_data, message='', username=username)
 
@@ -268,8 +285,8 @@ def unanswered():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
-             root='/home/ubuntu/recap/RECAP/src/static')
+             root='.\static')
+             #root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
@@ -280,7 +297,7 @@ def download():
         print ("welcome: can't identify user...redirecting to signup")
         bottle.redirect("/signup")
     print('download')
-    return bottle.template('download', username=username, message ="")
+    return bottle.template('download', username=username, message = "")
 
 
 @bottle.route('/accordian')
@@ -382,11 +399,11 @@ def form_end():
     if (username == None):
         print ("welcome: can't identify user...redirecting to signup")
         bottle.redirect("/signup")
-    #print('-------******************************-------')
+    print('-------******************************-------')
     database = Database_manage_recap()
     database.dbconnection(username)
     #username = bottle.request.forms.get("username")
-    #print(username)
+    print(username)
     # form = bottle.request.forms.get('answer')
     section_no = bottle.request.forms.get('section')
     free_text = bottle.request.forms.get('free_text')
@@ -395,6 +412,7 @@ def form_end():
     section_no = int(section_no)
     save_free_text(section_no, free_text, username)
     no_questions = database.count_questions(section_no)
+    #print('no questions',no_questions)
 
     if section_no < 13:
         modifier = 'sales'
@@ -406,9 +424,11 @@ def form_end():
     form = {}
     for x in range(no_questions):
         x = (section_no * 1000) + (x + 1)
+        #print(x)
         x = str(x)
-        # print('x',x)
+        #print('x',x)
         form[x] = bottle.request.forms.get(x)
+        #print(x,form[x])
 
     section_interface_dict, question_interface_dict = save_answer(form,  modifier, username)
 
@@ -423,11 +443,11 @@ def save_free_text(section_no, free_text, username):
 def save_answer(answer_dictionary, modifier, username):
 
     for key in answer_dictionary.keys():
-        print(answer_dictionary)
+        #print(answer_dictionary)
         question_no = int(key)
         print(question_no)
         answer = answer_dictionary[key]
-        print(answer)
+        #print(answer)
         # check if the answer should be stored as an int
         if answer !=None:
             try:

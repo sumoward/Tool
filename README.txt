@@ -18,3 +18,7 @@ STEPS BEFORE UPLOAD:
 remmeber to set root path for static files on ubuntu server
 
 turn off debugging.
+
+
+sudo newrelic-admin run-python recap_questionaire_module.py
+

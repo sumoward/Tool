@@ -17,16 +17,17 @@ class DocGen:
     def importfile(self, filename):
         f = open(filename, "r")
         text = f.read()
-        #print (text)
+        print (text)
         return text
 
     def mail_merge(self, template, kwargs):
 
         company_name = kwargs.get('Company_Name', "default company_name")
-        #print('******',company_name)
-        #print('*******************', kwargs.items())
+        print('******', company_name)
+        print('*******************', kwargs.items())
+        print('********', template)
         document = MailMerge(template)
-        #print (document.get_merge_fields())
+        print (document.get_merge_fields())
         #merge fields
         #{'ZIP_Code', 'Address_Line_2', 'Country_or_Region',
         #'Address_Line_1', 'Company_Name', 'Title',
