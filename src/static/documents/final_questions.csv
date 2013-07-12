@@ -152,8 +152,8 @@ section 8,System Interfacing Overview
 ,Other? Please Specify 
 ,Do Systems Reside side by side ? Yes/No
 ,How will you manage Type of interface required - File transfer or Database Level
-,"How willyou manageWhere relevant - File types to be used - .CSV, XML, EDIFACT, Other"
-,"How willyou manageFile transfer Method - FTP, AS2, EDI etc."
+,"How will you manageWhere relevant - File types to be used - .CSV, XML, EDIFACT, Other"
+,"How will you manageFile transfer Method - FTP, AS2, EDI etc."
 ,Will Principal Systems Ltd Standard File Formats be used by the client?
 ,"If, No, are sample Files available?"
 *%$break&%*,
@@ -178,7 +178,7 @@ section 10,Purchasing Process Overview
 ,Is there a Budget authorised for this expenditure?
 ,With whom does final decision making authority rest with?
 ,What systems have you seen to date?
-,"Will you be reviewing other WMS systems, and is so what are they?"
+,"Will you be reviewing other WMS systems, and if so what are they?"
 ,Where did you hear about Principal Systems/In-DEX WMS
 ,Have you spoken with or visited any site using In-DEX WMS?
 *%$break&%*,
@@ -624,8 +624,8 @@ section 33,Stock RE Location
 *%$introduction$%*,
 ,How many Pallets do you move around daily to maximise capacity
 ,Do you have drive in racking 
-,Do you re-Warehouse drive in racks to maximise extraction efficiency and space
-,Do you rewarehouse replenishment pallets to be closer to the pick face
+,Do you re locate stock to drive in racks to maximise extraction efficiency and space
+,Do you re locate stock to replenishment pallets to be closer to the pick face
 ,How many Internal Stock Transfer Occur Daily?
 ,How is this process managed?
 *%$break&%*,
@@ -873,7 +873,7 @@ section 50,Configuration
 *%$subhead$%*,In-DEX GUI Configuration
 ,Configure GUI needs - Map to client business processes
 ,"(Put-away Rules, Pick Rules, Product Handling Criteria, System Instructions etc. etc.)"
-*%$subhead$%*,RF configuration 
+*%$subhead$%*,RF Configuration 
 ,Configure RF needs - Map to business processes
 ,"(Screen Configurations, Drop down menus, Operator Instructions etc. etc.)"
 *%$subhead$%*,Specific customisation configuration over & above - PSL Standard Dockets & Reports 
