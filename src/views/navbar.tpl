@@ -1,46 +1,8 @@
-  <!doctype html>
+  <doctype html>
  
     <head>
-        <meta charset="utf-8">
-        <title>RECAP</title>
-        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link href="..static/css/bootstrap.css" rel="stylesheet">
-        <style type="text/css">
-            body{padding-top: 60px;padding-bottom: 40px;}
-        </style>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap-responsive.css" rel="stylesheet">
-        <!--[if lt IE 9]>
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
-        <![endif]-->
-        
-          <meta charset="utf-8" />
-  <title>jQuery UI Accordion - Default functionality</title>
-  <link rel="stylesheet" href="/static/jquery-ui-1.10.2.custom.min.css.gz" />
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   
-  <script>
-  $(function() {
-        $( "#accordion" ).accordion({
-            collapsible: true,
-            active: false,
-            heightStyle: "content",
-            
-            
-        });
-        
-         $("#accordion").css("display", "block");
-         
-    });
-    
-       
-  </script>
-        
-        
-        
+             
     </head>
   
   <body>
@@ -111,9 +73,8 @@
             </div>
         </div>
  
- <!-- Le javascript==================================================-->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/js/bootstrap.js"></script>
+
+        
     </body>
 
     </html>

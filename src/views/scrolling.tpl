@@ -4,29 +4,22 @@
 <meta charset="utf-8">
 <title>InDex WMS</title>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-<link rel="icon" type="image/png "href="static/image/favicon.ico">
-<!-- CSS Code -->
-<link rel="stylesheet" href="static/css/style.css">
-<link rel="stylesheet" href="static/css/reset.css">
-<!-- JS Code -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="static/js/script.js"></script>
-
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-       <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
-        <style>
-            body{padding-top: 60px;/* 60px to make the container go all the way to the bottom of the topbar */}
-        </style>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap-responsive.css" rel="stylesheet">
-        <!--[if lt IE 9]>
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
-        <![endif]-->
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
 
+<link rel="stylesheet" href="static/css/style.css.gz">
+<link rel="stylesheet" href="static/css/reset.css.gz">
+<link href="/static/css/bootstrap.min.css.gz" rel="stylesheet">
+<link href="/static/css/bootstrap-responsive.min.css.gz" rel="stylesheet">
+ <style>
+        body{padding-top: 60px;/* 60px to make the container go all the way to the bottom of the topbar */}
+</style>
 
-
-<script src="static/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script> 
-<script src="static/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script> 
+<script src="/static/jsfiles/jquery.min.js.gz"></script>
+<script src="static/js/script.js.gz"></script>
+  
+<script src="static/jquery.localscroll-1.2.7-min.js.gz" type="text/javascript"></script> 
+<script src="static/jquery.scrollTo-1.4.3.1-min.js.gz" type="text/javascript"></script> 
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -88,10 +81,10 @@ $(document).ready(function() {
 <!-- Section #1 -->
 <section name="first" id="first" data-speed="300" data-type="background">
     <article> 
-    <div class="span3 "><a href="#second"><img src="..\static\image\postit1.png" alt="64x64"></a></div>
-    <div class="span3 offset3"><a href="#second"><img src="..\static\image\postit2.png" alt="64x64"></a></div>
-    <div class="span3 offset2"><a href="#third"><img src="..\static\image\postit3.png" alt="64x64"></a></div>
-    <div class="span3 offset3"><a href="#fourth"><img src="..\static\image\postit4.png" alt="64x64"></a></div> 
+    <div class="span3 "><a href="#second"><img src="..\static\image\postit1.png" alt="postit image"></a></div>
+    <div class="span3 offset3"><a href="#second"><img src="..\static\image\postit2.png" alt="postit image"></a></div>
+    <div class="span3 offset2"><a href="#third"><img src="..\static\image\postit3.png" alt="postit image"></a></div>
+    <div class="span3 offset3"><a href="#fourth"><img src="..\static\image\postit4.png" alt="postit image"></a></div> 
    
             </article> 
 </section>
@@ -100,9 +93,9 @@ $(document).ready(function() {
      <article> 
     
 
-    <div class="span3 "><a href="#third"><img src="..\static\image\postit5.png" alt="64x64"></a></div> 
-    <div class="span3 offset3"><a href="#third"><img src="..\static\image\postit6.png" alt="64x64"></a></div> 
-    <div class="span3 offset3"><a href="#third"><img src="..\static\image\postit8.png" alt="64x64"></a></div>    
+    <div class="span3 "><a href="#third"><img src="..\static\image\postit5.png" alt="postit image"></a></div> 
+    <div class="span3 offset3"><a href="#third"><img src="..\static\image\postit6.png" alt="postit image"></a></div> 
+    <div class="span3 offset3"><a href="#third"><img src="..\static\image\postit8.png" alt="postit image"></a></div>    
 			 </article> 
 		 
 </section>
@@ -112,9 +105,9 @@ $(document).ready(function() {
 
  <article>    
      
-    <div class="span3 offset2"><a href="#fourth"><img src="..\static\image\postit9.png" alt="64x64"></a></div> 
-     <div class="span3 offset1"><a href="#fourth"><img src="..\static\image\postit10.png" alt="64x64"></a></div>
-      <div class="span3 offset2"><a href="#fourth"><img src="..\static\image\postit11.png" alt="64x64"></a></div> 
+    <div class="span3 offset2"><a href="#fourth"><img src="..\static\image\postit9.png" alt="postit image"></a></div> 
+     <div class="span3 offset1"><a href="#fourth"><img src="..\static\image\postit10.png" alt="postit image"></a></div>
+      <div class="span3 offset2"><a href="#fourth"><img src="..\static\image\postit11.png" alt="postit image"></a></div> 
      
           
       </article> 
@@ -125,16 +118,16 @@ $(document).ready(function() {
 
 <article> 
 	
-    <div class="span3 offset1"><a href="#fifth"><img src="..\static\image\postit12.png" alt="64x64"></div>
-    <div class="span3 offset2"><a href="#fifth"><img src="..\static\image\postit14.png" alt="64x64"></div>
-	<div class="span3 offset3"><a href="#fifth"><img src="..\static\image\postit15.png" alt="64x64"></div>
+    <div class="span3 offset1"><a href="#fifth"><img src="..\static\image\postit12.png" alt="postit image"></div>
+    <div class="span3 offset2"><a href="#fifth"><img src="..\static\image\postit14.png" alt="postit image"></div>
+	<div class="span3 offset3"><a href="#fifth"><img src="..\static\image\postit15.png" alt="postit image"></div>
 
 	</article> 
 
 </section>
-	<div class="span3 "><img src="..\static\image\postit13.png" alt="64x64"></a></div>
-	<div class="span3 offset3"><img src="..\static\image\postit16.png" alt="64x64"></a></div>
-	<div class="span3 offset1 "><img src="..\static\image\postit17.png" alt="64x64"></a></div>
+	<div class="span3 "><img src="..\static\image\postit13.png" alt="postit image"></a></div>
+	<div class="span3 offset3"><img src="..\static\image\postit16.png" alt="postit image"></a></div>
+	<div class="span3 offset1 "><img src="..\static\image\postit17.png" alt="postit image"></a></div>
 	
 	<form method = "post" action="/user_interface">
 <input type="hidden"  name = 'username' value = "{{username}}">

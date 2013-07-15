@@ -53,7 +53,6 @@ Insert the clients email here<br>
 <br/>
 </body>
 <footer>
-<a href="https://docs.google.com/spreadsheet/ccc?key=0AvtA3_n0IgBedFBpZElfYW8yZldvbHVxM29tR3kwRlE#gid=0">ASN & Pallet and Case Label Data Capture Template.xlsx</a>
 %include footer
 </footer>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
  <head> 
         <meta charset="utf-8">
@@ -6,22 +6,14 @@
       	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       	<link rel="icon" type="image/png "href="static/image/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
-        <style type="text/css">
-            body{padding-top: 60px;padding-bottom: 40px;}
-        </style>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap-responsive.css" rel="stylesheet">
-        <!--[if lt IE 9]>
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
-        <![endif]-->
+<link href="/static/css/bootstrap.min.css.gz" rel="stylesheet">
+<link href="/static/css/bootstrap-responsive.min.css.gz" rel="stylesheet">
  </head>
  <body>      
 <div class="container">
 <div class="hero-unit">  
 
-<img src="static/image/header1_01.gif" class="img-polaroid">
+<a href="http://www.principalsystems.com/"><img src="static/image/header1_01.gif" class="img-polaroid"></a>
 
     <h1>Welcome {{username}}</h1>
 <ul>
