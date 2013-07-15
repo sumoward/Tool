@@ -17,6 +17,10 @@
             body{padding-top: 60px;/* 60px to make the container go all the way to the bottom of the topbar */}
         </style>
        <script src="/static/jsfiles/bootstrap.min.js.gz"></script> 
+       
+       <script src="/static/jsfiles/scripts.js.gz"></script>
+       <script src="/static/jsfiles/jquery.localscroll-1.2.7-min.js.gz"></script>
+       <script src="/static/jsfiles/jquery.scrollTo-1.4.3.1-min.js.gz"></script>
 </head>
 
 <body>
