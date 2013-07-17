@@ -3,13 +3,16 @@
 <head>
 <title>Download</title>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-<link rel="stylesheet" type="text/css" href="/layoutcss.css">
-<link href="http://bootswatch.com/cerulean/bootstrap.css" rel="stylesheet">
 <link rel="icon" type="image/png "href="static/image/favicon.ico">
-
-
-
-
+<link href="/static/css/bootstrap.min.css.gz" rel="stylesheet">
+<link href="/static/css/bootstrap-responsive.min.css.gz" rel="stylesheet">
+<script src="/static/jsfiles/jquery.min.js.gz"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+     
+        <style>
+            body{padding-top: 60px;/* 60px to make the container go all the way to the bottom of the topbar */}
+        </style>
+       <script src="/static/jsfiles/bootstrap.min.js.gz"></script> 
 
  </head>
  

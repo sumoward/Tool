@@ -27,6 +27,8 @@
         }); 
          $("#accordion").css("display", "block");      
     });
+    
+    
       
   </script>
 

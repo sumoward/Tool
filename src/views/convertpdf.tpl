@@ -1,13 +1,32 @@
 <!doctype HTML>
 <html>
 <head>
-<title></title>
+<title>Create pdf</title>
 
 
-       <link href="http://bootswatch.com/cerulean/bootstrap.css"
-        rel="stylesheet">
+       
+        
        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap-responsive.css"
+<link rel="icon" type="image/png "href="static/image/favicon.ico">
+<link href="/static/css/bootstrap.min.css.gz" rel="stylesheet">
+<link href="/static/css/bootstrap-responsive.min.css.gz" rel="stylesheet">
+
+
+<script src="/static/jsfiles/jquery.min.js.gz"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+     
+        <style>
+            body{padding-top: 60px;/* 60px to make the container go all the way to the bottom of the topbar */}
+        </style>
+<script src="/static/jsfiles/bootstrap.min.js.gz"></script> 
+        
+        
+        
+        
+        
+        
+        
+        
 </head>
 <nav>
 %include navbar username=username

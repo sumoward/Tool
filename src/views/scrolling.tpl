@@ -7,8 +7,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png "href="static/image/favicon.ico">
 
-<link rel="stylesheet" href="static/css/style.css.gz">
-<link rel="stylesheet" href="static/css/reset.css.gz">
+<link rel="stylesheet" href="/static/css/style.css.gz">
+<link rel="stylesheet" href="/static/css/reset.css.gz">
 <link href="/static/css/bootstrap.min.css.gz" rel="stylesheet">
 <link href="/static/css/bootstrap-responsive.min.css.gz" rel="stylesheet">
  <style>
@@ -16,10 +16,9 @@
 </style>
 
 <script src="/static/jsfiles/jquery.min.js.gz"></script>
-<script src="static/js/script.js.gz"></script>
-  
-<script src="static/jquery.localscroll-1.2.7-min.js.gz" type="text/javascript"></script> 
-<script src="static/jquery.scrollTo-1.4.3.1-min.js.gz" type="text/javascript"></script> 
+<script src="/static/js/script.js.gz"></script>
+ <script src="/static/jsfiles/jquery.localscroll-1.2.7-min.js.gz" type="text/javascript"></script> 
+<script src="/static/jsfiles/jquery.scrollTo-1.4.3.1-min.js.gz" type="text/javascript"></script> 
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -33,12 +32,12 @@ $(document).ready(function() {
 
 <div id="nav" class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
-              
+              <div class = "span2"><h4>WMS Checklist</h4></div>
                 <div class="container">
                    
                
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="brand" href="#home">WMS Checklist&nbsp&nbsp&nbsp&nbsp{{username}}</a>
+                    </button><a class="brand" href="#home">{{username}}</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                        		<li><a href="/map_link">MAP<i class="icon-search icon-white"></i></a>

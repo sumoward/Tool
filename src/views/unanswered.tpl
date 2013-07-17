@@ -3,8 +3,6 @@
 <head>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <link rel="icon" type="image/png "href="static/image/favicon.ico">
-
-<link rel="icon" type="image/png "href="static/image/favicon.ico">
 <link href="/static/css/bootstrap.min.css.gz" rel="stylesheet">
 <link href="/static/css/bootstrap-responsive.min.css.gz" rel="stylesheet">
 

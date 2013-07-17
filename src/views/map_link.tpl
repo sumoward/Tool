@@ -29,10 +29,10 @@
 <img src="../static/image/warehouse.jpg" alt="warehouse" usemap = "#warehousemap" height="1000" width="750">
 
 <map name="warehousemap">
-  <area shape="rect" coords="64,449,366,662" alt="Sales" href="/user_interface">
-  <area shape="rect" coords="610,130,912,343" alt="Existing Technology" href="/user_interface">
-  <area shape="rect" coords="490,691,792,904" alt="Picking" href="/scoping">
-  <area shape="rect" coords="1069,500,1371,713" alt="Loading" href="/scoping">
+  <area shape="rect" coords="90, 270, 520, 550" alt="scoping" href="/scoping">
+  <area shape="rect" coords="420, 130, 716, 250" alt="user interface" href="/user_interface">
+  <area shape="rect" coords="560, 330, 970, 540" alt="professional services" href="/professional_services">
+  
 </map>
 
 

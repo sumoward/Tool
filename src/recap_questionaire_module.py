@@ -282,11 +282,12 @@ def unanswered():
                 form1=section_interface_dict,
                  form2=question_interface_dict, username=username)
 
+
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
-             root='/home/ubuntu/recap/RECAP/src/static')
+             root='.\static')
+             #root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
