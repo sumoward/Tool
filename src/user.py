@@ -8,6 +8,7 @@ import pymongo
 import bson
 import sys
 
+
 # makes a little salt
 def make_salt():
     salt = ""
@@ -27,7 +28,7 @@ def make_pw_hash(pw, salt=None):
     return hashlib.sha256(pw.encode('utf-8') + salt.encode('utf-8')).hexdigest() + "," + salt
 
 
-# validates that the user information is valid, return True of False 
+# validates that the user information is valid, return True of False
 # and fills in the error codes
 def validate_signup(username, password, verify, email, errors):
     USER_RE = re.compile(r"^[a-zA-Z0-9_-]{3,20}$")
@@ -108,7 +109,7 @@ def end_session(connection, session_id):
     # this may fail because the string may not be a valid bson objectid
     try:
         id = bson.objectid.ObjectId(session_id)
-        sessions.remove({'_id':id})
+        sessions.remove({'_id': id})
     except:
 
         return
@@ -169,8 +170,9 @@ def uid_to_username(connection, uid):
 SECRET = 'verysecret'
 SECRET = SECRET.encode('utf-8')
 
+
 def hash_str(s):
-    
+
     #print(SECRET)
     #print(type(SECRET))
     #print(s)

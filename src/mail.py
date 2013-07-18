@@ -29,7 +29,7 @@ class Email_handler():
         \nI am sending an email from a Python program,\
          just testing.\n The attachment should work")
         msg.attach(part)
-        print ('filename: ',filename)
+        print ('filename: ', filename)
         for file in filename:
             # This is the binary part(The Attachment):
             part = MIMEApplication(open(file, "rb").read())
@@ -49,8 +49,8 @@ class Email_handler():
 
 if __name__ == "__main__":
     handler = Email_handler()
-    filename1 ='static/downloads/ASN & Pallet and Case Label Data Capture Template.xlsx'
+    filename1 = 'static/downloads/ASN & Pallet and Case Label Data Capture Template.xlsx'
     filename2 = 'static/downloads/Customer charges.xlsx'
-    filename=[filename1, filename2]
+    filename = [filename1, filename2]
     customer = 'brian.ward@principalsystems.com'
     handler.build_mime(filename, customer)

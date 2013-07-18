@@ -1,3 +1,9 @@
+"""
+ReCap is a tool to gather sales and scoping information for Principal systems.
+
+This is the bottle server running on CherryPy
+
+"""
 import bottle
 from database_manage import Database_manage_recap
 import ast
@@ -47,9 +53,8 @@ def login_check():
 def present_welcome():
     # check for a cookie, if present, then extract value
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     return bottle.template("welcome", {'username': username})
 
 
@@ -85,9 +90,9 @@ def process_signup():
         print ('sessionid', session_id)
         cookie = user.make_secure_val(session_id)
         bottle.response.set_cookie("session", cookie)
-        cook = bottle.request.get_cookie('session')
-        print('cook', cook)
-        print('user', username)
+        #cook = bottle.request.get_cookie('session')
+        #print('cook', cook)
+        #print('user', username)
         #username = bottle.request.forms.get("username")
         return bottle.template("welcome", username=username)
     else:
@@ -122,8 +127,10 @@ def process_login():
 
         cookie = user.make_secure_val(session_id)
 
-        # Warning, if you are running into a problem whereby the cookie being set here is 
-        # not getting set on the redirect, you are probably using the experimental version of bottle (.12). 
+        # Warning, if you are running into a problem
+        # whereby the cookie being set here is
+        # not getting set on the redirect,
+        #you are probably using the experimental version of bottle (.12).
         # revert to .11 to solve the problem.
         bottle.response.set_cookie("session", cookie)
         bottle.redirect("/welcome")
@@ -138,30 +145,26 @@ def process_login():
 def process_logout():
     connection = MongoClient("localhost", 27017)
     cookie = bottle.request.get_cookie("session")
-    if (cookie == None):
+    if (cookie is None):
         print ("no cookie...")
-        bottle.redirect("/signup")
     else:
         session_id = user.check_secure_val(cookie)
         if (session_id == None):
             print ("no secure session_id")
-            bottle.redirect("/signup")
         else:
             # remove the session
             user.end_session(connection, session_id)
             print ("clearing the cookie")
             bottle.response.set_cookie("session", "")
-            bottle.redirect("/signup")
-
+    bottle.redirect("/signup")     
 
 @route('/convertpdf')
 @bottle.post('/convertpdf')
 def convertpdf():
     print('convertpdf-----------------------')
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
 
     template1 = bottle.request.forms.get('title')
     template2 = bottle.request.forms.get('first_name')
@@ -176,8 +179,6 @@ def convertpdf():
     template11 = bottle.request.forms.get('city')
     template12 = bottle.request.forms.get('state')
 
-    #print('T1!', template1)
-    #print('T2!', template2)
     company_data = {'Title': template1,
                         'First_Name': template2,
                         'Last_Name': template3,
@@ -194,23 +195,21 @@ def convertpdf():
 
     #template = 'static/documents/Executive_Summary2.docx'
     template = 'static/documents/templatecust.docx'
-    print ('template is : ', template)
+    #print ('template is : ', template)
 
     if template1:
         doc2 = DocGen()
-        #company_name = 'Principalx Systems'
         filename = doc2.mail_merge(template, company_data)
         output = 'static/documents/' + filename[:-5] + '.pdf'
-        print('$$output', output)
+        #print('$$output', output)
         doc2.convert(filename, output)
         #create email handeler
         handler = Email_handler()
         customer = company_data['Email_Address']
         output_filename = []
         output_filename.append(output)
-        print(customer, output_filename)
+        #print(customer, output_filename)
         handler.build_mime(output_filename, customer)
-    
         return bottle.template('convertpdf', template=template,
                             message='Your document: ' + output + ' is ready. A copy has been emailed to you',
                                          company_data=company_data,
@@ -225,7 +224,7 @@ def index():
     username = login_check()  # see if user is logged in
     if (username is None):
         bottle.redirect("/login")
-    session = bottle.request.get_cookie('session')
+    #session = bottle.request.get_cookie('session')
     #print ('user',username, ':', session)
     #response.charset = 'utf-8'
     return bottle.template('scrolling', username=username)
@@ -240,9 +239,8 @@ def present_internal_error():
 @route('/scrolling')
 def scrolling():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     #response.charset = 'utf-8'
     return bottle.template('scrolling', username=username)
 
@@ -250,9 +248,8 @@ def scrolling():
 @route('/map_link')
 def map_link():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     #response.charset = 'utf-8'
     return bottle.template('map_link', username=username)
 
@@ -261,9 +258,8 @@ def map_link():
 def scrolling_doc():
     #response.charset = 'utf-8
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     #print('useer',username)
     section_interface_dict, question_interface_dict = database.create_interface_dict('all', username)
     return bottle.template('scrolling_doc',
@@ -274,9 +270,8 @@ def scrolling_doc():
 @route('/unanswered')
 def unanswered():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     section_interface_dict, question_interface_dict = database.create_interface_dict('all', username)
     return bottle.template('unanswered',
                 form1=section_interface_dict,
@@ -294,11 +289,10 @@ def server_static(filename):
 @bottle.route('/download')
 def download():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     print('download')
-    return bottle.template('download', username=username, message = "")
+    return bottle.template('download', username=username, message="")
 
 
 @bottle.route('/accordian')
@@ -310,9 +304,8 @@ def accordian():
 @bottle.route('/document')
 def document():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     section_interface_dict, question_interface_dict = database.create_interface_dict('all')
     return bottle.template('document', form1=section_interface_dict,
                  form2=question_interface_dict)
@@ -322,9 +315,8 @@ def document():
 @bottle.route('/user_interface')
 def user_interface():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     #print('-------******************************-------')
     database = Database_manage_recap()
     database.dbconnection(username)
@@ -348,9 +340,8 @@ def user_interface():
 @bottle.route('/professional_services')
 def professional_services():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     #print('-------******************************-------')
     database = Database_manage_recap()
     database.dbconnection(username)
@@ -363,9 +354,8 @@ def professional_services():
 @bottle.route('/scoping')
 def scoping():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     #print('-------******************************-------')
     database = Database_manage_recap()
     database.dbconnection(username)
@@ -397,10 +387,9 @@ def form_end():
     #print('-------******************************-------')
     print('form_end')
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
-    print('-------******************************-------')
+    if (username is None):
+        redirect()
+    #print('-------******************************-------')
     database = Database_manage_recap()
     database.dbconnection(username)
     #username = bottle.request.forms.get("username")
@@ -442,7 +431,6 @@ def save_free_text(section_no, free_text, username):
 
 
 def save_answer(answer_dictionary, modifier, username):
-
     for key in answer_dictionary.keys():
         #print(answer_dictionary)
         question_no = int(key)
@@ -450,36 +438,30 @@ def save_answer(answer_dictionary, modifier, username):
         answer = answer_dictionary[key]
         #print(answer)
         # check if the answer should be stored as an int
-        if answer !=None:
+        if answer is not None:
             try:
                 answer = int(answer)
             except ValueError:
                 print('will not convert to an int')
             print('saving.....')
         database.save_answer(question_no, answer, username)
-
     return database.create_interface_dict(modifier, username)
 
 
 @bottle.route('/saved_file')
 @bottle.post('/saved_file')
 def saved_file():
-    #print('save_file')
-
+    print('save_file')
     data = bottle.request.files.uploadField
     #print(data)
-
     if data and data.file:
         raw = data.file.read()  # This is dangerous for big files
         #print(raw)
         filename = data.filename
         #form = "Hello ! You uploaded %s (%d bytes)." % (filename, len(raw))
         #print(form)
-
         # save the file
-
         target_dir = r"static/uploaded"
-
         filename = os.path.join(target_dir, filename)
         #print(filename)
         # write the uploaded file to the storage
@@ -490,7 +472,6 @@ def saved_file():
         # email the user to inform that a file has been uploaded
         handler = Email_handler()
         handler.build_mime(filename)
-
         return bottle.template('saved_file', form=filename)
 
     return bottle.template('saved_file', form='empty')
@@ -499,16 +480,14 @@ def saved_file():
 @bottle.post('/documentation')
 @bottle.route('/documentation')
 def documentation():
-
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     print('documentation')
     customer = bottle.request.forms.get('customer')
-    downloaded_file =[]
+    downloaded_file = []
     downloaded_file = bottle.request.forms.getlist('document_download')
-    print('downloaded file',downloaded_file)
+    #print('downloaded file', downloaded_file)
 
     if not downloaded_file or not customer:
         print('here', customer, downloaded_file)
@@ -516,11 +495,11 @@ def documentation():
         return bottle.template('download', username=username, message=message)
 
     if downloaded_file:
-        print('downloaded file',downloaded_file)
+        print('downloaded file', downloaded_file)
         # use the file handling class
         file_handler = File_template_handling()
         list_of_files = file_handler.directory()
-        num = len(list_of_files)
+        #num = len(list_of_files)
         #print(num)
         filename = []
         for choice in downloaded_file:
@@ -551,7 +530,7 @@ def documentation():
 
 
 def form_input_parse(form_dictionary):
-    print('form input parse')
+    #print('form input parse')
     # remove the word Ordered Dict
     form_dictionary = form_dictionary[11:]
     # evaluate the remaining string
@@ -578,9 +557,8 @@ def form_input_parse(form_dictionary):
 @bottle.route('/doc_create')
 def create_doc():
     username = login_check()
-    if (username == None):
-        print ("welcome: can't identify user...redirecting to signup")
-        bottle.redirect("/signup")
+    if (username is None):
+        redirect()
     #print('start document creation')
     section = bottle.request.forms.get('section')
     #print(section)
@@ -589,6 +567,11 @@ def create_doc():
     #document_dict = database.create_interface_dict('sales')
     return bottle.template('doc_create', section=section,
                             text_box=text_box, username=username)
+
+
+def redirect():
+    print ("welcome: can't identify user...redirecting to signup")
+    bottle.redirect("/signup")
 
 
 #

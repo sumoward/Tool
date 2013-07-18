@@ -13,6 +13,18 @@
             body{padding-top: 60px;/* 60px to make the container go all the way to the bottom of the topbar */}
         </style>
        <script src="/static/jsfiles/bootstrap.min.js.gz"></script> 
+       
+       
+       <script>
+    $(document).ready(function() { 
+    $.blockUI({ message: '<h1><img src="busy.gif" /> Just a moment...</h1>' }); 
+    setTimeout(function(){
+        $.unblockUI();
+    }, 10000);
+});  
+       
+       </script>
+       
 
  </head>
  
@@ -23,6 +35,10 @@
 <div class="container">
 
 <div class="hero-unit">
+
+<div id="domMessage" style="display:none;"> 
+    <h1>We are processing your request.  Please be patient.</h1> 
+</div>
 <legend>Select the documents you want to share with the client</legend>
 <br/>
 
