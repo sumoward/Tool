@@ -24,7 +24,7 @@
     <legend>
     <h2>Signup</h2>
     <form method="post" class="form-horizontal">  
-    Username	<input type="text" name="username" value="{{username}}"><br>
+    Username	<input type="text" name="username" value=""><br>
     Password	<input type="password" name="password" value=""><br>
     Password	<input type="password" name="verify" value=""><br>
     email		<input type="text" name="email" value=""><br>
@@ -32,6 +32,8 @@
     </form>
 </div>
 </div>
+
+
 
 
     <!-- google analytics -->

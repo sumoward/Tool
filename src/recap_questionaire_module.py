@@ -16,6 +16,8 @@ from mail import Email_handler
 from bottle import static_file, route, error, response
 from docgen import DocGen
 from pymongo.mongo_client import MongoClient
+from pricing_procedure import Pricing_procedure
+
 
 # connect to mongoDB
 connection_string = "mongodb://localhost"
@@ -53,6 +55,7 @@ def login_check():
 def present_welcome():
     # check for a cookie, if present, then extract value
     username = login_check()
+    print(len(username))
     if (username is None):
         redirect()
     return bottle.template("welcome", {'username': username})
@@ -73,16 +76,21 @@ def process_signup():
     print('signup process')
     connection = MongoClient("localhost", 27017)
 
-    email = bottle.request.forms.get("email")
-    username = bottle.request.forms.get("username")
-    password = bottle.request.forms.get("password")
-    verify = bottle.request.forms.get("verify")
+    email = bottle.request.forms.get("email").strip()
+    username = bottle.request.forms.get("username").strip()
+    password = bottle.request.forms.get("password").strip()
+    verify = bottle.request.forms.get("verify").strip()
+    
+    print(email,username,password,verify)
 
     # set these up in case we have an error case
     errors = {'username': cgi.escape(username), 'email': cgi.escape(email)}
+    print('er:', errors)
     if (user.validate_signup(username, password, verify, email, errors)):
+        print('here1')
         if (not user.newuser(connection, username, password, email)):
             # this was a duplicate
+            print('dup')
             errors['username_error'] = "Username already in use. Please choose another"
             return bottle.template("signup", errors)
 
@@ -114,10 +122,11 @@ def process_login():
 
     connection = MongoClient("localhost", 27017)
     #print('login request')
-    username = bottle.request.forms.get("username")
-    password = bottle.request.forms.get("password")
+    username = bottle.request.forms.get("username").strip()
+    password = bottle.request.forms.get("password").strip()
 
     print ("user submitted ", username, "pass ", password)
+    print(len(username))
 
     userRecord = {}
     if (user.validate_login(connection, username, password, userRecord)):
@@ -281,8 +290,8 @@ def unanswered():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
-             root='/home/ubuntu/recap/RECAP/src/static')
+             root='.\static')
+             #root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
@@ -573,6 +582,45 @@ def redirect():
     print ("welcome: can't identify user...redirecting to signup")
     bottle.redirect("/signup")
 
+
+@bottle.post('/pricing')
+@bottle.route('/pricing')
+def pricing():
+    print('pricing')
+    index_costs = bottle.request.forms.get('index_costs')
+    if not index_costs:
+        index_costs = ""
+
+    pricing1 = Pricing_procedure()
+    pricelist = pricing1.set_pricing('euro')
+    print (pricelist)
+    index_costs = {}
+    quantity = {}
+    total_index = 0
+    for key, value in pricelist.items():
+        holder = bottle.request.forms.get(key)
+        print(holder)
+        print(type(holder))
+        if holder is  '' or holder is None:
+            quantity[key] = 0
+            index_costs[key] = 0
+        else:
+            quantity[key] = holder
+            index_costs[key] = int(holder)
+        print(key, index_costs[key])
+        print(index_costs[key],' times ' , pricelist[key])
+        index_costs[key] = index_costs[key] * pricelist[key]
+        #get the total cost
+        total_index = total_index + index_costs[key]
+        print(key,index_costs[key])
+
+    #TODO dave pricelist to database
+
+    print(index_costs)
+    print(total_index)
+
+
+    return bottle.template('pricing', pricelist=pricelist, index_costs=index_costs, quantity=quantity, total_index=total_index)
 
 #
 #bottle.run(server='cherrypy', host='localhost', port=8081)

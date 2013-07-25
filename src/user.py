@@ -39,20 +39,24 @@ def validate_signup(username, password, verify, email, errors):
     errors['password_error'] = ""
     errors['verify_error'] = ""
     errors['email_error'] = ""
-
-    if not USER_RE.match(username):
-        errors['username_error'] = "invalid username. try just letters and numbers"
-        return False
+    print('here2',len(username))
+#    if not USER_RE.match(username):
+#        errors['username_error'] = "invalid username. try just letters and numbers"
+#        print('here3')
+#        return False
 
     if not PASS_RE.match(password):
         errors['password_error'] = "invalid password."
+        print('here4')
         return False
     if password != verify:
         errors['verify_error'] = "password must match"
+        print('here5')
         return False
     if email != "":
         if not EMAIL_RE.match(email):
             errors['email_error'] = "invalid email address"
+            print('here6')
             return False
     return True
 
