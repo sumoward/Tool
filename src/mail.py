@@ -31,6 +31,7 @@ class Email_handler():
         msg.attach(part)
         print ('filename: ', filename)
         for file in filename:
+            print(file)
             # This is the binary part(The Attachment):
             part = MIMEApplication(open(file, "rb").read())
             part.add_header('Content-Disposition',
@@ -40,7 +41,7 @@ class Email_handler():
         smtp = SMTP("smtp.gmail.com", 587)
         # Start the server:
         #uncomment this if you wish to debug
-        #smtp.set_debuglevel(1)
+        smtp.set_debuglevel(1)
         smtp.ehlo()
         smtp.starttls()
         smtp.login(LOGIN, PASSWORD)

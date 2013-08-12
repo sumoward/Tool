@@ -11,10 +11,10 @@ import csv
 
 class Database_manage_recap:
 
-    def dbconnection(self, username):
+    def dbconnection(self, username, template = 'questionaire_master_template'):
         self.connection = pymongo.MongoClient("localhost", 27017)
         self.db = self.connection.recap
-        self.template = self.db.questionaire_master_template
+        self.template = self.db[template]
         self.store = self.db[username]
         #print('end of connection method',self.store)
         #print(type(self.store))
@@ -29,7 +29,8 @@ class Database_manage_recap:
             self.store.insert(cur)
         self.store.ensure_index('sections.section')
         print('copied template over')
-        return temp
+        
+        return self.store
 
     def get_sections_and_tags(self):
         pipeline = [{'$project':{'_id':0, 'section':'$sections.section',

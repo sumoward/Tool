@@ -1,0 +1,274 @@
+?$%title?$%,In-Dex Warehouse and Supply Chain System Costs,,,
+?$%sub?$%,In-DEX Core Base Product,,,
+?$%desc?$%,In-DEX Standard Version,12500,0,0
+?$%desc?$%,In-DEX Enterprise Version,17500,0,0
+?$%desc?$%,In-DEX Third Party Logistics (3PL) Standard Version,17500,0,0
+?$%desc?$%,In-DEX Third Party Logistics (3PL) Enterprise Version,25000,0,0
+?$%sub?$%,In-DEX User Counts,,,
+?$%desc?$%,Per Additional GUI/Desktop User - Concurrent User ,2500,0,0
+?$%desc?$%,Per Additional RDT/Voice User - Concurrent User ,1500,0,0
+?$%desc?$%,Per Additional Voice User - Concurrent User ,1500,0,0
+?$%sub?$%,Optional Modules,,,
+?$%desc?$%,R D T (Radio Data Terminal - Scanning),9500,0,0
+?$%desc?$%,Voice Module ,9500,0,0
+?$%desc?$%,Integration Module,9500,0,0
+?$%desc?$%,Job Management,10000,0,0
+?$%desc?$%,Movex  IDB Integration Module ,5000,0,0
+?$%desc?$%,Additional Site Licence - Per Physical Site ,7500,0,0
+?$%desc?$%,Web Access - Includes 5 Named Accounts,7500,0,0
+?$%desc?$%,Number of Accounts - Web Module only - Per named Account,500,0,0
+?$%desc?$%,In-DEX After Imaging Resilience ,5000,0,0
+?$%desc?$%,Digital Signature - Capture/attach customer signatures,5000,0,0
+?$%desc?$%,EDM - Electronic Document Management,5000,0,0
+?$%desc?$%,In-DEX Load Bay Scheduler,5000,0,0
+?$%desc?$%,PDF Mail - Automated email and fax,5000,0,0
+,,,,
+,In-DEX Document Imaging & Scanning including Wireless Picture Capture,,,
+,Core Base Product,List Price,Quantity,Quantity
+,"In-DEX Document & Imaging System - Includes Base Application:- 1 Acquisition, 1 In-dexing & 2 Local Enquiry Users ",10000,1,10000
+,,,,
+,User Counts,,,
+,Per Additional Acquistion User,5000,1,5000
+,Per Additional Indexing User,2500,1,2500
+,Per Additional Local Enquiry User,1500,1,1500
+,,,,
+,Optional Modules,,,
+,Web Access Module ,5000,,0
+,Per Web enquiry (Concurrent),1500,,0
+,Data Export to CD ,5000,,0
+,Online Archive Retrieval  ,5000,,0
+,Barcode recognition ,5000,,0
+,Soft Electronic File Acquisition,5000,,0
+,Per Additional Site Licence ,5000,,0
+,,,,0
+,Total In-DEX Document Imaging & Scanning including Wireless Picture Capture,,,19000
+,,,,
+,,,,
+,PROGRESS,,,
+,,List Price,Quantity,Quantity
+,Core Base Product,,,
+A ,Progress OpenEdge Workgroup RDBMS - Registered Device (Minimum 5 User - Maximum 50 users),220,0,0
+,OR,,, 
+B,Progress OpenEdge Enterprise RDBMS - Registered Device (Minimum 5 Users),660,26,17160
+,,,,
+Man,Progress OpenEdge Client Networking - Registered Device (Minimum 5 Users),120,26,3120
+Man,Progress OpenEdge Application Server Enterprise Edition - Registered Device (Minimum 5 Users),560,26,14560
+,,,,
+,Optional Progress Elements,,,
+,Progress OpenEdge Fathom Replication Plus for WorkGroup - Add-on Registered Device,150,,0
+,Progress OpenEdge Fathom Replication Plus for Enterprise - Add-on Registered Device,150,26,3900
+,Progress OpenEdge Dataserver for Microsoft SQL Server/ODBC/Oracle - Registered Device,460,,0
+,,,,
+,Total Progress Licence Costs,,,38740
+,,,,
+,,,,
+,Georgia Telnet ,,,
+,Georgia Telnet Software (40 Users - Single CPU),995,1,995
+,Georgia Telnet Software (40 Users - Single CPU) - Required for Second Server Resilience,995,1,995
+,,,,
+,Total Georgia Telnet Costs,,,1990
+,,,,
+,,,,
+,Cleo LexiCom Winbase AS2 Communication software,,,
+,Initial Trading Partner ,995,1,995
+,Subsequent Trading Partners,535,2,1070
+,,,,
+,Total Cleo LexiCom Winbase AS2 Communication software,,,2065
+,,,,
+,TekSpeech Connector End User Licenses,Unit Price ,,
+,TekSpeech Connector End User Licenses - Per Site,12500,1,12500
+,Tekspeech - Client Licencing - per terminal,350,12,4200
+,,,,
+,Total TekSpeech Connector End User Licenses,,,16700
+,,,,
+,Vocollect Hardware Licences ,,,
+,VoiceClient License (per site),80,1,80
+,VoiceClient License (per terminal),1210,12,14520
+,VoiceConsole License (per site),80,1,80
+,VoiceConsole License (per terminal),65,12,780
+,,,,
+,Total Vocollect Hardware Licences,,,15460
+,,,,
+,,,,
+,Total Software Value ,,,#REF!
+,,,,
+,,,,
+,Professional Services,,,
+,,,,
+,"To ascertain a credible day count requires Principal Systems personnel to come on site and perform a detailed scoping exercise to review existing operations, to ascertain the required level of process re-engineering to optimize processes and the level of integration required to interface to existing IT systems.                                  ",,,
+,Below are the typically tasks that are required and estimated day count,,,
+,,,,
+,,,,
+,,,,
+,Analysis Phase,,,
+,Sample Tasks,,,
+,Visit Site Detailed Business process/Warehouse walk-through,,,
+,Integration workshop  (Inc. any 3rd parties),,,
+,Functional Specification & Process mapping/re- engineering,,,
+,Review server & Wireless Infrastructure with vendors etc,,,
+,Establish Project Teams,,,
+,Understand and define Customer Vs. PSL Responsibilities,,,
+,Establish target golive dates,,,
+,Document Findings,,,
+,Revisit site and present & finalise findings,,,
+,Total Estimated Day Count ,?850,5,
+,,,,
+,Project Control,,,
+,Sample Tasks,,,
+,Establish Project team  ,,,
+,Project scope/Project proposal/Project budget/Proposal presentation/Project schedule/ Project milestones/Project status reports ,,,
+,Finalize Server & Resilience requirements ,,,
+,Finalize Voice/RF/Mobile Printing & Wireless Infrastructure requirements,,,
+,Establish risk management log/Issues management log,,,
+,Contracts & Service level agreements,,,
+,Key performance indicators,,,
+,Agree change control management,,,
+,Business Re-engineering ('as-is' and 'as-should-be'),,,
+,Training materials and management,,,
+,Standard operating procedures/Test planning,,,
+,Implementation plan/Project sign-off criteria/Project closure report,,,
+,Project Team reviews (mixture on-site & conference call),,,
+,Total Estimated Day Count ,?850,10,
+,,,,
+,Software Installation ,,,
+,Sample Tasks,,,
+,Installation of Progress Databases,,,
+,Installation of In-DEX ,,,
+,Installation of Georgia Telnet,,,
+,"Working with IT hardware company on network, permission, passwords settings, printer issues etc",,,
+,"Set-up integration systems, environment, etc",,,
+,"System configuration (DB backups, Resilience etc..)",,,
+,Standard In-DEX configuration,,,
+,Establish a Test Database,,,
+,Total Estimated Day Count ,?850,5,
+,,,,
+,3rd Party Systems Integration/Interfacing,,,
+,Sample Tasks,,,
+,Define interface requirements.,,,
+,Development of Technical Interfacing,,,
+,Unit Testing Interfacing,,,
+,User Acceptance testing Interfcaing,,,
+,Volume testing Interfacing,,,
+,Total Estimated Day Count ,?850,0,
+,,,,
+,,,,
+,Configuration,,,
+,Sample Tasks,,,
+,In-DEX GUI Configuration,,,
+,Configure - Map to client business processes,,,
+,"(Put-away Rules, Pick Rules, Product Handling Criteria, System Instructions etc etc.)  This would include standardizing Product classes, Charge codes etc.  This will provide the standard configuration for all sites",,,
+,In-DEX RF Configuration,,,
+,Configure - Map the RF Data terminal processes,,,
+,Specific customization configuration,,,
+,Configuration of group and site specific reporting requirements ,,,
+,Configuration of site specific docket requirements (Standard dockets with varying language requirements),,,
+,Configuration of site specific labeling requirements (PSL Assistance),,,
+,PSL Testing (prior to official test phase),,,
+,System test phase (Internal PSL system walkthrough),,,
+,Total Estimated Day Count ,?850,,
+,,,,
+,Label & Docket Layouts,,,
+,Sample Tasks,,,
+,Review customer requirments against PSL standard offering,,,
+,Configure Requirements ,,,
+,Test and Change requests,,,
+,Total Estimated Day Count ,?850,,
+,,,,
+,Reporting Requirements ,,,
+,Sample Tasks,,,
+,Review customer requirments against PSL standard offering,,,
+,Configure Requirements ,,,
+,Test and Change requests,,,
+,Total Estimated Day Count ,?850,,
+,,,,
+,,,,
+,Software development,,,
+,Sample Tasks,,,
+,Bespoke development requirments?,,,
+,Total Estimated Day Count ,?850,,
+,,,,
+,Testing,,,
+,Sample Tasks,,,
+,Set-up pilot test environment,,,
+,UAT assistance (PSL Help with UAT phase),,,
+,"""Day-in-the-life"" test ",,,
+,Stress tests,,,
+,Go-Live test +  walkthrough + scenario verification,,,
+,Total Estimated Day Count ,?850,,
+,,,,
+,Training,,,
+,Sample Tasks,,,
+,Training - Direct or Train the trainer?,,,
+,Super user training,,,
+,Total Estimated Day Count ,?850,,
+,,,,
+,On Site Go Live Assist,,,
+,Sample Tasks,,,
+,Preparation for 'Big-bang' Go-Live,,,
+,Stock-take or Import data from previous system - PSL assistance ,,,
+,Minimum 1 Week pre during and post go live,,,
+,Total Estimated Day Count ,?850,,
+,,,,
+,Sign-off Phase,,,
+,Sample Tasks,,,
+,"Project Closure - Sign-off by customer, Hand-over to support mechanisms (Normal-Alert)",,,
+,Project review workshop,,,
+,Lessons learnt document,,,
+,Review and rework standard configurations and documentation ready for the subsequent roll-out (PSL Assistance),,,
+,Total Estimated Day Count ,?850,,
+,,,,
+,Total Estimate Project Day Count ,?850,,
+,,,,
+,total Investment ,,,
+,,,,
+,Annual Maintenace and Support ,,,
+,Standard Maintenance ,20% of Software Value ,,#REF!
+,24 X 7 Critical Maintenance ,30% of Software Value,,#REF!
+,,,,
+#,,,,
+,Indicitive Wireless Site Survey / Infrastruture and Mobile Computing Costs ,,,
+,,,,
+,Written Site Survey,950,1,950
+,Access Points - Cisco Lancom - Indoor Outdoor IP rating etc. - Per Access Point Qty dependent on site survey,500,10,5000
+,Cabling Wiring /Routers,5000,1,5000
+,"Industrial Type Scanner - Honeywell, Psion, Datalogics ",3000,12,36000
+,?˜˜˜˜˜˜˜˜˜˜˜˜ Get Industrial handheld units ? Robust for drops ? anything else a nonsense,,,
+,?˜˜˜˜˜˜˜˜˜˜˜˜ Units must run ?TELNET? Sessions,,,
+,?˜˜˜˜˜˜˜˜˜˜˜˜ Main manufacturers,,,
+,?˜˜˜˜˜˜˜˜˜˜˜˜ Ensure Guns include:-,,,
+,Internal Radio Unit 802.11 b,,,
+,Windows CE.NET vs 5.0 with Teklogix Emulation Software ,,,
+,Intel PAX279 Mhz Processor at 520MHZ,,,
+,64MB Ram,,,
+,Alpha Numeric Keypad,,,
+,Integrated hi-vis scanner,,,
+,Battery,,,
+,Spare Battery ,,,
+,Shoulder Strap ,,,
+,Rubber Case ,,,
+,PSL will assist in this area,,,
+,Charger per device or Gang Charger,1000,2,2000
+,Vocollect /Intermec Hardware - Average Cost per device including below,3000,5,15000
+,Vocollect Talkman Voice Terminal,,,
+,Voice Client,,,
+,Combo Charger -Holds 5 terminals + 5 batteries - for A500's,,,
+,INTERMEC˜ 850-819-001 Snap-on adapter for enabling Vocollect wired headset,,,
+,Intermec˜Holder for CK3 inc. Snap on adaptor,,,
+,SR-20 Wired Headset - 2 per device (A500 & CK3),,,
+,Belt or Belt Clip,,,
+,Hi Capacity Battery,,,
+,Spare Parts Bundle,,,
+,Training DVD,,,
+,Wired Listening Kit,,,
+,Wireless Listening Kit,,,
+,Configuration Cable,,,
+,Visual Training Device,,,
+,Storage Cabinet,,,
+,Mobile Printer - Zebra QL420 ,1500,2,3000
+,Chargers,,,
+,Shoulder Strap ,,,
+,Spare Battery ,,,
+,802.11 Radio Unit ,,,
+,Fixed Label Printer - Zebra ZM600,2900,1,2900
+,,,,
+,Indicitive Wireless Site Survey / Infrastruture and Mobile Computing Costs ,,,69850

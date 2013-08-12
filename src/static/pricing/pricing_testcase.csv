@@ -1,0 +1,57 @@
+$%title$%,In-Dex Warehouse and Supply Chain System Costs,
+$%sub$%,In-DEX Core Base Product,
+$%desc$%,In-DEX Standard Version,12500
+$%desc$%,In-DEX Enterprise Version,17500
+$%desc$%,In-DEX Third Party Logistics (3PL) Standard Version,17500
+$%desc$%,In-DEX Third Party Logistics (3PL) Enterprise Version,25000
+$%sub$%,In-DEX User Counts,
+$%desc$%,Per Additional GUI/Desktop User - Concurrent User ,2500
+$%desc$%,Per Additional RDT/Voice User - Concurrent User ,1500
+$%desc$%,Per Additional Voice User - Concurrent User ,1500
+$%sub$%,Optional Modules,
+$%desc$%,R D T (Radio Data Terminal - Scanning),9500
+$%desc$%,Voice Module ,9500
+$%desc$%,Integration Module,9500
+$%desc$%,Job Management,10000
+$%desc$%,Movex  IDB Integration Module ,5000
+$%desc$%,Additional Site Licence - Per Physical Site ,7500
+$%desc$%,Web Access - Includes 5 Named Accounts,7500
+$%desc$%,Number of Accounts - Web Module only - Per named Account,500
+$%desc$%,In-DEX After Imaging Resilience ,5000
+$%desc$%,Digital Signature - Capture/attach customer signatures,5000
+$%desc$%,EDM - Electronic Document Management,5000
+$%desc$%,In-DEX Load Bay Scheduler,5000
+$%desc$%,PDF Mail - Automated email and fax,5000
+$%end$%,,
+$%title$%,In-DEX Document Imaging & Scanning including Wireless Picture Capture,
+$%sub$%,Core Base Product,
+$%desc$%,"In-DEX Document & Imaging System - Includes Base Application:- 1 Acquisition, 1 In-dexing & 2 Local Enquiry Users ",10000
+$%sub$%,User Counts,
+$%desc$%,Per Additional Acquistion User,5000
+$%desc$%,Per Additional Indexing User,2500
+$%desc$%,Per Additional Local Enquiry User,1500
+$%sub$%,Optional Modules,
+$%desc$%,Web Access Module ,5000
+$%desc$%,Per Web enquiry (Concurrent),1500
+$%desc$%,Data Export to CD ,5000
+$%desc$%,Online Archive Retrieval  ,5000
+$%desc$%,Barcode recognition ,5000
+$%desc$%,Soft Electronic File Acquisition,5000
+$%desc$%,Per Additional Site Licence ,5000
+$%end$%,,
+$%title$%,PROGRESS ,
+$%sub$%,Core Base Product,
+$%desc$%,Progress OpenEdge Workgroup RDBMS - Registered Device (Minimum 5 User - Maximum 50 users),220
+$%desc$%,Progress OpenEdge Enterprise RDBMS - Registered Device (Minimum 5 Users),660
+$%desc$%,Progress OpenEdge Client Networking - Registered Device (Minimum 5 Users),120
+$%desc$%,Progress OpenEdge Application Server Enterprise Edition - Registered Device (Minimum 5 Users),560
+$%sub$%,Optional Progress Elements,
+$%desc$%,Progress OpenEdge Fathom Replication Plus for WorkGroup - Add-on Registered Device,150
+$%desc$%,Progress OpenEdge Fathom Replication Plus for Enterprise - Add-on Registered Device,150
+$%desc$%,Progress OpenEdge Dataserver for Microsoft SQL Server/ODBC/Oracle - Registered Device,460
+$%end$%,,
+$%title$%,Georgia Telnet ,
+$%sub$%,Core Base Product,
+$%desc$%,Georgia Telnet Software (40 Users - Single CPU),995
+$%desc$%,Georgia Telnet Software (40 Users - Single CPU) - Required for Second Server Resilience,995
+$%end$%,,

@@ -1,6 +1,8 @@
 #Brian Ward
 #Principal Systems
 #06/09/2012
+from database_manage import Database_manage_recap
+import pymongo
 
 
 """
@@ -10,88 +12,60 @@ A class to generate the appropriate pricing structure
 
 class Pricing_procedure:
 
-    def __init__(self):
-        self.car_park = 0
-        self.currency = ''
-        self.total = 0
-        self.pricing_document = {}
-
-
-    def set_pricing(self, currency):
-
-            self.currency = currency
-            #print('You are working in :', self.currency)
-            #print(self.car_park)
-            self.pricelist={'In-DEX Standard Version':    12500,
-'In-DEX Enterprise Version':17500,
-'In-DEX Third Party Logistics (3PL) Standard Version':17500,
-'In-DEX Third Party Logistics (3PL) Enterprise Version':25000,
-'Per Additional GUI/Desktop User - Concurrent User':2500,
-'Per Additional RDT/Voice User - Concurrent User':1500,
-'Per Additional Voice User - Concurrent User':1500,
-'R D T (Radio Data Terminal - Scanning)':9500,
-'Voice Module':9500,
-'Integration Module':9500,
-'Job Management':10000,
-'Movex  IDB Integration Module':5000,
-'Additional Site Licence - Per Physical Site':7500,
-'Web Access - Includes 5 Named Accounts':7500,
-'Number of Accounts - Web Module only - Per named Account':500,
-'In-DEX After Imaging Resilience':5000,
-'Digital Signature - Capture/attach customer signatures':5000,
-'EDM - Electronic Document Management':5000,
-'In-DEX Load Bay Scheduler':5000,
-'PDF Mail - Automated email and fax':5000}
-
-            return self.pricelist
-
-#    def pricelist_import(self,):
-#
-#        filename = 'pricing_' + str(self.car_park) + '_\
-#        ' + self.currency + '.csv'
-#
-#        filename = 'C:\eclipse for python\workspace\RECAP\src\static\pricing/' + filename
-#        print (filename, ' is the pricing list being imported')
-#        self.parse(filename)
-#
-#    """
-#        parse the appropriate pricing document
-#    """
-#
-#    def parse(self, filename):
-#        f = open(filename, 'r')
-#        for line in f.readlines():
-#            if line != '':
-#                line = line.strip()
-#                for i, char in enumerate(line):
-#                    if char == ',':
-#                        comma = i
-#                self.pricing_document[line[0:comma]] = line[comma + 1:]
-#
-#        print('pricing doc :', self.pricing_document)
-
-    def total_price(self):
-        #the quantity of each price
-        quantity = 1
-        #print(self.pricing_document)
-
-        for value in self.pricing_document.values():
-            #print(value)
-            value = value * quantity
-            self.total = self.total + float(value)
-        return self.pricing_document
-
-    def price_print(self):
-        #print('\nThe Total cost of the project will be: ', self.total)
-        return self.total
+    def set_pricing(self, username):
+        pass
+        tester1 = Database_manage_recap()
+        self.store = tester1.dbconnection(username, 'pricing_master_template')
+        temp = tester1.copy_template()
+        #print(temp)
+        return temp
+    
+    def get_pricing(self, section_no, username):
+        username = username + '_pricing'
+        print(username)
+        print('get pricing for section ' + str(section_no) + ' of ' + username)
+        pipeline = [{'$match' : { 'section_no' : section_no } }]
+        #cursor = self.store.aggregate(pipeline)
+        connection = pymongo.MongoClient("localhost", 27017)
+        db =  connection.recap
+        
+        cursor = db[username].aggregate(pipeline)
+        print (cursor)
+        cursor = cursor['result']
+        print (cursor)
+        return cursor
+        
+    def get_section(self):
+        pass
+    
+    def check_pricing_exist(self, username):
+        pass
+        username = username + '_pricing'
+        print(username)
+        connection = pymongo.MongoClient("localhost", 27017)
+        db = connection['recap']
+        print(db.collection_names())
+        if username in db.collection_names():
+            print('true')
+            return True
+        else:
+            print('false')
+            return False
 
 
 if __name__ == "__main__":
     pricing1 = Pricing_procedure()
-    pricelist = pricing1.set_pricing('euro')
-#pricing1.pricelist_import()
-#pricing1.total_price()
-#pricing1.price_print()
-
+    #tester1 = Database_manage_recap()
+    username = "aad"
+    username = username + '_pricing'
+    temp = pricing1.set_pricing(username)
+    print(temp)
+    section_no = 1
+    username = 'aad'
+    pricing1.get_pricing(section_no, username)
+    username = 'aad'
+    boo =pricing1.check_pricing_exist(username)
+    print(boo)
+    
 
 

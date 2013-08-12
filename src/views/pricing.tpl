@@ -18,21 +18,27 @@
 <h1>pricing list</h1>
 <div class="container">
 
-<!-- Intro -->
-<legend><h3>Please fill in the appropriate quantity</h3></legend><br>
+{{pricelist}}
+{{pricelist[0]['section_name']}}
 
-<form class="form-inline" method = "POST" action="/pricing">
+
+
+
+<!-- Intro -->
+<legend><h3>{{pricelist[0]['section_name']}}</h3></legend><br>
+
+<form class="form-condensed table-hover" method = "POST" action="/pricing">
 <table class="table">
 <thead><tr><th>Component</th><th>Unit Price</th><th>Quanity</th><th>Price</th></tr><thead>
-%for key, value in pricelist.items():
 
-<tbody><tr><td>{{key}}</td><td>{{value}}</td><td><input type="text" name= "{{key}}" class="input-small search-query"  value ="{{quantity[key]}}"></td><td>{{index_costs[key]}}<td></tr></tbody>
 
-%end
+<tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></tbody>
+
+
 </table>
 <br> <button type="submit" class="btn btn-primary btn-large">Submit</button><br>
 
-<h2>Total In-Dex Warehouse and Supply Chain System Costs = {{total_index}}</h2><br>
+<h2>Total In-Dex Warehouse and Supply Chain System Costs = </h2><br>
 </form>
 </div>
 </body>

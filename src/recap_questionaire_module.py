@@ -290,8 +290,8 @@ def unanswered():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
-             root='/home/ubuntu/recap/RECAP/src/static')
+             root='.\static')
+             #root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
@@ -587,40 +587,74 @@ def redirect():
 @bottle.route('/pricing')
 def pricing():
     print('pricing')
+    username = login_check()
+    #print(len(username))
+    if (username is None):
+        redirect()
+
     index_costs = bottle.request.forms.get('index_costs')
     if not index_costs:
         index_costs = ""
 
     pricing1 = Pricing_procedure()
-    pricelist = pricing1.set_pricing('euro')
-    print (pricelist)
-    index_costs = {}
-    quantity = {}
-    total_index = 0
-    for key, value in pricelist.items():
-        holder = bottle.request.forms.get(key)
-        print(holder)
-        print(type(holder))
-        if holder is  '' or holder is None:
-            quantity[key] = 0
-            index_costs[key] = 0
-        else:
-            quantity[key] = holder
-            index_costs[key] = int(holder)
-        print(key, index_costs[key])
-        print(index_costs[key],' times ' , pricelist[key])
-        index_costs[key] = index_costs[key] * pricelist[key]
-        #get the total cost
-        total_index = total_index + index_costs[key]
-        print(key,index_costs[key])
+    #username = username + '_pricing'
+    # check if the pricing template has been generated
+    
+    # if not generate the pricingin list
+    if  not pricing1.check_pricing_exist(username):
+        pricelist1 = pricing1.set_pricing(username)
+        print ('check',pricelist1)
+    section_no = 1
+    pricelist2 = pricing1.get_pricing(section_no, username)
+    print ('p2',pricelist2)
+    
+#   index_costs = {}
+#    quantity = {}
+#    total_index = 0
+#    for key, value in pricelist.items():
+#        holder = bottle.request.forms.get(key)
+#        print(holder)
+#        print(type(holder))
+#        if holder is  '' or holder is None:
+#            quantity[key] = 0
+#            index_costs[key] = 0
+#        else:
+#            quantity[key] = holder
+#            index_costs[key] = int(holder)
+#        print(key, index_costs[key])
+#        print(index_costs[key],' times ' , pricelist[key])
+#        index_costs[key] = index_costs[key] * pricelist[key]
+#        #get the total cost
+#        total_index = total_index + index_costs[key]
+#        print(key,index_costs[key])
 
     #TODO dave pricelist to database
 
-    print(index_costs)
-    print(total_index)
+ #   print(index_costs)
+    #print(total_index)
 
 
-    return bottle.template('pricing', pricelist=pricelist, index_costs=index_costs, quantity=quantity, total_index=total_index)
+    return bottle.template('pricing', pricelist=pricelist2)
+
+@bottle.post('/best_practice')
+@bottle.route('/best_practice')
+def best_practice():
+    print('best practice')
+    message = ""
+    first_name = bottle.request.forms.get('form0')
+    last_name = bottle.request.forms.get('form1')
+    email = bottle.request.forms.get('form2')
+    company = bottle.request.forms.get('form3')
+    print(first_name, last_name, email, company)
+    if email:
+        handler = Email_handler()
+        filename = ['static/downloads/Customer charges.xlsx']
+        handler.build_mime(filename, email)
+        message = (str(filename) + ' sent to, ' + email)
+        print('message')
+
+    return bottle.template('best_practice', message = message)
+
 
 #
 #bottle.run(server='cherrypy', host='localhost', port=8081)
