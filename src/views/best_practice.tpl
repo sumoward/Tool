@@ -15,8 +15,9 @@
        <script src="/static/jsfiles/bootstrap.min.js.gz"></script>      
 </head>
 <body>
-
 <div class="container">
+<div class="span8">
+
 <div class="hero-unit">
 <a href="http://www.principalsystems.com/"><img src="static/image/header1_01.gif" class="img-polaroid"></a>
 <h3>Principal Systems Guide to WMS best practice</h3>
@@ -35,7 +36,9 @@ blah
 Start generating more leads for your business with great content. Download the free ebook to the right to get started!
 </div>
 </div>
-<div class="container">
+
+<div class="span3">
+
 <!-- Intro -->
 <legend>If you would like us to email it to to you. Please fill in the details below.</legend><br>
 
@@ -43,19 +46,21 @@ Start generating more leads for your business with great content. Download the f
 
 <label>First name</label><input type="text" class="input-large search-query" name ='form0'><br>
 <label>Last name</label><input type="text" class="input-large search-query" name ='form1'><br>
-<label>E-mail</label><input type="text" class="input-medium search-large" name ='form2'><br>
-<label>Company Name</label><input type="text" class="input-medium search-large" name ='form3'><br>
-<label>Phone</label><input type="text" class="input-medium search-large" name ='form4'><br>
+<label>E-mail</label><input type="text" class="input-large search-query" name ='form2'><br>
+<label>Company Name</label><input type="text" class="input-large search-query" name ='form3'><br>
+<label>Phone</label><input type="text" class="input-large search-query" name ='form4'><br>
 
-<br> <button type="submit" class="btn btn-primary btn-medium">Download Now</button><br>
+<br> <button type="submit" class="btn btn-warning btn-large">Download Now</button><br>
 
-% if message:
+% if message != "Please fill in the details above so that we may send you your information":
 {{message}}
 %end
+
+</form>
+</div>
+</div>
 <footer>
 %include footer
 </footer>
 
-</form>
-</div>
 </body>
