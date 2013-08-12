@@ -17,6 +17,7 @@ from bottle import static_file, route, error, response
 from docgen import DocGen
 from pymongo.mongo_client import MongoClient
 from pricing_procedure import Pricing_procedure
+import pymongo
 
 
 # connect to mongoDB
@@ -290,8 +291,8 @@ def unanswered():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
-             root='/home/ubuntu/recap/RECAP/src/static')
+             root='.\static')
+             #root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
@@ -645,15 +646,27 @@ def best_practice():
     last_name = bottle.request.forms.get('form1')
     email = bottle.request.forms.get('form2')
     company = bottle.request.forms.get('form3')
+    phone = bottle.request.forms.get('form4')
     print(first_name, last_name, email, company)
     if email:
         handler = Email_handler()
         filename = ['static/downloads/Customer charges.xlsx']
+        #update the marketing campaign details
+        marketing_campaign = 'first one'
         handler.build_mime(filename, email)
         message = (str(filename) + ' sent to, ' + email)
         print('message')
-
-    return bottle.template('best_practice', message = message)
+        #connect to recap and store
+        connection = pymongo.MongoClient("localhost", 27017)
+        db = connection['recap']
+        #date time
+        db['marketing'].insert({'first_name':first_name,
+                                 'last_name':last_name,'email':email, 'company':company,
+                                  'phone':phone, 'marketing_campaign':marketing_campaign })
+        return bottle.template('best_practice', message = message)
+    else:
+        message = "Please fill in the details above so that we may send you your information"
+        return bottle.template('best_practice', message = message)
 
 
 #

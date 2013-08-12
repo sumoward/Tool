@@ -18,6 +18,7 @@
 
 <div class="container">
 <div class="hero-unit">
+<a href="http://www.principalsystems.com/"><img src="static/image/header1_01.gif" class="img-polaroid"></a>
 <h3>Principal Systems Guide to WMS best practice</h3>
 Our latest guide to the top 10 practices in Warehouse management.
 
@@ -40,13 +41,20 @@ Start generating more leads for your business with great content. Download the f
 
 <form class="form-condensed table-hover" method = "POST" action="/best_practice">
 
-<label>first name</label><input type="text" class="input-medium search-query" name ='form0'><br>
-<label>last name</label><input type="text" class="input-medium search-query" name ='form1'><br>
-<label>email</label><input type="text" class="input-medium search-query" name ='form2'><br>
-<label>company</label><input type="text" class="input-medium search-query" name ='form3'><br>
+<label>First name</label><input type="text" class="input-large search-query" name ='form0'><br>
+<label>Last name</label><input type="text" class="input-large search-query" name ='form1'><br>
+<label>E-mail</label><input type="text" class="input-medium search-large" name ='form2'><br>
+<label>Company Name</label><input type="text" class="input-medium search-large" name ='form3'><br>
+<label>Phone</label><input type="text" class="input-medium search-large" name ='form4'><br>
 
-<br> <button type="Download Now" class="btn btn-primary btn-medium">Submit</button><br>
+<br> <button type="submit" class="btn btn-primary btn-medium">Download Now</button><br>
 
+% if message:
+{{message}}
+%end
+<footer>
+%include footer
+</footer>
 
 </form>
 </div>
