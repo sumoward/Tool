@@ -13,7 +13,7 @@ from collections import OrderedDict
 import os
 from filehandling import File_template_handling
 from mail import Email_handler
-from bottle import static_file, route, error, response
+from bottle import static_file, route, error, response, template
 from docgen import DocGen
 from pymongo.mongo_client import MongoClient
 from pricing_procedure import Pricing_procedure
@@ -291,8 +291,8 @@ def unanswered():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
-             root='/home/ubuntu/recap/RECAP/src/static')
+             root='.\static')
+             #root='/home/ubuntu/recap/RECAP/src/static')
 
 
 @bottle.post('/download')
@@ -583,11 +583,40 @@ def redirect():
     print ("welcome: can't identify user...redirecting to signup")
     bottle.redirect("/signup")
 
+@bottle.route('/pricing_main')
+def pricing_main():
+    print('pricing_main')
+    username = login_check()
+    #print(len(username))
+    if (username is None):
+        redirect()
+    #section_no= 1
+    #username ='brian'
+    #pricing1 = Pricing_procedure()
+    #pricelist2 = pricing1.get_pricing(section_no, username)
+    return bottle.template('pricing_main', sectiontotal='test for section total')
 
-@bottle.post('/pricing')
-@bottle.route('/pricing')
-def pricing():
-    print('pricing')
+@bottle.post('/pricing_calc')
+def pricing_calc():
+    print('pricing_calc')
+    username = login_check()
+    #print(len(username))
+    if (username is None):
+        redirect() 
+    #retrieve information from price calculator
+    edited_values = []
+    edited_values = bottle.request.forms.getlist('quantity')
+    section_no = bottle.request.forms.get('section_no')
+    print (edited_values)
+    print (section_no)
+    pricing1 = Pricing_procedure()
+    pricing1.apply_calc(edited_values, section_no, username)
+    return bottle.template('pricing_main', sectiontotal='test for section total')
+
+#@bottle.post('/pricing/<section_no>')
+@bottle.route('/pricing/<section_no>')
+def pricing_section(section_no):
+    print('pricing_section', section_no)
     username = login_check()
     #print(len(username))
     if (username is None):
@@ -600,42 +629,22 @@ def pricing():
     pricing1 = Pricing_procedure()
     #username = username + '_pricing'
     # check if the pricing template has been generated
-    
-    # if not generate the pricingin list
+    # if not generate the pricing in list
     if  not pricing1.check_pricing_exist(username):
         pricelist1 = pricing1.set_pricing(username)
-        print ('check',pricelist1)
-    section_no = 1
+        print ('check', pricelist1)
+    #section_no = 1
     pricelist2 = pricing1.get_pricing(section_no, username)
-    print ('p2',pricelist2)
-    
-#   index_costs = {}
-#    quantity = {}
-#    total_index = 0
-#    for key, value in pricelist.items():
-#        holder = bottle.request.forms.get(key)
-#        print(holder)
-#        print(type(holder))
-#        if holder is  '' or holder is None:
-#            quantity[key] = 0
-#            index_costs[key] = 0
-#        else:
-#            quantity[key] = holder
-#            index_costs[key] = int(holder)
-#        print(key, index_costs[key])
-#        print(index_costs[key],' times ' , pricelist[key])
-#        index_costs[key] = index_costs[key] * pricelist[key]
-#        #get the total cost
-#        total_index = total_index + index_costs[key]
-#        print(key,index_costs[key])
+    print ('p2  for sections', pricelist2)
 
-    #TODO dave pricelist to database
+    return template('pricing', pricelist=pricelist2, section_no =section_no)
+    #return template('Hello {{section_no}}, how are you?',section_no =section_no)
 
- #   print(index_costs)
-    #print(total_index)
+@route('/hello/<name>')
+def greet(name='Stranger'):
+    return template('Hello {{name}}, how are you?', name=name)
 
 
-    return bottle.template('pricing', pricelist=pricelist2)
 
 @bottle.post('/best_practice')
 @bottle.route('/best_practice')

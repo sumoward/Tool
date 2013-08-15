@@ -15,25 +15,32 @@
        <script src="/static/jsfiles/bootstrap.min.js.gz"></script>      
 </head>
 <body>
+<a href="/pricing_main">price</a>
+
+<ul>
+<li><a href="/pricing/1">section1</a></li>
+<li><a href="/pricing/2">section2</a></li>
+<li><a href="/pricing/3">section3</a></li>
+<li><a href="/pricing/4">section4</a></li>
+<li><a href="/pricing/5">section5</a></li>
+
+
+</ul>
+
 <h1>pricing list</h1>
 <div class="container">
-
-{{pricelist}}
-{{pricelist[0]['section_name']}}
-
-
-
 
 <!-- Intro -->
 <legend><h3>{{pricelist[0]['section_name']}}</h3></legend><br>
 
-<form class="form-condensed table-hover" method = "POST" action="/pricing">
+<form class="form-condensed table-hover" method = "POST" action="/pricing_calc" enctype="multipart/form-data">
+<input type="hidden" name = "section_no"  value ="{{pricelist[0]['section_no']}}">
 <table class="table">
 <thead><tr><th>Component</th><th>Unit Price</th><th>Quanity</th><th>Price</th></tr><thead>
 
-
-<tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></tbody>
-
+%for category in pricelist[0]['categories']:
+<tbody><tr><td>{{category['category']}}</td><td>{{category['list_price']}}</td><td><input type="text" name = "quantity" class="input-small" value ="{{category['quantity']}}"></td><td>{{category['sub_total']}}</td></tr></tbody>
+%end
 
 </table>
 <br> <button type="submit" class="btn btn-primary btn-large">Submit</button><br>
