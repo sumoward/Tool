@@ -1,51 +1,43 @@
 <doctype html>
 <head>
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-<link rel="icon" type="image/png "href="static/image/favicon.ico">
-<link href="/static/css/bootstrap.min.css.gz" rel="stylesheet">
-<link href="/static/css/bootstrap-responsive.min.css.gz" rel="stylesheet">
+
 <title>Pricing</title>
 
-<script src="/static/jsfiles/jquery.min.js.gz"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+     <meta charset="utf-8">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png "href="/static/image/favicon.ico">
+        
+        <link href="/static/css/bootstrap.min.css.gz" rel="stylesheet">
+        <link href="/static/css/bootstrap-responsive.min.css.gz" rel="stylesheet">
+        <style type="text/css">body{padding-top: 60px;padding-bottom: 40px;}</style>   
+        <link rel="stylesheet" href="/static/jsfiles/jquery-ui-1.10.2.custom.min.css.gz" />
+                       
+  <script src="/static/jsfiles/jquery.min.js.gz"></script>
+  <script src="/static/jsfiles/bootstrap.min.js.gz"></script>   
+  <script src="/static/jsfiles/jquery-1.9.1.min.js.gz"></script>
+  <script src="/static/jsfiles/jquery-ui.js.gz"></script>
+ <script src="/static/jsfiles/bootstrap.min.js.gz"></script> 
      
-        <style>
-            body{padding-top: 60px;/* 60px to make the container go all the way to the bottom of the topbar */}
-        </style>
-       <script src="/static/jsfiles/bootstrap.min.js.gz"></script>      
+
 </head>
 <body>
-<a href="/pricing_main">price</a>
-
-<ul>
-<li><a href="/pricing/1">section1</a></li>
-<li><a href="/pricing/2">section2</a></li>
-<li><a href="/pricing/3">section3</a></li>
-<li><a href="/pricing/4">section4</a></li>
-<li><a href="/pricing/5">section5</a></li>
-
-
-</ul>
-
-<h1>pricing list</h1>
+<nav>
+%include navbar username=username
+</nav>
 <div class="container">
-
-<!-- Intro -->
-<legend><h3>{{pricelist[0]['section_name']}}</h3></legend><br>
-
+%include buttons
 <form class="form-condensed table-hover" method = "POST" action="/pricing_calc" enctype="multipart/form-data">
 <input type="hidden" name = "section_no"  value ="{{pricelist[0]['section_no']}}">
-<table class="table">
-<thead><tr><th>Component</th><th>Unit Price</th><th>Quanity</th><th>Price</th></tr><thead>
-
+<table class="table table-condensed">
+<thead><tr><th><legend><h4>{{pricelist[0]['section_name']}}</h4></legend></th></tr><tr><th>Component</th><th>Unit Price</th><th>Quanity</th><th>Price</th></tr><thead>
 %for category in pricelist[0]['categories']:
-<tbody><tr><td>{{category['category']}}</td><td>{{category['list_price']}}</td><td><input type="text" name = "quantity" class="input-small" value ="{{category['quantity']}}"></td><td>{{category['sub_total']}}</td></tr></tbody>
+<tbody><tr><td>{{category['category']}}</td><td><p class = "text-center">{{category['list_price']}}</p></td><td><input type="text" name = "quantity" class="input-small" value ="{{category['quantity']}}"></td><td><p class = "text-right">{{category['sub_total']}}</p></td></tr>
 %end
-
+<tr><td></td><td></td><td></td></tr>
+<tr><td><h4>Total for {{pricelist[0]['section_name']}}</h4</td><td></td><td></td><td><p class = "text-right">{{pricelist[0]['section_total']}}</p></td></tr></tbody>
 </table>
-<br> <button type="submit" class="btn btn-primary btn-large">Submit</button><br>
-
-<h2>Total In-Dex Warehouse and Supply Chain System Costs = </h2><br>
+<br><button type="submit" class="btn btn-primary btn-large">Submit</button><br>
 </form>
 </div>
 </body>

@@ -57,10 +57,33 @@ class Price_Import:
             elif '$%end$%' in entry:
                 print (counter)
                 counter = counter + 1
+        #add a measure for the base
+    def add_base_modules(self):
+                pass
+               
+                base_elements = ['In-DEX Standard Version',
+                            'In-DEX Enterprise Version',
+                            'In-DEX Third Party Logistics (3PL) Standard Version',
+                            'In-DEX Third Party Logistics (3PL) Enterprise Version'
+                            ]
+                base = 'In-DEX Standard Version'
+                pipeline = [{'$match':{'categories.category': base}}]
+                result = self.pricing.aggregate(pipeline)
+                print(result['result'])
+                
+                
+                print('base ', base)
+                self.pricing.update({'categories.$.category': base},
+     {'$set':{'base_total': 0}})
+                
+
+
+
 
 if __name__ == "__main__":
     tester1 = Price_Import()
     tester1.start()
     pricefile = 'static/pricing/pricing_testcase.csv'
     tester1.writeout(pricefile)
+    tester1.add_base_modules()
     print('pricing completed')

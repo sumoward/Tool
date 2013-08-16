@@ -592,9 +592,10 @@ def pricing_main():
         redirect()
     #section_no= 1
     #username ='brian'
-    #pricing1 = Pricing_procedure()
-    #pricelist2 = pricing1.get_pricing(section_no, username)
-    return bottle.template('pricing_main', sectiontotal='test for section total')
+    pricing1 = Pricing_procedure()
+    pricelist3, overall_total = pricing1.get_totals( username)
+    print(pricelist3)
+    return bottle.template('pricing_main', sectiontotal='test for section total', username = username, pricelist=pricelist3, overall_total = overall_total)
 
 @bottle.post('/pricing_calc')
 def pricing_calc():
@@ -611,7 +612,11 @@ def pricing_calc():
     print (section_no)
     pricing1 = Pricing_procedure()
     pricing1.apply_calc(edited_values, section_no, username)
-    return bottle.template('pricing_main', sectiontotal='test for section total')
+    pricing1 = Pricing_procedure()
+    pricelist3, overall_total = pricing1.get_totals( username)
+    print(pricelist3)
+    bottle.redirect('/pricing/' + section_no)
+    
 
 #@bottle.post('/pricing/<section_no>')
 @bottle.route('/pricing/<section_no>')
@@ -637,7 +642,7 @@ def pricing_section(section_no):
     pricelist2 = pricing1.get_pricing(section_no, username)
     print ('p2  for sections', pricelist2)
 
-    return template('pricing', pricelist=pricelist2, section_no =section_no)
+    return template('pricing', pricelist=pricelist2, section_no=section_no, username=username)
     #return template('Hello {{section_no}}, how are you?',section_no =section_no)
 
 @route('/hello/<name>')

@@ -50,8 +50,25 @@ $%desc$%,Progress OpenEdge Fathom Replication Plus for WorkGroup - Add-on Regist
 $%desc$%,Progress OpenEdge Fathom Replication Plus for Enterprise - Add-on Registered Device,150
 $%desc$%,Progress OpenEdge Dataserver for Microsoft SQL Server/ODBC/Oracle - Registered Device,460
 $%end$%,,
-$%title$%,Georgia Telnet ,
+$%title$%,Georgia Telnet,
 $%sub$%,Core Base Product,
 $%desc$%,Georgia Telnet Software (40 Users - Single CPU),995
 $%desc$%,Georgia Telnet Software (40 Users - Single CPU) - Required for Second Server Resilience,995
+$%end$%,,
+$%title$%,Cleo LexiCom Winbase AS2 Communication software,
+$%sub$%,Core Base Product,
+$%desc$%,Initial Trading Partner ,995
+$%desc$%,Subsequent Trading Partners,535
+$%end$%,,
+$%title$%,TekSpeech Connector End User Licenses,
+$%sub$%,Core Base Product,
+$%desc$%,TekSpeech Connector End User Licenses - Per Site,12500
+$%desc$%,Tekspeech - Client Licencing - per terminal,350
+$%end$%,,
+$%title$%,Vocollect Hardware Licences ,
+$%sub$%,Core Base Product,
+$%desc$%,VoiceClient License (per site),80
+$%desc$%,VoiceClient License (per terminal),1210
+$%desc$%,VoiceConsole License (per site),80
+$%desc$%,VoiceConsole License (per terminal),65
 $%end$%,,

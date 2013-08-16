@@ -42,6 +42,10 @@
                         			</li>
                         			 <li><a href="javascript:window.print()">Print this page<i class="icon-print"></i></a>
                          			</li>
+                         			</li>
+                            		<li><a href="/pricing/1">Pricing<i class="icon-refresh"></i></a>
+                        			</li>
+                         			
                                     </ul>
                         
                                    <li><a href="/logout">Logout</a>
