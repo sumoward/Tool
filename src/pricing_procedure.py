@@ -15,6 +15,7 @@ class Pricing_procedure:
     def set_pricing(self, username):
         pass
         username = username + '_pricing'
+        print('username : ', username)
         print('set_pricing')
         tester1 = Database_manage_recap()
         self.store = tester1.dbconnection(username, 'pricing_master_template')
@@ -24,7 +25,7 @@ class Pricing_procedure:
     
     def get_pricing(self, section_no, username):
         username = username + '_pricing'
-        print(username)
+        print('username : ', username)
         print(type(section_no))
         print('get pricing for section ' + str(section_no) + ' of ' + username)
         pipeline = [{'$match' : { 'section_no' : int(section_no)} }]
@@ -43,7 +44,7 @@ class Pricing_procedure:
     def check_pricing_exist(self, username):
         pass
         username = username + '_pricing'
-        print(username)
+        print('username : ', username)
         connection = pymongo.MongoClient("localhost", 27017)
         db = connection['recap']
         print(db.collection_names())
@@ -56,6 +57,7 @@ class Pricing_procedure:
 
     def apply_calc(self, edited_values, section_no, username):
             username= username + '_pricing'
+            print('username : ', username)
             print('apply calc',edited_values, section_no, username)
             section_no = int(section_no)
             #edit the value in mongo
@@ -100,6 +102,7 @@ class Pricing_procedure:
     def get_totals(self, username):
         pass
         username = username + '_pricing'
+        print('username : ', username)
         print('get totals for' ,username)
         connection = pymongo.MongoClient("localhost", 27017)
         db =  connection.recap
@@ -124,7 +127,6 @@ if __name__ == "__main__":
     pricing1 = Pricing_procedure()
     #tester1 = Database_manage_recap()
     username = "brian"
-    username = username + '_pricing'
     temp = pricing1.set_pricing(username)
     print('==>',temp)
     section_no = 1

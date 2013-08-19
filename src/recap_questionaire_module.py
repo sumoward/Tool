@@ -616,7 +616,7 @@ def pricing_calc():
     pricelist3, overall_total = pricing1.get_totals( username)
     print(pricelist3)
     bottle.redirect('/pricing/' + section_no)
-    
+
 
 #@bottle.post('/pricing/<section_no>')
 @bottle.route('/pricing/<section_no>')
@@ -635,7 +635,7 @@ def pricing_section(section_no):
     #username = username + '_pricing'
     # check if the pricing template has been generated
     # if not generate the pricing in list
-    print('cehck')
+    print('check')
     if  not pricing1.check_pricing_exist(username):
         pricelist1 = pricing1.set_pricing(username)
         print ('check', pricelist1)

@@ -36,6 +36,9 @@
 <a href="/signup">Register new customer</a>
 </li>
 <li>
+<a href="/pricing/1">Pricing</a>
+</li>
+<li>
 <a href="/">Admin</a>
 </li>
 

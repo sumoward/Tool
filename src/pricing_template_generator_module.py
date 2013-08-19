@@ -60,7 +60,6 @@ class Price_Import:
         #add a measure for the base
     def add_base_modules(self):
                 pass
-               
                 base_elements = ['In-DEX Standard Version',
                             'In-DEX Enterprise Version',
                             'In-DEX Third Party Logistics (3PL) Standard Version',
@@ -70,8 +69,6 @@ class Price_Import:
                 pipeline = [{'$match':{'categories.category': base}}]
                 result = self.pricing.aggregate(pipeline)
                 print(result['result'])
-                
-                
                 print('base ', base)
                 self.pricing.update({'categories.$.category': base},
      {'$set':{'base_total': 0}})
