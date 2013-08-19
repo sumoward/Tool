@@ -77,7 +77,10 @@ class Price_Import:
      {'$set':{'base_total': 0}})
                 
 
-
+    def add_days(self):
+            pass
+            
+            
 
 
 if __name__ == "__main__":
@@ -87,3 +90,7 @@ if __name__ == "__main__":
     tester1.writeout(pricefile)
     tester1.add_base_modules()
     print('pricing completed')
+    day_file = 'static/pricing/daycount_testcase.csv'
+    
+    
+    

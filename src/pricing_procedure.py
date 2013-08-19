@@ -14,6 +14,8 @@ class Pricing_procedure:
 
     def set_pricing(self, username):
         pass
+        username = username + '_pricing'
+        print('set_pricing')
         tester1 = Database_manage_recap()
         self.store = tester1.dbconnection(username, 'pricing_master_template')
         temp = tester1.copy_template()

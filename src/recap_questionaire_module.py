@@ -635,6 +635,7 @@ def pricing_section(section_no):
     #username = username + '_pricing'
     # check if the pricing template has been generated
     # if not generate the pricing in list
+    print('cehck')
     if  not pricing1.check_pricing_exist(username):
         pricelist1 = pricing1.set_pricing(username)
         print ('check', pricelist1)
@@ -682,6 +683,15 @@ def best_practice():
         message = "Please fill in the details above so that we may send you your information"
         return bottle.template('best_practice', message = message)
 
+
+@route('/professional')
+def professional():
+    print('Professional service calculator')
+    username = login_check()
+    #print(len(username))
+    if (username is None):
+        redirect()
+    return template('professional', username=username)
 
 #
 #bottle.run(server='cherrypy', host='localhost', port=8081)
