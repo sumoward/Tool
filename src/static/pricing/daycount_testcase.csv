@@ -1,1 +1,36 @@
-$%title$%,Professional servcies$%sub$%,Analysis Phase - Sample Tasks$%desc$%,Visit Site Detailed Business process/Warehouse walk-through$%desc$%,Integration workshop  (Inc. any 3rd parties)$%desc$%,Functional Specification & Process mapping/re- engineering$%desc$%,Review server & Wireless Infrastructure with vendors etc$%desc$%,Establish Project Teams$%desc$%,Understand and define Customer Vs. PSL Responsibilities$%desc$%,Establish target golive dates$%desc$%,Document Findings$%desc$%,Revisit site and present & finalise findings$%desc$%,Total Estimated Day Count $%sub$%,Project Control$%desc$%,Establish Project team  $%desc$%,Project scope/Project proposal/Project budget/Proposal presentation/Project schedule/ Project milestones/Project status reports $%desc$%,Finalize Server & Resilience requirements $%desc$%,Finalize Voice/RF/Mobile Printing & Wireless Infrastructure requirements$%desc$%,Establish risk management log/Issues management log$%desc$%,Contracts & Service level agreements$%desc$%,Key performance indicators,Agree change control management,Business Re-engineering ('as-is' and 'as-should-be'),Training materials and management,Standard operating procedures/Test planning,Implementation plan/Project sign-off criteria/Project closure report,Project Team reviews (mixture on-site & conference call),Total Estimated Day Count ,,,,,,,,,$%end$%,
+$%title$%,Analysis Phase - Sample Tasks
+$%desc$%,Visit Site Detailed Business process/Warehouse walk-through
+$%desc$%,Integration workshop  (Inc. any 3rd parties)
+$%desc$%,Functional Specification & Process mapping/re- engineering
+$%desc$%,Review server & Wireless Infrastructure with vendors etc
+$%desc$%,Establish Project Teams
+$%desc$%,Understand and define Customer Vs. PSL Responsibilities
+$%desc$%,Establish target golive dates
+$%desc$%,Document Findings
+$%desc$%,Revisit site and present & finalise findings
+$%end$%,
+$%title$%,Project Control
+$%desc$%,Establish Project team  
+$%desc$%,Project scope/Project proposal/Project budget/Proposal presentation/Project schedule/ Project milestones/Project status reports 
+$%desc$%,Finalize Server & Resilience requirements 
+$%desc$%,Finalize Voice/RF/Mobile Printing & Wireless Infrastructure requirements
+$%desc$%,Establish risk management log/Issues management log
+$%desc$%,Contracts & Service level agreements
+$%desc$%,Key performance indicators
+$%desc$%,Agree change control management
+$%desc$%,Business Re-engineering ('as-is' and 'as-should-be')
+$%desc$%,Training materials and management
+$%desc$%,Standard operating procedures/Test planning
+$%desc$%,Implementation plan/Project sign-off criteria/Project closure report
+$%desc$%,Project Team reviews (mixture on-site & conference call)
+$%end$%,
+$%title$%,Software Instalation
+$%desc$%,Installation of Progress Databases
+$%desc$%,Installation of In-DEX 
+$%desc$%,Installation of Georgia Telnet
+$%desc$%,"Working with IT hardware company on network, permission, passwords settings, printer issues etc"
+$%desc$%,"Set-up integration systems, environment, etc"
+$%desc$%,"System configuration (DB backups, Resilience etc..)"
+$%desc$%,Standard In-DEX configuration
+$%desc$%,Establish a Test Database
+$%end$%,

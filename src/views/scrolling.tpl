@@ -53,7 +53,7 @@ $(document).ready(function() {
                             </li>
                             <li><a href="#fifth">Go Live</a>
                              </li>
-                            <li><a href="\user_interface">RECAP<i class="icon-briefcase icon-white"></i></a>
+                            <li><a href="/user_interface">RECAP<i class="icon-briefcase icon-white"></i></a>
                             
                             
                            </ul>
@@ -80,10 +80,10 @@ $(document).ready(function() {
 <!-- Section #1 -->
 <section name="first" id="first" data-speed="300" data-type="background">
     <article> 
-    <div class="span3 "><a href="#second"><img src="..\static\image\postit1.png" alt="postit image"></a></div>
-    <div class="span3 offset3"><a href="#second"><img src="..\static\image\postit2.png" alt="postit image"></a></div>
-    <div class="span3 offset2"><a href="#third"><img src="..\static\image\postit3.png" alt="postit image"></a></div>
-    <div class="span3 offset3"><a href="#fourth"><img src="..\static\image\postit4.png" alt="postit image"></a></div> 
+    <div class="span3 "><a href="#second"><img src="../static/image/postit1.png" alt="postit image"></a></div>
+    <div class="span3 offset3"><a href="#second"><img src="../static/image/postit2.png" alt="postit image"></a></div>
+    <div class="span3 offset2"><a href="#third"><img src="../static/image/postit3.png" alt="postit image"></a></div>
+    <div class="span3 offset3"><a href="#fourth"><img src="../static/image/postit4.png" alt="postit image"></a></div> 
    
             </article> 
 </section>
@@ -92,9 +92,9 @@ $(document).ready(function() {
      <article> 
     
 
-    <div class="span3 "><a href="#third"><img src="..\static\image\postit5.png" alt="postit image"></a></div> 
-    <div class="span3 offset3"><a href="#third"><img src="..\static\image\postit6.png" alt="postit image"></a></div> 
-    <div class="span3 offset3"><a href="#third"><img src="..\static\image\postit8.png" alt="postit image"></a></div>    
+    <div class="span3 "><a href="#third"><img src="../static/image/postit5.png" alt="postit image"></a></div> 
+    <div class="span3 offset3"><a href="#third"><img src="../static/image/postit6.png" alt="postit image"></a></div> 
+    <div class="span3 offset3"><a href="#third"><img src="../static/image/postit8.png" alt="postit image"></a></div>    
 			 </article> 
 		 
 </section>
@@ -104,9 +104,9 @@ $(document).ready(function() {
 
  <article>    
      
-    <div class="span3 offset2"><a href="#fourth"><img src="..\static\image\postit9.png" alt="postit image"></a></div> 
-     <div class="span3 offset1"><a href="#fourth"><img src="..\static\image\postit10.png" alt="postit image"></a></div>
-      <div class="span3 offset2"><a href="#fourth"><img src="..\static\image\postit11.png" alt="postit image"></a></div> 
+    <div class="span3 offset2"><a href="#fourth"><img src="../static/image/postit9.png" alt="postit image"></a></div> 
+     <div class="span3 offset1"><a href="#fourth"><img src="../static/image/postit10.png" alt="postit image"></a></div>
+      <div class="span3 offset2"><a href="#fourth"><img src="../static/image/postit11.png" alt="postit image"></a></div> 
      
           
       </article> 
@@ -117,16 +117,16 @@ $(document).ready(function() {
 
 <article> 
 	
-    <div class="span3 offset1"><a href="#fifth"><img src="..\static\image\postit12.png" alt="postit image"></div>
-    <div class="span3 offset2"><a href="#fifth"><img src="..\static\image\postit14.png" alt="postit image"></div>
-	<div class="span3 offset3"><a href="#fifth"><img src="..\static\image\postit15.png" alt="postit image"></div>
+    <div class="span3 offset1"><a href="#fifth"><img src="../static/image/postit12.png" alt="postit image"></div>
+    <div class="span3 offset2"><a href="#fifth"><img src="../static/image/postit14.png" alt="postit image"></div>
+	<div class="span3 offset3"><a href="#fifth"><img src="../static/image/postit15.png" alt="postit image"></div>
 
 	</article> 
 
 </section>
-	<div class="span3 "><img src="..\static\image\postit13.png" alt="postit image"></a></div>
-	<div class="span3 offset3"><img src="..\static\image\postit16.png" alt="postit image"></a></div>
-	<div class="span3 offset1 "><img src="..\static\image\postit17.png" alt="postit image"></a></div>
+	<div class="span3 "><img src="../static/image/postit13.png" alt="postit image"></a></div>
+	<div class="span3 offset3"><img src="../static/image/postit16.png" alt="postit image"></a></div>
+	<div class="span3 offset1 "><img src="../static/image/postit17.png" alt="postit image"></a></div>
 	
 	<form method = "post" action="/user_interface">
 <input type="hidden"  name = 'username' value = "{{username}}">

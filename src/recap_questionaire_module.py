@@ -18,6 +18,8 @@ from docgen import DocGen
 from pymongo.mongo_client import MongoClient
 from pricing_procedure import Pricing_procedure
 import pymongo
+from day_count import Day_count_procedure
+
 
 
 # connect to mongoDB
@@ -291,7 +293,7 @@ def unanswered():
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,
-             #root='.\static')
+             #root='./static')
              root='/home/ubuntu/recap/RECAP/src/static')
 
 
@@ -613,7 +615,7 @@ def pricing_calc():
     pricing1 = Pricing_procedure()
     pricing1.apply_calc(edited_values, section_no, username)
     pricing1 = Pricing_procedure()
-    pricelist3, overall_total = pricing1.get_totals( username)
+    pricelist3, overall_total = pricing1.get_totals(username)
     print(pricelist3)
     bottle.redirect('/pricing/' + section_no)
 
@@ -684,14 +686,39 @@ def best_practice():
         return bottle.template('best_practice', message = message)
 
 
-@route('/professional')
+@bottle.post('/professional')
+@bottle.route('/professional')
 def professional():
     print('Professional service calculator')
     username = login_check()
     #print(len(username))
     if (username is None):
         redirect()
-    return template('professional', username=username)
+    tester1 = Day_count_procedure()
+    day_count = bottle.request.forms.getlist('quantity')
+    section_no = bottle.request.forms.get('section_no')
+
+    print('s', section_no)
+    print('q',day_count)
+#    try:
+#        total_day_count = sum([(float(x)) for x in day_count])
+#    except:
+#        total_day_count = 0
+#    print(day_count, total_day_count)
+    tester1.calculate_days_total(username, section_no, day_count)
+
+    #check if day count exists
+    if not tester1.check_day_count_exist(username):
+        tester1.set_daycount(username)
+    daycount1 = []
+    for x in range(1, 4):
+        section_no = x
+        print(x, 'dc' )
+        daycount1 =  daycount1 + tester1.get_daycount(section_no, username)
+        
+    print('dcall', daycount1)
+
+    return template('professional', username=username, day_count=daycount1)
 
 #
 #bottle.run(server='cherrypy', host='localhost', port=8081)

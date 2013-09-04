@@ -12,11 +12,16 @@ class Price_Import:
         self.holder = open(self.file, 'r',encoding='iso-8859-1')#encoding='iso-8859-1'??
         return self.holder
 
-    def start(self):
+    def start(self, mode):
         connection = pymongo.MongoClient("localhost", 27017)
         db = connection.recap
-        self.pricing = db.pricing_master_template
-        self.pricing.drop()
+        if mode == 'price':
+            self.pricing = db.pricing_master_template
+        elif mode == 'day':
+            print('days connection')
+            self.days = db.days_master_template
+        #self.pricing.drop()
+        self.days.drop()
         print('Connection made')
 
 # function to print out result
@@ -73,21 +78,51 @@ class Price_Import:
                 self.pricing.update({'categories.$.category': base},
      {'$set':{'base_total': 0}})
                 
-
-    def add_days(self):
+    def add_days(self, filename):
             pass
-            
-            
-
-
+            print('add_days')
+            self.file = filename
+            print(filename)
+            self.document = self.readin()
+            print(self.document)
+            counter = 1
+            for entry in self.document:
+                #print(entry)
+                if '$%title$%' in entry:
+                    #print (entry)
+                    parse = entry[10:-1]
+                    print ('parsed ', parse)
+                    #print(self.days)
+                    self.days.insert({'name':parse,'categories':[],'overall_total': 0, 'section_no':counter})
+                    #self.days.update({'section_name':parse})
+                elif '$%sub$%' in entry:
+                    #print (entry)
+                    self.subhead = entry[6:]
+                    #print ('subhead', self.subhead)
+                elif '$%desc$%' in entry:
+                    #print (entry)
+                    desc = entry[9:-1]
+                    print(desc)
+                    line = {
+                            'category':desc,
+                            'no_days':0}
+                    self.days.update({'name':parse},{'$push':{'categories':line}})
+                elif '$%end$%' in entry:
+                    print (counter)
+                    counter = counter + 1
+                    
 if __name__ == "__main__":
-    tester1 = Price_Import()
-    tester1.start()
-    pricefile = 'static/pricing/pricing_testcase.csv'
-    tester1.writeout(pricefile)
-    tester1.add_base_modules()
-    print('pricing completed')
+#    tester1 = Price_Import()
+#    tester1.start('price')
+#    pricefile = 'static/pricing/pricing_testcase.csv'
+#    tester1.writeout(pricefile)
+#    tester1.add_base_modules()
+#    print('pricing completed')
     day_file = 'static/pricing/daycount_testcase.csv'
-    
+    tester2 = Price_Import()
+    tester2.start('day')
+    tester2.add_days(day_file)
+   
+    print('day count completed')
     
     
